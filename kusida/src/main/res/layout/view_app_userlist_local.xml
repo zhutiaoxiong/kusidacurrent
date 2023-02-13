@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:rightres="@drawable/icon_add"
+        androidme:text="@string/contact_list" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/list_users_local"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:listSelector="@drawable/listuserlocal_selector"
+            />
+
+
+        <!--设置就是设置顶部的字母排序-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/title_layout_local"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+           <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/title_local"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:text=""-->
+                <!--android:textColor="#E0E0E0"-->
+                <!--android:layout_marginLeft="10dp"/>-->
+        <!--</LinearLayout>-->
+        <ImageView
+        android:id="@+id/cross_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/img_crossline"
+
+        />
+
+        <TextView
+            android:id="@+id/dialog_local"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@color/all_background_color"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="45dp"
+            android:visibility="invisible" />
+
+        <view.clip.child.SliderBarForUserlist
+            android:id="@+id/sidrbar_local"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/white"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmartImageView">
+        <attr name="onLoading" format="reference"/>
+        <attr name="onFail" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width_circle" format="dimension"/>
+        <attr name="border_color_circle" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <attr name="angle_round" format="dimension"/>
+        <attr name="src_round" format="reference"/>
+        <attr name="border_width_round" format="dimension"/>
+        <attr name="border_color_round" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AutoScalingLayout">
+        <attr name="designWidth" format="dimension"/>
+        <attr name="designHeight" format="dimension"/>
+        <attr name="autoScaleEnable" format="boolean"/>
+        <attr name="autoScaleType" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="androidMe">
+        <attr name="topText" format="string" />
+        <attr name="bottomTxt" format="string" />
+        <attr name="gravityTxt" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="digits" format="string" />
+        <attr name="inputType" format="string" />
+        <attr name="maxLength" format="integer" />
+        <attr name="text" format="string" />
+        <attr name="textcolor" format="color" />
+        <attr name="lefttxt" format="string" />
+        <attr name="righttxt" format="string" />
+        <attr name="righthint" format="string" />
+        <attr name="res" format="reference" />
+        <attr name="leftres" format="reference" />
+        <attr name="rightres" format="reference" />
+        <attr name="background" format="reference" />
+        <attr name="bkcolor" format="color" />
+        <attr name="righttxtcolor" format="color" />
+        <attr name="splitLine" format="boolean" />
+        <attr name="isShow" format="boolean" />
+        <attr name="hideRightImage" format="boolean" />
+        <attr name="hideCenterTxt" format="boolean" />
+        <attr name="selected" format="boolean" />
+        <attr name="hideRightTxt" format="boolean" />
+        <attr name="pos" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RippleView">
+    <attr name="rippleColor" format="color"/>
+    <attr name="alphaFactor" format="float"/>
+    <attr name="hover" format="boolean"/>
+    </declare-styleable>
+</resources>

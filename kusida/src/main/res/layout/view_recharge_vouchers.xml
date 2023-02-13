@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="充值券" />
+    <TextView
+        android:id="@+id/txt_already_used"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="208dp"
+        android:gravity="center"
+        android:layout_below="@+id/title_head"
+        android:text="您的券已经被领取使用过。请换一张试试"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/txt_delay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="183dp"
+        android:gravity="center"
+        android:layout_below="@+id/title_head"
+        android:text="您的爱车手机控车服务期限将延长 xx个月。充值券号为：xxxxxxxxx"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/Button_round"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="127dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:text="确认充值"
+        android:visibility="invisible"/>
+</RelativeLayout>

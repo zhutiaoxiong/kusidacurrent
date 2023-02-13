@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="carstate_active">#09bb07</color><!--激活-->
+    <color name="carstate_unactive">#999999</color><!--未激活-->
+    <color name="carstate_giveone">#e93232</color><!--授权-->
+    <color name="carstate_getone">#e4c454</color><!--副-->
+    <color name="confirm_bg_color">#ffffffff</color>
+    <color name="confirm_txt_color">#ff000000</color>
+    <color name="confirm_hint_color">#ff666666</color>
+    <color name="confirm_btn_blue">#ff0D88E8</color>
+    <color name="confirm_btn_blue_gray">#880D88E8</color>
+    <color name="confirm_split_color">#ffdadada</color>
+    <color name="background_top">#ff303035</color>
+    <color name="background_all">#ff242323</color>
+    <color name="background_transparent">#05ffffff</color>
+    <color name="title_bg_color">#ff0D88E8</color>
+    <color name="title_txt_color">#ffffffff</color>
+    <color name="normal_bg_color">#ffffffff</color>
+    <color name="normal_txt_color">#ff000000</color>
+    <color name="normal_txt_color_blue">#ff0D88E8</color>
+    <color name="normal_txt_color_gray">#ffd4d4d4</color>
+    <color name="normal_linebtn_color">#ff333333</color>
+    <color name="normal_hint_color">#ff666666</color>
+    <color name="normal_split_line_color">#ffa3a6aa</color>
+    <color name="button_bg_color">#ff0D88E8</color>
+    <color name="button_bg_color_pressed">#880D88E8</color>
+    <color name="button_txt_color">#ffffffff</color>
+    <color name="button_enable_false_color">#ffCCCCCC</color>
+    <color name="button_press_color">#ffDADADA</color>    <color name="white">#ffffffff</color>
+    <color name="white_alpha">#55ffffff</color>
+    <color name="white_alpha50pc">#88ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_gray">#383838</color>
+    <color name="black_alpha">#88000000</color>
+    <color name="red_text">#f66a69</color>
+    <color name="red_dark">@color/carstate_giveone</color>
+    <color name="blue">#ff0677da</color>
+    <color name="light_blue">#0066ff</color>
+    <color name="blue_text">#ff0677da</color>
+    <color name="blue_light">#ff0677da</color>
+    <color name="blue_btn">#467d9f</color>
+    <color name="blue_btn_pressed">#ff2b3942</color>
+    <color name="green_text">#72ca52</color>
+    <color name="green_light">#ff16b73c</color>
+    <color name="green_deep">#ff00ff00</color>
+    <color name="yellow_text">#ffFAB758</color>
+    <color name="yellow_smart_text">#cd8514</color>
+    <color name="qingse">#464671</color>
+    <color name="gray">#ff666666</color>
+    <color name="gray_half_white">#999999</color>
+    <color name="gray_light">#ffdadada</color>
+    <color name="gray_dark">#ff555555</color>
+    <color name="gray_text">#ff666666</color>
+
+</resources>

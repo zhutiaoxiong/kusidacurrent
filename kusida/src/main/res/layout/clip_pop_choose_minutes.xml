@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription,HardcodedText,SpUsage" >
+
+    <View
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+             />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="@string/title_control_toast_car_on"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/info_control_toast_car_on"
+            android:textColor="#6d6d6d"
+            android:textSize="14dp" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:layout_toLeftOf="@+id/txt1"
+            android:src="@drawable/icon_alarm_warning"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/txt1"
+            android:src="@color/background_all"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_default_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txt1"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/info_control_toast_car_on"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="gone"/>
+        <!--android:text="默认启动时长为10分钟，可滑动按扭自行设置"-->
+
+
+        <view.clip.child.ClipStartCarMinutes
+            android:id="@+id/clip_minnn"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_below="@+id/txt3"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/lin_bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left|center_vertical"
+            android:text="本次启动后车辆处于防盗状态，开门或踩刹车会熄火，需要开锁后才能正常行驶。"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+           />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_above="@+id/lin_bottom"
+            android:src="@color/background_all"
+            android:visibility="invisible"
+            />
+        <LinearLayout
+            android:id="@+id/lin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                style="@style/Single_line_with_background"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="@string/cancle" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:scaleType="fitXY"
+                android:src="@color/background_all" />
+            <TextView
+                android:id="@+id/txt_confirm"
+                style="@style/Single_line_with_background"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="@string/confirm" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

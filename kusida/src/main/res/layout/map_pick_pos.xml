@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="地图选点"
+        />
+
+    <common.map.FullScreenMap
+        android:id="@+id/map_full"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_weight="100"/>
+
+    <view.view4app.carpath.ViewBelowMapItem
+        android:id="@+id/view_pos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

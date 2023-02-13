@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:orientation="horizontal"
+                tools:ignore="HardcodedText,ContentDescription">
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="90dp"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:text="粤A SB160"
+        android:textColor="@color/annual_white_txt"
+        android:textSize="15dp"/>
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="9dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/annual_arrow_down" />
+</LinearLayout>

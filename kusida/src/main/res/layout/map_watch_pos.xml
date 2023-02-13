@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="利和广场"
+        />
+
+    <common.map.FullScreenMap
+        android:id="@+id/map_full"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_weight="100"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:gravity="left"
+        android:text="语音技术由科大讯飞提供"
+        android:background="@color/gray_light"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/gray_light"/>
+    <view.view4app.carpath.ViewBelowMapItem
+        android:id="@+id/view_pos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/gray_light"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt_navi"
+            android:layout_width="30dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="导航"
+            android:textColor="@color/blue_light"
+            android:textSize="16dp"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="@color/gray_light"/>
+
+        <TextView
+            android:id="@+id/txt_share"
+            android:layout_width="30dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/blue_light"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</LinearLayout>

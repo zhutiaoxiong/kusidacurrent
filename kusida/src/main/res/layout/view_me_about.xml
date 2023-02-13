@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <view.view4me.set.ClipTitleMeSet
+            android:id="@+id/title_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            androidme:text="@string/about"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kulala_icon"/>
+
+        <TextView
+            style="@style/Single_line_text_trans"
+            android:layout_height="22dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_version"
+            style="@style/Single_line_text_trans"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="V1.2.00"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_intro"
+            style="@style/Single_line_with_background"
+            android:layout_marginTop="20dp"
+            androidme:lefttxt="@string/company_profile"
+            androidme:rightres="@drawable/right_chacha"/>
+
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_suggest"
+            style="@style/Single_line_with_background"
+            androidme:lefttxt="@string/complaints_suggestions"
+            androidme:rightres="@drawable/right_chacha"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <view.clip.ClipLineBtnInptxt
+                android:id="@+id/txt_update"
+                style="@style/Single_line_with_background"
+                androidme:lefttxt="检查更新："
+                androidme:splitLine="false"/>
+
+            <TextView
+                android:id="@+id/txt_update_change"
+                style="@style/Single_line_text_trans"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="V1.2.00"
+                android:textSize="16dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_licence"
+            style="@style/Single_line_text_trans"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="@string/terms_of_use_and_privacy_policy"
+            android:textColor="@color/blue_text"
+            android:textSize="14dp"/>
+
+        <TextView
+            style="@style/Single_line_text_trans"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:text="@string/cool_technology_ltd_All_rights_reserved"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+
+        <TextView
+            style="@style/Single_line_text_trans"
+            android:layout_height="14dp"
+            android:gravity="center"
+            android:text="Copyright ©2015-2020 Kusida"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+
+        <TextView
+            style="@style/Single_line_text_trans"
+            android:layout_height="14dp"
+            android:gravity="center"
+            android:text="All Rights Reserved"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

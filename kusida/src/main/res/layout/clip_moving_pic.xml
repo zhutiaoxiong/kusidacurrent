@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="@color/background_all" >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/country_garden_in_the_campus_area_name"
+            android:textColor="#ffffff"
+            tools:ignore="HardcodedText" 
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_dot_contain"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:paddingRight="35dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"/>
+
+</RelativeLayout>

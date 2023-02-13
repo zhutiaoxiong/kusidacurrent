@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="@string/nickname" />
+
+    <TextView
+        android:id="@+id/txt_save"
+        style="@style/Single_line_text_trans"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/light_blue"
+        android:textSize="18dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/title_head"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/txt_input"
+            style="@style/Single_line_text_trans"
+            android:layout_height="45dp"
+            android:gravity="left|center_vertical"
+            android:inputType="textMultiLine"
+            android:maxLength="30"
+            android:hint="@string/please_enter_a_nickname"
+            android:layout_marginLeft="10dp"
+            android:singleLine="false"/>
+        <!--android:background="@drawable/underline"-->
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/delete"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

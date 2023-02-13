@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/touch_exit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@drawable/andi"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_base"
+        android:layout_width="match_parent"
+        android:layout_height="195.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/img_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="195.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_air_condition_big" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="空调设置"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/id_img_ac_status"
+            android:layout_width="75.5dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_selector_air_condition_ac_status"
+            android:layout_marginRight="2dp"
+           />
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="39dp">
+
+            <ImageView
+                android:id="@+id/bg_control_wind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_control_wind_big_or_small" />
+
+            <ImageView
+                android:id="@+id/wind_open"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="31dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_wind_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:gravity="center_vertical"
+                android:text="小"
+                android:textColor="@color/black" />
+
+            <SeekBar
+                android:id="@+id/seek_control_big_or_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="99.5dp"
+                android:layout_marginRight="29dp"
+                android:max="100"
+                android:maxHeight="13.5dp"
+                android:minHeight="13.5dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/layer_control_big_or_small"
+                android:thumb="@drawable/control_big_or_small_thumb"
+                android:thumbOffset="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:gravity="center_vertical"
+                android:text="大"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re2"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:id="@+id/img_bg_control_hot_or_cold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_control_wind_hot_cold" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="31dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_wind_hot_and_cold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:gravity="center_vertical"
+                android:text="冷"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginLeft="99.5dp"
+                android:layout_marginRight="29dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_wind_red_blue" />
+
+            <view.view4control.ViewControlHotOrCold
+                android:id="@+id/air_conditon_hot_cold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="96.5dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:gravity="center_vertical"
+                android:text="热"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/is_show_air_pop"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:padding="3dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="123.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_selector_air_condition_show_pop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="54.5dp"
+            android:layout_marginTop="122.5dp"
+            android:text="不自动弹框"
+            android:textColor="@color/black" />
+        <LinearLayout
+            android:id="@+id/lin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/Single_line_text_trans"
+                android:layout_width="50dp"
+                android:layout_weight="50"
+                android:background="@drawable/btn_selector_sheke_left"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/cancle"
+                android:textColor="@drawable/skin_color_button" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/Single_line_text_trans"
+                android:layout_width="50dp"
+                android:layout_weight="50"
+                android:background="@drawable/btn_selector_sheke_right"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="确认"
+                android:textColor="@drawable/skin_color_button" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

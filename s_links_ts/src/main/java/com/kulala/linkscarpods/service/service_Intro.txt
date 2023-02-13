@@ -1,0 +1,13 @@
+<<<<must no about other UI,only boardcast conn>>>
+
+1.sound ON OFF: --on service start--
+BootBroadcastReceiver.ServiceBNeedChangeSwitch(...
+
+2.SET pop Notifacation init
+BootBroadcastReceiver.initNotification(GlobalContext.getContext(),R.drawable.kulala_icon,getResources().getString(R.string.app_name), ManagerSwitchs.getInstance().getSoundOpen(),ManagerSwitchs.getInstance().getVibratorOpen());
+NotificationSer.initData(...
+
+3.socket init
+Ip,PORT,pHeadSocket.getPHeadSocket()
+onChangeValue:
+pHeadSocket.changeUserId(str);

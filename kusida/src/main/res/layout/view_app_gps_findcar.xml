@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:rightres="@drawable/icon_car_white"
+        androidme:text="@string/current_position"/>
+
+    <common.map.FullScreenMap
+        android:id="@+id/map_full"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_head"
+        android:clickable="true"/>
+
+
+    <include
+        android:id="@+id/lin1"
+        layout="@layout/include_address_txt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/lin2"/>
+
+    <RelativeLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/all_background_color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/down_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:layout_weight="30"/>
+
+            <LinearLayout
+                android:id="@+id/lin_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_gps_favorite"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/address_the_collection"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:layout_weight="30"/>
+
+            <LinearLayout
+                android:id="@+id/lin_carpath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_gps_path"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/vehicle_trajectory"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:layout_weight="30"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

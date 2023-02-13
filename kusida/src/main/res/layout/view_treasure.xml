@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp">
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/treasure_pic"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/treasurechests"
+        android:visibility="invisible"
+       />
+    <com.ant.liao.GifView
+        android:id="@+id/treasure_gif"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_qrcode_text"> #bababa</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <!--//朱绍雄定义的好友列表页面的颜色-->
+    <!--<color name="mediumseagreen">#3CB371</color>&lt;!&ndash;中海蓝 &ndash;&gt;-->
+    <color name="mango">#b5d345</color>//芒果色
+    <color name="smart_gray">#8f8e94</color>//浅灰色用于保养提醒页面的具体时间
+    <color name="car_percent">#dfdfdf</color>//浅灰色用于保养提醒页面的具体时间
+    //酒红色用于用于添加保养的确定按钮
+    //酒红色用于用于添加保养的确定按钮
+
+    <color name="annual_background_top">#ff303035</color>
+    <color name="annual_background_all">#ff242323</color>
+    <color name="firstpage_statusbar_color">#9bacb7</color>
+    <color name="annual_btn_confrim_blue">#467D9F</color>
+    <color name="annual_black_bg">#30303f</color>
+    <color name="annual_red_txt">#b72e2e</color>
+    <color name="annual_blue_text">#ff0677da</color>
+    <color name="annual_white_txt">#adadae</color>
+    <color name="annual_transparent">#01000000</color>
+    <color name="annual_input_above_bg">#f4f5f6</color>
+    <color name="background_all">#ff242323</color>
+    <color name="white">#ffffff</color>
+    <color name="light_white">#dcdcdc</color>
+    <color name="black">#000000</color>
+    <color name="all_background_color">#eeeeee</color>
+    <color name="black_alpha">#88000000</color>
+    <color name="green_light">#16b73c</color>
+    <color name="gray">#ff666666</color>
+    <color name="no_recode">#467D9F</color>-->
+    <color name="blue"> #5993FE</color>
+
+</resources>

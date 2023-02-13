@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Single_line_text_trans"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_cartype"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/maintenance"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        style="@style/Single_line_text_trans"
+        android:paddingLeft="10dp"
+        android:text="测AL386L"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageBtn"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/switch_on"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

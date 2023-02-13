@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/img_line">
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:padding="7dp"
+            android:src="@drawable/arrow_left"/>
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="7dp"
+            android:src="@drawable/arrow_right"/>
+
+        <TextView
+            android:id="@+id/txt_address_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/img_right"
+            android:layout_toRightOf="@+id/img_left"
+            android:gravity="center_vertical"
+            android:text="1.花城广场"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#242323"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_pos"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/txt_address_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img_left"
+            android:src="@drawable/icon_gps_location"/>
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_below="@+id/txt_address_name"
+            android:layout_toLeftOf="@+id/img_right"
+            android:layout_toRightOf="@+id/img_pos"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:singleLine="true"
+            android:text="花城广场18街56号"
+            android:layout_marginLeft="5dp"
+            android:textColor="#b2b3b5"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/txt_confirm"
+        android:src="@color/gray_light"/>
+
+    <TextView
+        android:id="@+id/txt_confirm"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/blue_text"
+        android:textSize="20dp"/>
+</RelativeLayout>

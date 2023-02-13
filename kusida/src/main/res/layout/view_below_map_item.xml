@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="58dp"
+        android:layout_weight="1"
+        >
+    <TextView
+        android:id="@+id/txt_address_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textColor="#242323"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="花城广场"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/icon_gps_location"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textColor="#b2b3b5"
+            android:textSize="12dp"
+            android:gravity="top"
+            android:singleLine="true"
+            android:text="距离您17km 花城广场18街56号"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@color/gray_light"/>
+    <TextView
+        android:id="@+id/txt_confirm"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="确定"
+        android:layout_gravity="right"
+        android:textColor="@color/blue_text"
+        android:textSize="20dp"/>
+
+</LinearLayout>

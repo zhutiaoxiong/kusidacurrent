@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:ignore="HardcodedText,ContentDescription" >
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="液晶钥匙" />
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidme:leftres="@drawable/titlehead_back"-->
+<!--        androidme:text="液晶钥匙" />-->
+    <LinearLayout
+        android:id="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/title_head"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/Single_line_text_trans"
+            android:paddingLeft="10dp"
+            android:text="手机蓝牙与液晶钥匙连接"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/image_isbind"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/switch_on"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+<!--    <ImageView-->
+<!--        android:id="@+id/img_splitline"-->
+<!--        android:layout_below="@id/li"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/img_crossline"-->
+<!--        android:visibility="visible"/>-->
+    <view.view4me.set.ClipSetItem
+        android:id="@+id/txt_isBind"
+        android:layout_below="@+id/li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="解绑"
+        android:layout_marginTop="10dp"
+        />
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_isBind"-->
+<!--        android:layout_below="@+id/li"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        androidme:lefttxt="解绑"-->
+<!--        androidme:rightres="@drawable/icon_common_arrow_right" />-->
+    <view.view4me.set.ClipSetItem
+        android:id="@+id/txt_lcd_tips"
+        android:layout_below="@+id/txt_isBind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="液晶钥匙操作说明"
+        android:layout_marginTop="20dp"
+        />
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_lcd_tips"-->
+<!--        android:layout_below="@+id/txt_isBind"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        androidme:lefttxt="液晶钥匙操作说明"-->
+<!--        androidme:rightres="@drawable/icon_common_arrow_right" />-->
+
+</RelativeLayout>

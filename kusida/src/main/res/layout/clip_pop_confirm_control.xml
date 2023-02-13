@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="HardcodedText,ContentDescription">
+    <View
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/black" />
+    <RelativeLayout
+        android:id="@+id/lin_base"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/img_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:scaleType="fitXY"/>
+        <!--android:src="@drawable/img_bg_confirm"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/Single_line_text_trans"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/operating_hints"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/txt_info"
+                style="@style/Single_line_text_trans"
+                android:layout_height="0dp"
+                android:layout_weight="100"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/operating_hints"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/txt_infosm"
+                style="@style/Single_line_text_trans"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/operating_hints"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/spiline_x"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/lin_bottom"
+            android:background="@color/background_top"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/lin_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/Single_line_text_trans"
+                android:layout_width="50dp"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/cancle"
+                />
+
+            <ImageView
+                android:id="@+id/split_center_line"
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="@color/background_top"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/Single_line_text_trans"
+                android:layout_width="50dp"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/confirm"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

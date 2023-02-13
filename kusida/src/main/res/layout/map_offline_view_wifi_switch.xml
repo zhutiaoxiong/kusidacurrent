@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/background_top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="WIFI下自动更新"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+            android:gravity="top"
+            android:text="WIFI环境下,自动更新离线包,保持获取最新数据"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/img_wifi_auto"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/switch_off"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

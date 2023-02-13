@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    package="com.client.proj.kusida"
+    android:installLocation="internalOnly"
+    android:versionCode="37"
+    android:versionName="3.4">
+
+    <!-- maxV:180630 -102 - 2.3.8.30 on post-->
+
+    <!-- 联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- 系统 -->
+<!--    <uses-permission android:name="android.permission.WAKE_LOCK"/>-->
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tool:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 修改手机连接网路状态权限 -->
+    <!-- uses-permission android:name="android.permission.MODIFY_PHONE_STATE" / -->
+    <!-- 开机启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- gps_baidu map -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+
+    <!-- 震动,audio,camera权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+<!--    <uses-permission android:name="android.permission.RECORD_AUDIO"/>-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--窗口-->
+<!--    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>-->
+<!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>-->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <!--拍照-->
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <!--蓝牙-->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.PERMISSION_READ_ENCRYPTED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <!--system app-->
+    <permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!--<uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>-->
+    <!--<uses-permission android:name="android.permission.READ_LOGS"/>-->
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS"/>-->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <!--DownloadManager-->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <uses-permission android:name="com.client.proj.kusida.permissions.MY_BROADCAST" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tool:ignore="ProtectedPermissions" />
+
+    <permission
+        android:name="com.client.proj.kusida.permissions.MY_BROADCAST"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false"/>
+    <queries>
+        <!--微信-->
+        <package android:name="com.tencent.mm" />
+        <package android:name="com.tencent.qqlite"/>
+        <package android:name="com.tencent.mobileqq"/>
+        <package android:name="com.eg.android.AlipayGphone"/>
+        <package android:name="com.taobao.taobao"/>
+        <package android:name="com.baidu.BaiduMap"/>
+        <package android:name="com.tencent.map"/>
+        <package android:name="com.autonavi.minimap"/>
+    </queries>
+<!-- android:preserveLegacyExternalStorage="true "-->
+    <application
+        android:name="common.GlobalContext"
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@drawable/kulala_icon"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:supportsRtl="true"
+         android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        tool:ignore="LockedOrientationActivity"
+        android:preserveLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        tool:targetApi="r">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+         <!--android:persistent="true"熄屏不要杀死-->
+        <!--signingReport keytool -v -list -keystore androidJava_key.jks
+        MD5: 7B:B1:8D:1A:F8:48:87:E3:D5:33:7B:F3:5B:1A:AE:A8
+        SHA1: 28:2B:DE:93:43:CF:0E:BB:61:97:E4:18:2B:C1:02:E8:55:DE:31:AA
+        不同版本注意修改：
+        1.appID 2.logo 3.flash 4.shareUrl+shareImage 5.companyInfo
+        6.微信，百度，友盟 appKey   百度Activity包位置
+        7.cid channel-->
+        <!--不同项目以下属性不同-->
+        <meta-data
+            android:name="cid"
+            android:value="5"/>
+        <meta-data
+            android:name="channel"
+            android:value="${CHANNEL_VALUE}"/>
+        <meta-data
+            android:name="WX_APPKEY"
+            android:value="wx3119e7312c9c771d"/>
+
+
+        <!--wxd7b143a785058177   wxee22b52c65c19672  wx184a1de0a3846a1f  wx02c9958436e12271 -->
+        <meta-data
+            android:name="QQ_SHARE"
+            android:value="tencent101973286"/>
+        <!-- 1111117269  101388546 APP ID：101955145
+        APP Key：e0a9bc285f201c9268c2100921245b17
+        审核中...
+
+
+        APP KEYBe1LYpKQpsQAgxUO       -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5fac904a45b2b751a929d63e"/>
+        <!--5fac904a45b2b751a929d63e    574be2c8e0f55a9c28000bf8     -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ChannelSelf"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="48ae76de3f"/>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="PeAQzjNPFi57LAGpEt3yjIjOiG17DmrB"/>
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity
+            android:name="common.map.ActivityNaviMap"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden">
+        </activity>
+        <activity
+            android:name="common.map.offline.ActivityOfflineMap"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden">
+        </activity>
+        <!--for camera -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.client.proj.kusida"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity
+            android:name="view.ActivityNavigation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"
+            android:theme="@style/whiteTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--android:excludeFromRecents="true" 不在最近应用列表显示-->
+        <activity
+            android:name="annualreminder.view.ActivityAnnual_RecodeAdd"
+            android:label="  "
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="view.ActivityFlash"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"
+            android:theme="@style/whiteTheme">
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityMyHome"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/homeTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityMore"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityOrder"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityMessage"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityMessageSoundRecording"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+
+        <activity
+            android:name="view.home.activity.ActivityRecordTimeSelect"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityMessageDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityMessageSelect"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityLocator"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityChangeEquipment"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityDistributionRecord"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityLocatorTrackList"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="view.home.activity.ActivityTracklistDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/whiteTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+        </activity>
+
+        <!--android:launchMode="singleInstance"-->
+        <!--android:excludeFromRecents="true" 不在最近应用列表显示-->
+
+        <activity
+            android:name="view.ActivityAdvertising"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.ActivityKulalaMain"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateUnspecified"
+            android:theme="@style/activityTheme"
+            >
+        </activity>
+        <!--<action android:name="view.ActivityKulalaMain"/>-->
+        <!-- android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" -->
+        <!--android:windowSoftInputMode="stateAlwaysHidden|adjustResize">-->
+        <activity
+            android:name="view.ActivityLogin"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+        </activity>
+        <!--android:excludeFromRecents="true" 不在最近应用列表显示-->
+        <activity
+            android:name="view.view4app.codriver.ActivityAuthorDetails"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <!--android:excludeFromRecents="true" 不在最近应用列表显示-->
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivityForBindEquipment"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.view4me.lcdkey.BindLcdKeyActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <activity
+        android:name="view.view4me.lcdkey.ActivityLCDkey"
+            android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateAlwaysHidden">
+
+    </activity>
+        <activity
+            android:name="view.view4me.lcdkey.ActivityLcdKeyTips"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+
+        <activity
+            android:name="view.ActivityWeb"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:hardwareAccelerated="true"
+            >
+        </activity>
+        <activity
+            android:name="view.ActivityWebDisPla"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="view.ActivityChat"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="view.ViewUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+
+        <activity
+            android:name="view.ClipCutPicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="view.view4me.carmanage.ActivityAddCustomerInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="view.view4me.ActivityUserAgreeMentPravate"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="view.view4me.ActivityPermisionTips"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="view.view4app.ViewGpsCarArea"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.view4app.ViewGpsFavoriteShowPos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.view4app.ViewGpsFindCar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.view4app.carpath.ViewCarPath"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.view4app.carpath.ViewMapPickPos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.view4app.lendcartemporary.ActivityLendCarTemporary"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="view.view4app.carpath.ViewMapPoi"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.view4app.carpath.ViewMapSearchNear"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="view.view4app.carpath.ViewMapWatchPos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="com.client.proj.kusida.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sdksample"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.client.proj.kusida.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sdksample"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent101388546"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+        <activity
+            android:name="com.tencent.tauth.ShareTotencent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity android:name="view.view4me.nfcmoudle.JiecaoVideoPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="view.view4me.shake.JiecaoVideoPlayerShakeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="view.ActivityUpGrade"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:hardwareAccelerated="true">
+        </activity>
+
+        <!--<receiver-->
+            <!--android:name="common.blue.BlueLinkReceiver"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="ONCONNECTEDFAILED"/>-->
+                <!--<action android:name="ONDISCOVEROK"/>-->
+                <!--<action android:name="ONMESSAGESENDED"/>-->
+                <!--<action android:name="ONDATARECEIVED"/>-->
+                <!--<action android:name="ONBLUECONNCHANGE"/>-->
+                <!--<action android:name="BLUETOOTH_NEED_GET_CARINFO"/>-->
+                <!--<action android:name="Intent.FLAG_RECEIVER_FOREGROUND"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver-->
+            <!--android:name="common.linkbg.BootBroadcastReceiver"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="SERVICE_INIT_SOCKET_POST"/>-->
+                <!--<action android:name="SERVICE_INIT_NOTIFI_POST"/>-->
+                <!--<action android:name="SERVICE_RECEIVE_MESSAGE"/>-->
+                <!--<action android:name="Intent.FLAG_RECEIVER_FOREGROUND"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!-- 个推SDK配置开始 -->
+        <!--<activity-->
+        <!--android:name="common.blue.OnePxActivity"-->
+        <!--android:configChanges="keyboardHidden|orientation|screenSize|navigation|keyboard"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="false"-->
+        <!--android:finishOnTaskLaunch="false"-->
+        <!--android:launchMode="singleInstance"-->
+        <!--android:process=":process"-->
+        <!--android:theme="@style/undeadActivityStyle"-->
+        <!--&gt;-->
+        <!--</activity>-->
+        <!--<service-->
+            <!--android:name="common.linkbg.MyPushService"-->
+            <!--android:exported="true"-->
+            <!--android:label="PushService"-->
+            <!--android:process=":pushservice"/>-->
+
+        <!--<service android:name="common.linkbg.MyPushReceiveService"/>-->
+
+        <!--<service-->
+            <!--android:name="com.kulala.linkbackground.PushService"-->
+            <!--android:exported="true"-->
+            <!--android:label="NotificationCenter"-->
+            <!--android:process=":pushservice">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.igexin.sdk.action.service.message"/>-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <!--<receiver android:name="com.kulala.linkbackground.PushReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+                <!--<action android:name="android.intent.action.USER_PRESENT"/>-->
+                <!--<action android:name="com.igexin.sdk.action.refreshls"/>-->
+                <!--&lt;!&ndash; 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 &ndash;&gt;-->
+                <!--<action android:name="android.intent.action.MEDIA_MOUNTED"/>-->
+                <!--<action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>-->
+                <!--<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <service
+            android:name="view.MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver
+            android:name="common.VersionApkBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+<!--        <receiver android:name="view.view4me.shake.BluetoothReceiver" >-->
+<!--            <intent-filter android:priority="1000">-->
+<!--                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>-->
+<!--                <action android:name="android.bluetooth.device.action.FOUND" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+        <!-- 个推SDK配置结束 -->
+    </application>
+
+</manifest>

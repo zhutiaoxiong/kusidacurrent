@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+<!--        <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--            android:id="@+id/title_head"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            androidme:leftres="@drawable/titlehead_back"-->
+<!--            androidme:rightres="@drawable/icon_car_white"-->
+<!--            androidme:text="@string/online_payment" />-->
+        <view.view4me.set.ClipTitleMeSet
+            android:id="@+id/title_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            androidme:rightres="@drawable/icon_car_white"
+            androidme:text="服务充值" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/findbg"
+    android:layout_marginTop="9dp"
+    android:layout_marginStart="14dp"
+    android:layout_marginEnd="14dp"
+   >
+    <common.pinyinzhuanhuan.CircleImg
+        android:id="@+id/img_left"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/applist_carpos_center" />
+    <TextView
+        android:id="@+id/txt_carname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@+id/img_left"
+        android:layout_marginStart="18dp"
+        android:text="@string/license_plate_number_not_choose_vehicles"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_below="@+id/txt_carname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@+id/img_left"
+        android:layout_marginStart="18dp"
+        android:text="@string/as_of_the_date_of_service"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:textColor="@color/black"/>
+</RelativeLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/txt_carname"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/license_plate_number_not_choose_vehicles"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="15dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_date"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/as_of_the_date_of_service"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="15dp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal" >
+
+            <view.clip.me.ClipPayItem
+                android:id="@+id/pay1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="50" />
+
+            <view.clip.me.ClipPayItem
+                android:id="@+id/pay2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <view.clip.me.ClipPayItem
+                android:id="@+id/pay3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="50" />
+
+            <view.clip.me.ClipPayItem
+                android:id="@+id/pay4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="50" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="14dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/method_of_payment_simbol"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <view.clip.me.ClipPayItem
+                android:id="@+id/pay5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="50" 
+                androidme:background="@drawable/icon_pay_weixing"/>
+
+            <view.clip.me.ClipPayItem
+                android:id="@+id/pay6"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="50" 
+                androidme:background="@drawable/icon_pay_checkpay"/>
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_confirm"-->
+<!--            style="@style/Button_round"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="80dp"-->
+<!--            android:layout_marginRight="80dp"-->
+<!--            android:text="@string/confirm"-->
+<!--            android:visibility="gone"/>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btn_recharge_vouchers"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/all_background_color"
+            android:text="@string/scavenger_recharge_voucher" />
+        <View
+            android:id="@+id/cross_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            />
+        <Button
+            android:id="@+id/btn_give_firend"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/background_top"
+            android:textColor="@color/black"
+            android:text="@string/to_top_up_your_friends"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/blue_light"
+            android:textColor="@color/black"
+            android:text="立即充值" />
+
+    </LinearLayout>
+
+</RelativeLayout>

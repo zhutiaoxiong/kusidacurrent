@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/head_no"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/img_icon"
+        android:text="@string/white_car"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_icon"
+        android:text="1.25M"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_size"
+        android:text="14.50元"
+        android:textSize="14sp"
+        android:textColor="@color/yellow_text"/>
+
+    <view.clip.child.ClipBtnProgress
+        android:id="@+id/btn_setup"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_listtitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/the_title"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/all_background_color"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Single_line_with_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText,ContentDescription">
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_margin="4dp"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/Single_line_text_trans"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dp"
+        android:text="测A S586B"/>
+    <ImageView
+        android:id="@+id/img_check"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="10dp"
+        android:padding="13dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/select_false"/>
+</LinearLayout>

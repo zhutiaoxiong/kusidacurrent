@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wearableApp xmlns:android="http://schemas.android.com/apk/res/android"
+             package="com.client.proj.kusida"
+    >
+    <versionCode>8</versionCode>
+    <versionName>1.0.0.8</versionName>
+    <rawPathResId>wearable_app</rawPathResId>
+</wearableApp>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="ContentDescription,HardcodedText">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="title"/>
+    <ListView
+        android:id="@+id/letter_list_letter"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_head"
+        android:background="@color/all_background_color"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+    <!--android:divider="@android:color/transparent"-->
+
+    <ListView
+        android:id="@+id/letter_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/letter_list_letter"
+        android:layout_below="@+id/title_head"
+        android:divider="@color/all_background_color"
+        android:dividerHeight="1dp"/>
+
+    <TextView
+        android:id="@+id/txt_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/all_background_color"
+        android:gravity="center"
+        android:maxWidth="70dip"
+        android:minWidth="70dip"
+        android:padding="10dip"
+        android:textColor="@android:color/black"
+        android:textSize="50dp" />
+
+</RelativeLayout>

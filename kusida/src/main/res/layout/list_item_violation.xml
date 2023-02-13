@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/background_top"
+    tools:ignore="HardcodedText" >
+    <TextView
+        android:id="@+id/txt_time"
+        style="@style/Single_line_text_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="2015-05-05"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txt_place"
+        style="@style/Single_line_text_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="广东中山"
+        android:textColor="@color/white"
+        android:textSize="14dp"/>
+    <TextView
+        android:id="@+id/txt_fee"
+        style="@style/Single_line_text_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/txt_place"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="金额：150元"
+        android:textColor="@color/red_dark"
+        android:textSize="12dp"/>
+
+
+</RelativeLayout>

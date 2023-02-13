@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/annual_background_all"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+
+
+    <annualreminder.view.style.StyleTitleHead
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:leftres="@drawable/titlehead_back"
+        androidme:text="年检提醒"/>
+
+    <annualreminder.view.clip.ClipAnnualReminder_select_car
+        android:id="@+id/view_select_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_annual_reminder"
+            android:layout_width="10dp"
+            android:layout_height="45dp"
+            android:layout_weight="100"
+            android:gravity="left|center_vertical"
+            android:text="| 年检记录"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="13dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/annual_reminder_add_icon"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <annualreminder.view.clip.ClipAnnualReminder_NoRecode
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

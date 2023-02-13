@@ -1,0 +1,9 @@
+step1: init:
+BlueAdapter.getInstance().init(GlobalContext.getCurrentActivity());
+
+step2: setEvent:
+BlueAdapter4.getInstance().setOnBlueConnListener(...
+BlueAdapter4.getInstance().setOnBlueDataListener(...
+
+step3: connect && sendmessage:
+BlueAdapter4.getInstance().sendMessage(...

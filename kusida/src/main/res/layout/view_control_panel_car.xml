@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription,HardcodedText,SpUsage" >
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="visible"/>
+    <ImageView
+        android:id="@+id/img_findcar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txt_carname"
+        android:adjustViewBounds="true"
+        android:contentDescription="寻车闪灯"
+        android:visibility="invisible" />
+
+
+    <adapter.viewpager.ViewPagerChild
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:scrollbars="none"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/dot_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/control_carnum_bg"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/txt_carname"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/dot_horizontal"
+        android:gravity="center"
+        android:text="@string/inactive_vehicles"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/dot_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"/>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:src="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/Single_line_text_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/img_icon"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="@string/the_daily_login"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/txt_score"
+        style="@style/Single_line_text_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/txt_name"
+        android:layout_toRightOf="@+id/img_icon"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="+5"
+        android:textColor="@color/green_light"
+        android:textSize="16dp"/>
+
+    <ImageView
+        android:id="@+id/img_check"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/select_true_green"/>
+
+</RelativeLayout>

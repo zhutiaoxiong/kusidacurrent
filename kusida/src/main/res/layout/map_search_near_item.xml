@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txt_address_name"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_toLeftOf="@+id/img_call"
+        android:gravity="center_vertical"
+        android:text="花城广场"
+        android:textColor="#242323"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/txt_address_name"
+        android:layout_toLeftOf="@+id/img_call"
+        android:gravity="top"
+        android:text="17km 花城广场18街56号"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#b2b3b5"
+        android:textSize="14dp"/>
+
+    <ImageView
+        android:id="@+id/img_call"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="9dp"
+        android:padding="12dp"
+        android:layout_toLeftOf="@+id/img_navi"
+        android:scaleType="fitXY"
+        android:src="@drawable/map_near_search_call"/>
+
+    <ImageView
+        android:id="@+id/img_navi"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/map_near_search_navi"/>
+
+</RelativeLayout>

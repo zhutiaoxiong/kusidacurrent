@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText" >
+
+    <ListView
+        android:id="@+id/list_values"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:textColor="@color/gray_dark"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:alpha="0.2"
+        android:background="@color/background_top"
+        android:text="2014年1111"
+        android:textColor="@android:color/transparent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:alpha="0.2"
+        android:background="@color/background_top"
+        android:text="2014年11111"
+        android:textColor="@android:color/transparent"
+        android:textSize="18sp" />
+
+</FrameLayout>

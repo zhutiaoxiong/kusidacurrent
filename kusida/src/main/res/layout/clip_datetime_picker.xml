@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background_top"
+    android:orientation="vertical"
+    tools:context="view.clip.ClipDatetimePicker"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="@string/cancle"
+            android:textSize="16dp"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/please_select_a_date"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:background="@android:color/transparent"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/confirm"
+            android:textSize="16dp"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_dark" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <view.clip.child.ClipPicker
+            android:id="@+id/pick_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            androidme:text="2014年" />
+
+        <view.clip.child.ClipPicker
+            android:id="@+id/pick_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            androidme:text="12月" />
+
+        <view.clip.child.ClipPicker
+            android:id="@+id/pick_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            androidme:text="30日 周三" />
+
+        <view.clip.child.ClipPicker
+            android:id="@+id/pick_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            androidme:text="10:" />
+
+        <view.clip.child.ClipPicker
+            android:id="@+id/pick_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            androidme:text="60" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="142dp"
+    android:layout_height="144dp"
+    android:background="@drawable/img_seat_background"
+    android:orientation="horizontal">
+    <view.view4control.ViewSeatItem
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        androidme:comand="1"
+        />
+    <view.view4control.ViewSeatItem
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        androidme:comand="2"
+        />
+</LinearLayout>

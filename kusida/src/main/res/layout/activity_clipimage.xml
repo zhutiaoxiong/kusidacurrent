@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+  
+   <FrameLayout
+       android:id="@+id/cutpic_framelayout"
+       android:layout_width="match_parent"
+       android:layout_height="48dp">
+
+       <RelativeLayout
+           android:id="@+id/title_bar"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="@color/white" >
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="48dp"
+               android:scaleType="fitXY"
+               android:src="@color/white"/>
+
+           <ImageView
+               android:id="@+id/backto_camaraorgallery"
+               android:layout_width="31dp"
+               android:layout_height="31dp"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:src="@drawable/title_back"
+               android:layout_marginStart="15dp"
+
+               />
+
+           <TextView
+               android:id="@+id/tv_title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="100dp"
+               android:layout_marginRight="20dp"
+               android:singleLine="true"
+               android:text="@string/move_and_scale"
+               android:textColor="#000000"
+               android:textSize="18sp" />
+           <TextView
+               android:id="@+id/besure"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="20dp"
+               android:singleLine="true"
+               android:text="@string/confirm"
+               android:textColor="@color/blue_light"
+               android:textSize="18sp" />
+
+       </RelativeLayout>
+   </FrameLayout>
+
+    <common.pinyinzhuanhuan.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_above="@+id/fenge_layout2"
+        android:layout_below="@+id/fenge_layout1"
+       />
+    <LinearLayout
+        android:id="@+id/fenge_layout2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="65dp"/>
+
+    <LinearLayout
+        android:id="@+id/fenge_layout1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="65dp"
+        android:layout_below="@+id/cutpic_framelayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

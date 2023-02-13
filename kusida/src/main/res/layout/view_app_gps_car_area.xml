@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:rightres="@drawable/icon_gps_cararea_setup"
+        androidme:text="@string/electronic_fence" />
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidme:leftres="@drawable/titlehead_back"-->
+<!--        androidme:rightres="@drawable/icon_gps_cararea_setup"-->
+<!--        androidme:text="@string/electronic_fence"/>-->
+
+    <common.map.FullScreenMap
+        android:id="@+id/map_full"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_address"
+        android:layout_below="@+id/title_head"
+        android:clickable="true"/>
+
+    <view.view4app.carpath.ViewBelowMapItem
+        android:id="@+id/view_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

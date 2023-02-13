@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="@string/the_integral_subsidiary" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_head">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_below="@+id/title_head"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/annual_bgst_round_black_selectcar">
+
+                <TextView
+                    android:id="@+id/t_score"
+                    style="@style/Single_line_text_trans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:layout_margin="10dp"
+                    android:text="@string/the_current_total_credit"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/txt_score"
+                    style="@style/Single_line_text_trans"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/t_score"
+                    android:layout_margin="10dp"
+                    android:gravity="left|center_vertical"
+                    android:text="0"
+                    android:textColor="@color/blue_light"
+                    android:textSize="18dp"/>
+            </RelativeLayout>
+            <TextView
+                style="@style/Single_line_text_trans"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="10dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/the_integral_subsidiary"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+            <adapter.BasicListView
+                android:id="@+id/list_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_top"
+                android:divider="@color/all_background_color"
+                android:dividerHeight="1dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

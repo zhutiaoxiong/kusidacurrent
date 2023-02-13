@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidme:leftres="@drawable/titlehead_back"-->
+<!--        androidme:text="摇一摇功能操作说明" />-->
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="摇一摇功能操作说明" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.kulala.staticsview.image.smart.SmartImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_shake_tips_05" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="支持摇一摇的手机有哪些"
+        android:textSize="24dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/shake_spline"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:text="1.安卓手机：安卓5.0或以上操作系统，且微信“摇一摇”功能可以使用。\n\n2.对于安卓手机，由于安卓系统的多样性，即使符合以上系统版本要求,酷斯达数字车钥匙不能确保所有品牌型号手机都能支持摇一摇功能，使用前请先核实手机是否支持。"
+        android:textSize="16dp"
+        android:visibility="gone"/>
+</LinearLayout>

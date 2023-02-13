@@ -1,0 +1,6 @@
+include ':kusida',':s_links_ts'
+include ':s_staticsview'
+include ':s_dispatcher',':s_staticsfunc'
+include ':s_timepicker'
+include ':s_wearfunc'
+

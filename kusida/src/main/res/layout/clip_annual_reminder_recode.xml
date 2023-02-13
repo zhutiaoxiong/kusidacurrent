@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <ListView
+        android:id="@+id/list_recodes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:listSelector="#03000000"
+        android:divider="@color/annual_background_all"
+        android:dividerHeight="2dp"/>
+    <!--android:background="@drawable/annual_bgst_round_black_btn"-->
+</RelativeLayout>

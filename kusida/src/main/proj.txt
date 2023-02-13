@@ -1,0 +1,58 @@
+
+#不优化输入的类文件
+-dontoptimize
+
+# 1. jar包
+-libraryjars libs/android-support-v4.jar
+-dontwarn android.support.v4.**
+-keep class android.support.v4.** { *; }
+
+-libraryjars libs/baidumapapi_base_v3_7_3.jar
+-libraryjars libs/baidumapapi_map_v3_7_3.jar
+-libraryjars libs/baidumapapi_search_v3_7_3.jar
+-libraryjars libs/baidumapapi_util_v3_7_3.jar
+-dontwarn com.baidu.mapapi.**
+-keep class com.baidu.**{ *; }
+-keep class com.baidu.mapapi.**{ *; }
+-keep class vi.com.gdi.bgl.android.** { *; }
+
+-libraryjars libs/cocos2d-android.jar
+-dontwarn org.cocos2d.**
+-keep class org.cocos2d.** { *; }
+
+-libraryjars libs/core.jar
+-dontwarn com.google.zxing.**
+-keep class com.google.zxing.** { *; }
+
+-libraryjars libs/gson-2.3.1.jar
+-dontwarn com.google.gson.**
+-keep class com.google.gson.** { *; }
+-keep class com.google.gson.reflect.** { *; }
+
+-dontwarn android.support.v4.**
+-keep class android.support.v4.**
+
+-keep class android.net.http.SslError
+-keep class android.webkit.**{*;}
+-keep class cn.sharesdk.**{*;}
+-keep class com.sina.**{*;}
+-keep class m.framework.**{*;}
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+# 2. self files.
+-keep final class *
+-keep class model.**
+-keepclasseswithmembers class model.** {
+    public *;
+}
+-keepclasseswithmembers class * {
+    public static String *;
+}
+
+-keep class common.OEventName
+-keepclasseswithmembers class * {
+    public void receiveEvent(String,Object);
+}
+-keepclasseswithmembers class * {
+    public void callback(String, Object);
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+  >
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="权限说明" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="酷斯达数字车钥匙APP权限说明"/>
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="在您使用酷斯达数字车钥匙APP时，需要开启以下权限，以便我们获取必须收集的基础信息，向您提供相关服务；\n\n1.  设备信息(为了正常识别手机设备，以标识您为酷斯达数字车钥匙用户\n\n2.   存储权限(获取此权限用于缓存虚拟车辆模型，否则将无法显示模型))\n\n\n以下权限仅在部分功能中使用，如果不开启以下权限，不会影响您正常使用。您可以去设置权限管理中管理该权限。\n\n1.   相机(使用帮助于反馈和上传头像功能时，需要获取此权限)\n\n2.   蓝牙(使用蓝牙开关锁功能需要连接蓝牙用到此权限)"/>
+</LinearLayout>

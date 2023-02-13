@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="42.5dp"
+        android:background="#f7f7f7">
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#212020"
+            android:text="@string/give_cards_to_him"
+            />
+        <EditText
+            android:id="@+id/txt_edit"
+            android:layout_width="255dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:hint="@string/please_enter_phone_number"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:background="@drawable/card_give_promebox"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#b2b2b2"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/gift"
+            android:textColor="#7bb3f1"
+            android:textSize="15dp"
+            android:background="#f7f7f7"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#b2b2b2"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/cancle"
+            android:textColor="#7bb3f1"
+            android:textSize="15dp"
+            android:background="#f7f7f7"/>
+    </LinearLayout>
+</LinearLayout>

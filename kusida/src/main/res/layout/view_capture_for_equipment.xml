@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+        <com.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            androidme:text="将二维码或条形码放入框内，即可自动扫码"
+            androidme:pos="2"
+            />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <view.view4me.set.ClipTitleMeSet
+            android:id="@+id/title_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            androidme:text="扫一扫"
+            androidme:righttxt="相册"/>
+        <TextView
+            android:id="@+id/txt_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手动输入"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+        <com.kulala.commonview.list.ListViewWarp
+            android:id="@+id/list_cars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:background="@drawable/bgst_black_round15"
+            android:listSelector="@drawable/bgst_black_round15"
+            android:divider="@color/white_alpha"
+            android:dividerHeight="1dp"/>
+</LinearLayout>

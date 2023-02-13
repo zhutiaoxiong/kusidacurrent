@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="HardcodedText,ContentDescription">
+    <RelativeLayout
+        android:id="@+id/master_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <common.map.FullScreenMap
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <view.view4app.View4AppTopView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"/>
+
+        <RelativeLayout
+            android:id="@+id/lin_pos"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/all_background_color">
+
+            <TextView
+                android:id="@+id/txt_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="11dp"
+                android:text="北京南站"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_address_name"
+                android:layout_alignStart="@+id/txt_address_name"
+                android:singleLine="true"
+                android:text="北京南站"
+                android:textColor="#a5a5a5"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textSize="13dp"/>
+            <ImageView
+                android:id="@+id/img_movetocar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:src="@drawable/applist_carpos_center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fuchezhu_view"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+    <RelativeLayout
+        android:id="@+id/upgrade_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="invisible">
+        <view.view4me.ResizableImageView
+            android:id="@+id/up_grade_view"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_upgrade_plus"
+            android:scaleType="centerCrop"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,ContentDescription">
+    <Button
+        android:id="@+id/set"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="67.5dp"
+        android:layout_marginRight="67.5dp"
+        android:background="@drawable/set_now_maintain_round_button"
+        android:text="@string/set_now"
+        android:textColor="@color/mango"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/set"
+        android:src="@drawable/first_maintain"
+        android:scaleType="fitXY"
+       />
+</RelativeLayout>

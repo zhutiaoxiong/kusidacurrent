@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="@string/sex" />
+
+    <view.clip.ClipLineBtnTxt
+        android:id="@+id/txt_boy"
+        android:layout_marginTop="15dp"
+        style="@style/Single_line_with_background"
+        android:layout_below="@+id/title_head"
+        androidme:rightres="@drawable/select_true_redn"
+        androidme:text="@string/men"/>
+    <view.clip.ClipLineBtnTxt
+        android:id="@+id/txt_girl"
+        style="@style/Single_line_with_background"
+        android:layout_below="@+id/txt_boy"
+        androidme:rightres="@drawable/select_true_redn"
+        androidme:text="@string/women"/>
+
+</RelativeLayout>

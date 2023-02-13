@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language">language</string>
+    <string name="app_state_recode_title">Recode</string>
+    <string name="app_violation_title">Violation Check</string>
+
+    <string name="app_name">Kulala</string>
+    <string name="flag_info">Found</string>
+    <string name="flag_me">My</string>
+    <string name="wallet">wallet</string>
+    <string name="share">share</string>
+    <string name="set">set</string>
+    <string name="contact_us">contact us</string>
+    <string name="about">about</string>
+    <!-- ViewMe  Main-->
+    <string name="nickname">nickname</string>
+    <string name="mobile_phone_no">phone number</string>
+    <string name="currently_there_is_no_available_vehicles">currently_there_is_no_available_vehicles</string>
+    <string name="please_wait_a_moment_data_is_not_loaded">please wait a moment data is not oaded!</string>
+    <!-- ViewMe  carmanager-->
+    <string name="carmanager">carmanager</string>
+    <string name="new_vehicle">new vehicle</string>
+    <string name="license_plate_number">license plate number</string>
+    <string name="vehicle_brand">vehicle brand</string>
+    <string name="please_enter_the_license_plate_number">please enter the license plate number</string>
+    <string name="vehicle_system">vehicle system ：</string>
+    <string name="vehicle_system_no_space">vehicle system</string>
+    <string name="vehicle_type">vehicle type ：</string>
+    <string name="vehicle_type_no_space">vehicle type</string>
+    <string name="vin_code">vin code ：</string>
+    <string name="please_enter_vin_code_last_six_number">please enter vin code last six number</string>
+    <string name="engine_number">engine number ：</string>
+    <string name="please_enter_engine_last_six_number">please enter engine last six number</string>
+    <string name="purchase_date">purchase date ：</string>
+    <string name="date_of_insurance">date of insurance ：</string>
+    <string name="year_of_careful_date">year of careful date ：</string>
+    <string name="maintenance_date">maintenance date ：</string>
+    <string name="terminal_number">terminal number ：</string>
+    <string name="can_choose">*can choose*</string>
+    <string name="see_details">see details</string>
+    <string name="delete">delete</string>
+    <string name="please_enter_a_password">please enter a password:</string>
+    <string name="network_bad">network bad!</string>
+    <string name="please_select_a_vehicle_series">please select a vehicle series</string>
+    <string name="please_first_select_the_vehicle_brands">please first select the vehicle brands!</string>
+    <string name="please_first_select_a_vehicle_series">please first select a vehicle series!</string>
+    <string name="modify_the_vehicle">modify the vehicle</string>
+    <string name="please_select_a_vehicle_model">please select a vehicle model</string>
+    <string name="add_a_new_vehicle">add a new vehicle (</string>
+    <string name="success">) success!</string>
+
+    <!-- ViewMe  pay-->
+    <string name="online_payment">online payment</string>
+    <string name="not_choose_the_vehicle_license_plate_number">not choose the vehicle license plate number：</string>
+    <string name="as_of_the_date_of_service">as of the date of service：</string>
+    <string name="three_handre_dyuan">330.00元</string>
+    <string name="three_year">three year</string>
+    <string name="please_select_a_vehicle">please select a vehicle</string>
+    <string name="method_of_payment">method of payment</string>
+    <string name="no_available_vehicles">no available vehicles!</string>
+    <string name="alipay_pay_success">alipay pay success!</string>
+    <string name="you_do_not_install_pay_treasure_or_cancelled_payment">you do not install pay treasure or cancelled payment!</string>
+    <string name="please_install_wechat_software">please install wechat software!</string>
+    <string name="yuan">yuan</string>
+    <string name="you_on_the_current_activation_vehicle_do_not_have_to_pay">you on the current activation vehicle do not have to pay！无需支付!</string>
+    <!-- ViewMe  share-->
+    <string name="sharing_software">sharing software：</string>
+    <string name="sharing_website">sharing website：</string>
+    <string name="share_a_circle_of_friends">share a circle of friends</string>
+    <string name="share_wechat">share wechat</string>
+    <!-- ViewMe  set-->
+    <!-- ViewMe  safety-->
+    <string name="security">security</string>
+    <string name="message_switch">message switch</string>
+    <string name="privacy_switch">privacy switch</string>
+    <string name="prompt_box_switch">prompt box switch</string>
+    <string name="sound_and_vibration">sound and vibration</string>
+    <string name="gestures_password">gestures password</string>
+    <string name="change_phone_number">change phone number</string>
+    <string name="binding_email">binding email</string>
+    <string name="scurity_issues">scurity issues</string>
+    <string name="click_settings">click settings</string>
+    <string name="click_modify">click modify</string>
+    <string name="modify_password">modify password</string>
+    <string name="not_login">not login</string>
+    <string name="unbounded">unbounded</string>
+    <!--<!- Gesture code starting &ndash;&gt;-->
+    <string name="reset_password">reset password</string>
+    <string name="please_choose_the_following_method_to_reset_your_password">please choose the following method to reset your password</string>
+    <string name="tip">tip ： </string>
+    <string name="the_tip">tip</string>
+    <string name="please_choose_the_following_method_to_reset_your_phone_number">please choose the following method to reset your phone number</string>
+    <string name="please_choose_the_following_method_to_reset_your_aderess">please choose the following method to reset your aderess</string>
+    <string name="please_choose_the_following_method_to_reset_your_security_issues">please choose the following method to reset your security issues</string>
+    <string name="mobile_phone_number_find_back">mobile phone number find back</string>
+    <string name="modify_email">modify email</string>
+    <string name="modify_phone_number">modify phone number</string>
+    <string name="modify_security_issues">modify security issues</string>
+    <string name="the_new_email">the new email</string>
+    <string name="please_enter_a_new_email">please enter a new email</string>
+    <string name="please_enter_the_corresponding_answer">please enter the corresponding answer</string>
+    <string name="validation">validation</string>
+    <string name="email_back">email back</string>
+    <string name="mobile_phone_number_to_reset_the_password">mobile phone number to reset the password</string>
+    <string name="mobile_phone_number_to_reset_the_phone_number">mobile phone number to reset the phone number</string>
+    <string name="reset_the_phone_number">reset the phone number</string>
+    <string name="please_enter_phone_number">please enter phone number</string>
+    <string name="please_enter_new_phone_number">please enter new phone number</string>
+    <string name="please_enter_erification_code">please enter erification code</string>
+    <string name="mobile_phone_number">mobile phone number</string>
+    <string name="verification_code">verification code</string>
+    <string name="not_receive_verification_code">not receive verification code?</string>
+    <string name="to_obtain">obtain</string>
+    <string name="using_voice_verification">please using voice verification</string>
+    <string name="voice_verification">voice verification</string>
+    <string name="check_the_solution">can not recieve verfycode，check the solution</string>
+    <string name="how_to_obtain_authentication_code">how to obtain authentication_code</string>
+    <string name="security_authentication">security authentication</string>
+    <string name="the_new_password">the new password :</string>
+    <string name="the_phone_number">the phone number:</string>
+    <string name="please_enter_a_new_password">please enter a new password</string>
+    <string name="please_enter_a_new_password_again">please enter a new password again</string>
+    <string name="verify_password">verify password</string>
+    <string name="two_information_input_please_input_again">two information input not same,please_input_again!</string>
+    <string name="mobile_phone_number_to_reset">mobile phone number to reset</string>
+    <string name="email_to_reset">email to reset</string>
+    <string name="anquanwenti_to_reset">problem to reset</string>
+    <string name="mobile_phone_back">mobile phone back</string>
+    <string name="problem_a">problem one：</string>
+    <string name="the_answer">the answer：</string>
+    <string name="when_is_your_birth_place">where is your birth place?</string>
+    <string name="reset_email_phone_number">reset email phone number</string>
+    <string name="mobile_phone_number_to_reset_the_security_issues">mobile phone number to reset the security issues</string>
+    <string name="the_answer_can_not_be_empty_please_retry_after_input">the answer can not be empty,please retry after input</string>
+    <string name="authentication_is_successful">authentication is successful</string>
+    <string name="question_two">question two：</string>
+    <string name="question_three">question three：</string>
+    <string name="email_fill_in_error_please_input_the_correct_email">email fill in error please input the correct email</string>
+    <string name="email_reset_successfully">email reset successfully!</string>
+    <string name="validation_fails">validation fails</string>
+    <string name="we_have_sent_an_email_to_your_mailbox_please_pay_attention_to_check">we have sent an email to your mailbox,please pay attention to check!</string>
+    <string name="password_is_wrong_please_input_english_numbers_underscore_combination">password is wrong please input english numbers underscore combination!</string>
+    <string name="repeated_password_is_wrong">repeated password is wrong!</string>
+    <string name="password_reset_successfully">password reset successfully!</string>
+    <string name="please_enter_the_complete_phone_number">please enter the complete phone number!</string>
+    <string name="the_phone_number_wrong">the phone number wrong!</string>
+    <string name="verification_code_for_failure_please_try_again">verification code for failure,please try again</string>
+    <string name="verfy_code">verfy code:</string>
+    <string name="reset_success">reset success</string>
+    <!-- ViewMe  Message-->
+    <string name="message">message</string>
+    <string name="no_message">no message</string>
+    <string name="control">control</string>
+    <string name="the_alarm">the alarm</string>
+    <!-- ViewMe  About-->
+    <string name="company_profile">company profile：</string>
+    <string name="complaints_suggestions">complaints suggestions：</string>
+    <string name="terms_of_use_and_privacy_policy">terms of use and privacy policy</string>
+    <string name="cool_technology_ltd_All_rights_reserved">cool technology ltd All rights reserved</string>
+    <string name="download_server_error_please_download_again">download server error!please download again!</string>
+    <string name="guangdong_cool_network_technology_co_ltd">guangdong cool network technology co ltd</string>
+    <string name="user_agreement">user agreement</string>
+    <!-- ViewMe  Suggest-->
+    <string name="complaints_suggestions_title">complaints suggestions title</string>
+    <string name="prompt_the_problem_is_solved_please_contact_mounting_point">prompt the problem is solved please contact mounting point</string>
+    <string name="please_choose">| please choose</string>
+    <string name="i_want_to_ridicule">i want to ridicule</string>
+    <string name="business_cooperation">business cooperation</string>
+    <string name="software_functions">software functions</string>
+    <string name="hardware_quality">hardware quality</string>
+    <string name="after_sales_service">after sales service</string>
+    <string name="hardware_prices">hardware prices</string>
+    <string name="please_enter_a_suggestion_two_hundred_words">|please enter a suggestion in two hundred words</string>
+    <string name="we_look_forward_to_your_feedback">we look forward to your feedback</string>
+    <string name="submit">submit</string>
+    <string name="information_not_filled">information not filled！</string>
+    <!-- ViewMe  ContactUs-->
+    <string name="scan_concern_wechat_public_number">scan and concern wechat public number</string>
+    <string name="modify_the_success">modify the success!</string>
+    <!-- Gesture code starting -->
+    <string name="setup_gesture_code">setup gesture code</string>
+    <string name="forget_gesture_code">forget gesture code?</string>
+    <string name="use_other_account_login">use other account login</string>
+    <string name="set_gesture_pattern">set gesture pattern</string>
+    <string name="set_gesture_pattern_reason">set gesture pattern reason,set two same gesture</string>
+    <!-- End -->
+    <!--ViewMe  ClipPopChooseSex-->
+    <string name="men_symbol">men ♂</string>
+    <string name="women_symbol">women ♀</string>
+    <string name="cancle">cancle</string>
+    <!--ViewMe  ViewUserInfoAddress-->
+    <string name="positioning_can_not">positioning can not!</string>
+    <string name="region">region</string>
+    <string name="orientation_to_the_region">orientation to the region</string>
+    <string name="all">all</string>
+    <!--ViewMe  ViewUserInfoNickname-->
+    <string name="no_input_information">no input information</string>
+    <string name="save">save</string>
+    <string name="please_enter_a_nickname">please enter a nickname</string>
+    <!--ViewMe  ViewUserInfoScore-->
+    <string name="my_points">my points</string>
+    <string name="the_total_score">the total score</string>
+    <string name="the_integral_subsidiary">the integral subsidiary</string>
+    <string name="the_daily_task">the daily task</string>
+    <string name="to_complete_the_task">to complete the task</string>
+    <!--ViewMe  ViewUserInfoScoreDetail-->
+    <string name="the_current_total_credit">the current total credit:</string>
+    <!--ViewMe  ViewUserInfoScoreHelp-->
+    <string name="integral_rules">integral rules</string>
+    <string name="how_to_obtain_the_integral">how to obtain the integral?</string>
+    <!--ViewMe  ViewUserInfoSex-->
+    <string name="sex">sex</string>
+    <string name="men">men</string>
+    <string name="women">women</string>
+    <!--ViewMe  ViewUserInfoSign-->
+    <string name="individuality_signature">individuality signature</string>
+    <string name="compelete">compelete</string>
+    <!--ViewMe  ViewUserInfoActivity-->
+    <string name="taking_pictures">taking pictures</string>
+    <string name="choose_from_the_mobile_phone_photo_albums">choose from the mobile phone photo albums</string>
+    <string name="is_not_set">is not set</string>
+    <string name="not_to_choose">not to choose</string>
+    <string name="did_not_fill_in">did not fill in</string>
+    <string name="personal_information">personal information</string>
+    <string name="nickname_simbol">nickname:</string>
+    <string name="please_enter_the_nickname">please enter the nickname</string>
+    <string name="account_number_phone_number">account number(phone number)</string>
+    <string name="no_phone_number">no phone number</string>
+    <string name="my_points_simbol">my points:</string>
+    <string name="sex_simbol">sex:</string>
+    <string name="birthsday_simbol">birthsday:</string>
+    <string name="regon_simbol">regon:</string>
+    <string name="individuality_signature_simbol">individuality signature simbol:</string>
+    <!--ViewMe  ClipCutPicActivity-->
+    <string name="please_later">please later...</string>
+    <string name="image_loading_failure">image loading failure</string>
+    <string name="move_and_scale">move and scale</string>
+
+    <!--  ClipPopActivateCar-->
+    <string name="please_enter_the">please input</string>
+    <string name="equipment_activation_code">equipment activation code</string>
+    <string name="please_make_sure_the_selected_user_agreement_and_enter_the_correct_activation_code">please make sure the selected user agreement and enter the correct activation code</string>
+    <string name="activate_the_device">activate the device</string>
+    <string name="please_enter_the_activation_code">please enter the activation code</string>
+    <!--  loginreg ViewAnswerGetForVerfication-->
+    <string name="the_answer_can_not_be_empty">the answer can not be empty</string>
+    <!--  loginreg ViewFinshInfo-->
+    <string name="enter_the_nickname">enter the nickname</string>
+    <string name="enter_the_email">enter the email</string>
+    <string name="please_select_a_picture">please select a picture</string>
+    <string name="please_enter_a_nickname_simbol">please enter a nickname simbol!</string>
+    <string name="please_input_binding_mailbox">please input binding mailbox!</string>
+    <string name="improve_the_personal_information">improve the personal information</string>
+    <string name="add_a_picture">add a picture:</string>
+    <string name="click_on_the_binding">click on the binding</string>
+    <string name="click_on_the_input">click on the input</string>
+    <string name="enter_the_nickname_aa">enter the nickname:</string>
+    <string name="binding_email_aa">binding email:</string>
+
+
+    <!--  loginreg ViewLogin-->
+    <string name="login_failed_please_try_again">login failed please try again</string>
+    <string name="please_enter_your_correct_phone_number">please enter your correct phone number</string>
+    <string name="enter_the_password_for_six_to_eightteen">enter the password for six to eightteen</string>
+    <string name="login">login</string>
+    <string name="registered">registered</string>
+    <string name="go_in_to_see">go in to see</string>
+
+    <!--  loginreg ViewLoginRegUserName-->
+    <string name="please_enter_a_correct_phone_number">please enter a correct phone number!</string>
+    <string name="please_enter_a_user_name">please enter a user name</string>
+    <!--  loginreg ViewPassfind-->
+    <string name="the_new_password_is_enabled_please_login">the new password is enabled,please login!</string>
+    <string name="the_new_password_aa">new password:</string>
+    <string name="user_name_aa">UserName:</string>
+
+    <!--  loginreg ViewReg-->
+    <string name="registration_failed_please_try_again">registration failed,please try again</string>
+    <string name="verification_code_wrong_please_enter_the_six_digit_verification_code">verification code wrong!please enter the six digit verification code!</string>
+    <string name="confirm_password">confirm password:</string>
+    <string name="please_make_sure_the_password">please enter password again</string>
+    <string name="pelease_enter_the_password">pelease enter the password</string>
+    <!--  loginreg ViewResetPassWord-->
+    <string name="security_question">security question</string>
+
+    <!--  view4App ViewChooseAuthor-->
+    <string name="please_select_authorization_capabilities">请选择授权功能</string>
+    <!--  view4App ViewCodriverList-->
+    <string name="stop_the_authorization">stop the authorization</string>
+    <string name="have_to_cancel_the_authorization">have to cancel the authorization!</string>
+    <string name="you_have_not_set_up_deputy_owner">you have not set up deputy owner!</string>
+    <string name="have_to_authorized_deputy_owner">have to authorized deputy owner</string>
+    <!--  view4App maintain  MaintainPromeBox-->
+    <string name="i_know">i know</string>
+    <string name="check">check</string>
+    <string name="remind_me_later">remind me later</string>
+    <string name="have_to_maintain">have to maintain</string>
+    <string name="has_been_completed">has been completed</string>
+    <!--  view4App maintain  ViewAddMaintain-->
+    <string name="three_months">three months</string>
+    <string name="six_months">six months</string>
+    <string name="twelve_months">twelve months</string>
+    <string name="the_vehicle_list">vehicle list</string>
+    <string name="your_car_is_not_active_please_activate_the_vehicle">your car is not active ，please activate the vehicle</string>
+    <string name="set_success">set success</string>
+    <string name="add_the_maintenance">add the maintenance</string>
+    <!--  view4App maintain  ViewAddMaintain-->
+    <string name="complete_maintenance">complete maintenance</string>
+    <string name="delete_records">delete records</string>
+    <string name="sure_to_delete_the_content_of_the_maintenance_set">sure to delete the content of the maintenance set？</string>
+    <string name="sure_to_compelete_the_content_of_the_maintenance_set">sure to compelete the content of the maintenance set？</string>
+    <string name="you_do_not_have_any_record">you do not have any record</string>
+    <!--  view4App ViewAppList-->
+    <string name="deputy_owner_management">deputy owner management</string>
+    <string name="electronic_fence">electronic fence</string>
+    <string name="parking_trajectory">parking trajectory</string>
+    <string name="bad_condition_of_the_network">bad condition of the network!</string>
+    <!--  view4App ViewAuthorUserInfo-->
+    <string name="authorization_details">authorization details</string>
+    <string name="licensor_nickname">licensor nickname：</string>
+    <string name="nothing">nothing</string>
+    <string name="authorization_object">authorization object:</string>
+    <string name="authorized_vehicles">authorized vehicles:</string>
+    <string name="authorized_time_colon">authorized time</string>
+    <string name="authorized_limit">authorized limit</string>
+
+    <!--  view4App ViewCodriverAuthorization-->
+    <string name="please_select_start_time">please select start time!</string>
+    <string name="time_to_end_after_the_start_time">time to end after the start time!</string>
+    <string name="please_select_authorized_vehicles">please select authorized vehicles</string>
+    <string name="did_not_choose_the_vehicle">did not_choose_the_vehicle!</string>
+    <string name="please_select_authorized_time">please select authorized time!</string>
+    <string name="did_not_choose_the_user">did not choose the user!</string>
+    <string name="deputy_owner_has_been_authorized">deputy owner has been authorized!</string>
+    <string name="binding_deputy_owner_success">binding deputy owner success!</string>
+    <string name="authorization_management">authorization management</string>
+    <string name="vehicle_selection">vehicle selection</string>
+    <string name="select_contact">select contact</string>
+    <string name="from">from </string>
+    <string name="start_time">start time</string>
+    <string name="to"> to  </string>
+    <string name="end_time">end time</string>
+    <string name="determine_authorization">determine authorization</string>
+    <string name="qr_code_is_generated">qr code is generated</string>
+    <!--  view4App ViewCodriverManage-->
+    <string name="contact_list">contact list</string>
+    <string name="have_to_authorized_deputy_owner_colon">have to authorized deputy owner</string>
+    <!--  view4App ViewGpsCarArea-->
+    <string name="cancel_the_fence">cancel the fence</string>
+    <string name="set_fence">set fence</string>
+    <string name="input_radius_of_the_fence">input radius of the fence</string>
+    <string name="countless_according_to_vehicle_position">countless according to vehicle position!</string>
+    <string name="please_enter_the_radius_of_the_fence_unit_km">please enter the radius of the fence unit km</string>
+    <string name="please_enter_an_integer">please enter an integer！</string>
+    <string name="the_gps_did_not_provide_a_vehicle_coordinates">the gps did not provide a vehicle coordinates!</string>
+    <string name="not_set_electronic_fence">not set electronic fence!</string>
+    <!--  view4App ViewGpsFavorite-->
+    <string name="collect_coordinates">collect coordinates</string>
+    <!--  view4App ViewGpsFavoriteShowPos-->
+    <string name="collection_location">collection location</string>
+    <!--  view4App ViewGpsFindCar-->
+    <string name="my_location">my location</string>
+    <string name="current_position">current position</string>
+    <string name="address_the_collection">address the collection</string>
+    <string name="vehicle_trajectory">vehicle trajectory</string>
+    <!--  view4App ViewGpsPathList-->
+    <string name="vehicle_no_data_or_complete_loss_of_time">vehicle no data or complete loss of time!</string>
+    <!--  view4App ViewGpsPathShow-->
+    <string name="test_share_point">test share point</string>
+    <!--  view4App ViewQrcode-->
+    <string name="deputy_owner_please_scan">deputy owner please scan</string>
+    <!--  view4App ViewUserList-->
+    <string name="add_contact">add contact</string>
+    <string name="please_enter_the_contact_number_of_hands">please enter the contact number of hands</string>
+    <string name="delete_the_contact">delete the contact</string>
+    <string name="make_a_phone_call">make a phone call</string>
+    <string name="you_enter_the_phone_number_format_error">you enter the phone number format error!</string>
+    <!--  view4App ViewViolationDetail-->
+    <string name="fines">fines：</string>
+    <string name="illegal_sites">illegal sites：</string>
+    <string name="illegal_reason">illegal reason：</string>
+    <string name="violation_of_the_code">violation of the code：</string>
+    <string name="processing_state">processing state：</string>
+    <string name="illegal_points">illegal points：</string>
+    <string name="have_to_deal_with">have to deal with</string>
+    <string name="undisposed">undisposed</string>
+    <string name="mark">mark</string>
+    <string name="violation_of_the_details">violation of_the_details</string>
+    <string name="illegal_sites_five_hundred_yuan">illegal sites five hundred yuan</string>
+    <string name="illegal_reason_five_hundred_yuan">illegal reason five hundred yuan</string>
+    <string name="violation_of_the_code_five_hundred_yuan">violation of the code five hundred yuan</string>
+    <string name="processing_state_five_hundred_yuan">processing state five hundred yuan</string>
+    <string name="illegal_points_five_hundred_yuan">illegal points five hundred yuan</string>
+    <!--  view4App ViewViolationVioList-->
+    <string name="violation_of_the_list">violation of the list</string>
+    <string name="do_not_check_on_earth_are_you_have_violations">do not check on earth are you_have_violations</string>
+    <!--  view4control OnClickListenerControl-->
+    <string name="please_do_not_click_frequently">please do not click frequently!</string>
+    <!--  view4control ViewControlCarNew-->
+    <!--  view4control ViewControlPanelControl-->
+
+    <!--  control car -->
+    <!--<string name="battery_protection_start_the_engine_or_close_the_ignition_switch">battery_protection_start_the_engine_or_close_the_ignition_switch!</string>-->
+
+
+    <string name="title_control_toast_car_on">title_control_toast_car_on</string>
+    <string name="title_control_toast_car_on_unlock">title_control_toast_car_on_unlock</string>
+    <string name="title_control_toast_car_off">title_control_toast_car_off</string>
+    <string name="title_control_toast_open_trunk">title_control_toast_open_trunk</string>
+    <string name="title_control_toast_close_trunk">title_control_toast_close_trunk</string>
+    <string name="title_control_toast_normal">title_control_toast_normal</string>
+    <string name="title_control_toast_lock">title_control_toast_lock</string>
+    <string name="title_control_toast_unlock">title_control_toast_unlock</string>
+
+    <string name="info_control_toast_car_on">info_control_toast_car_on，请确保车辆处于安全且通风良好的位置。维修中和档位在非停车档时切勿操作。</string>
+    <string name="info_control_toast_car_off">info_control_toast_car_off，请确认车辆已安全停放好，车辆行驶中请勿操作。</string>
+    <string name="info_control_toast_open_trunk">info_control_toast_open_trunk,请确认尾箱有足够的打开上升空间，否则请取消。</string>
+    <string name="info_control_toast_close_trunk">info_control_toast_close_trunk,请确认尾箱关闭时无障碍物，否则请取消。</string>
+    <string name="info_control_toast_find_car">info_control_toast_find_car?</string>
+    <string name="info_control_toast_lock">info_control_toast_lock?</string>
+    <string name="info_control_toast_unlock">info_control_toast_unlock?</string>
+
+    <string name="name_car_on">name_car_on</string>
+    <string name="name_car_off">name_car_off</string>
+    <string name="name_find_car">name_find_car</string>
+    <string name="name_lock">name_lock</string>
+    <string name="name_unlock">name_unlock</string>
+    <string name="name_open">name_open</string>
+    <string name="name_close">name_close</string>
+
+    <string name="open_vehicle">open_vehicle</string>
+    <string name="vehicle_flameout">vehicle_flameout</string>
+    <string name="open_the_trunk">open_the_trunk</string>
+    <string name="vehicle_for_car">vehicle_for_car</string>
+    <string name="send_the_timeout">send the timeout!</string>
+    <!--  view4control ViewControlPanelControl-->
+    <string name="is_to_refresh_the_vehicle_state">is to refresh the vehicle state</string>
+    <string name="the_temperature">temperature:--</string>
+    <string name="no_vehicles">no vehicles</string>
+    <string name="inactive_vehicles">inactive vehicles</string>
+    <string name="active_vehicles">active vehicles</string>
+
+    <string name="gps_location">gps location</string>
+    <string name="online">online</string>
+    <string name="model_net">model_net</string>
+    <!--  view4control ViewTreasure-->
+    <string name="the_failure_please_try_again">the failure please try again</string>
+    <!--  view4control ViewTreaSureGet-->
+    <string name="congratulations_to_you_to_get_a_card">congratulations to you to get a card</string>
+    <string name="audi_a5">audi a5</string>
+    <string name="intermediate_card">intermediate card</string>
+    <!--  view4Info  -->
+    <!--  view4Info  card ClipPopGiveCardPromBox-->
+    <string name="please_enter_the_complete_phone_number_1">please enter the complete phone number!</string>
+    <string name="give_cards_to_him">give cards to him</string>
+    <string name="gift">gift</string>
+    <!--  view4Info  card ClippopShareCard-->
+    <string name="collection_of_card_game_aa">【collection of card game 】</string>
+    <string name="I_am_is_with_a_cool_smart_car_control_system_for_a_card">I am is with a cool smart car control system for a card</string>
+    <string name="everybody_cyclists_to_pk">,everybody cyclists to pk</string>
+    <string name="wechat">wechat</string>
+    <!--  view4Info  card ItemViewForViewPager-->
+    <string name="primary_card">primary card</string>
+    <string name="advanced_card">advanced card</string>
+    <string name="suxury_card">suxury card</string>
+    <string name="extravagant_card">extravagant card</string>
+    <!--  view4Info  card ItemViewForViewPager-->
+    <string name="ultimate_card">ultimate card</string>
+    <!--  view4Info  card ViewCollectAchievement-->
+    <string name="presented_a_successful">presented a successful</string>
+    <string name="synthesis_of_success">synthesis of success</string>
+    <string name="collection_of_card_game">collection of card game</string>
+    <string name="card_type">card type</string>
+    <!--  view4Info ViewCarDressUp -->
+    <string name="personality_is_dressed_up">personality is dressed up</string>
+    <!--  view4Info ViewDownLoadManager -->
+    <string name="have_bought_the_skin">have bought the skin</string>
+    <string name="can_not_delete_the_default_skin">can not delete the default skin!</string>
+    <string name="skin_removed_successfully_to_use_again_please_download_again">skin removed successfully to use again please download again!</string>
+    <string name="download_manager">download manager</string>
+    <!--  view4Info ViewDownLoadManager -->
+    <!--  view4Info ViewInfoWeb -->
+    <!--  view4Info ViewSelectCar -->
+    <string name="set_up_the_success">set up the success！</string>
+    <string name="select_the_vehicle">select the vehicle</string>
+    <!--  view4Info ActivityChat -->
+    <string name="online_consulting">online consulting</string>
+    <string name="please_enter_here_to_ask_questions">please enter here to ask questions:</string>
+    <string name="send">send</string>
+    <!--  view4Info ActivityFlash -->
+    <string name="install_the_apk">install the apk</string>
+    <!--  view4Info ActivityKulalaMain -->
+    <string name="direct_demonstration">direct demonstration</string>
+    <string name="you_receive">you receive【</string>
+    <string name="gift_card_please_check">】gift_card_please_check！</string>
+    <!--  view4Info ViewBuyCar -->
+    <string name="buy_equipment">buy equipment</string>
+    <!--  view4Info ViewPromeBox -->
+    <string name="no_activation_device_please_choose">no activation device please choose</string>
+    <string name="simulation_demonstration">simulation demonstration</string>
+    <string name="network_anomaly_temporarily_unable_to_enter_the_demo_mode">network anomaly temporarily unable to enter the demo mode</string>
+    <string name="network_anomaly_temporarily_unable_to_exit_the_demo_mode">network anomaly temporarily unable to exit the demo mode</string>
+    <!--  view4Info ViewPromeBoxExit -->
+    <string name="whether_out_of_simulation_demonstration">whether out of simulation demonstration？</string>
+
+    <!--  adapter AdapterDownLoad -->
+    <string name="download">download</string>
+    <string name="white_car">white   car</string>
+    <string name="have_to_buy">have to buy</string>
+    <!--  adapter AdapterForMaintain -->
+
+    <string name="is_the_maintenance">is the maintenance</string>
+    <string name="end_of_the_normal_maintenance">end of the normal maintenance</string>
+    <string name="ahead_of_maintenance_in_advance_end">ahead of maintenance in advance end</string>
+    <string name="time">time： </string>
+    <string name="months">months</string>
+    <!--  adapter AdapterInformation -->
+    <string name="title_information_title_of_information">title information title of information</string>
+    <string name="system">system</string>
+    <string name="information_content">information content</string>
+    <!--  adapter AdapterShowGpsFavorite -->
+
+    <string name="note">note：</string>
+    <string name="delete_note">delete note</string>
+    <string name="editors_note">editors note</string>
+    <string name="modify_note">modify note</string>
+    <string name="see_on_the_map">see on the map</string>
+    <string name="share_location">share location</string>
+    <string name="navigation">navigation</string>
+    <string name="please_enter_the_note_information">please enter the note information</string>
+    <string name="the_time"> time</string>
+    <string name="address">address</string>
+    <!--  adapter AdapterSkin -->
+    <string name="the_title">title</string>
+    <string name="the_daily_login">daily login</string>
+    <string name="license_plate_number_simbol">license plate number simbol: </string>
+    <string name="the_window_has_been_opened">the window has been opened</string>
+    <!--  com  DDWXEntryActivity -->
+    <string name="collection">collection</string>
+    <string name="be_success">be success</string>
+    <string name="refuse">refuse</string>
+    <!--  com  WXEntryActivity -->
+    <string name="successful_share">successful share</string>
+    <string name="cancel_the_share">cancel the share</string>
+    <string name="refuse_to_share">refuse to share</string>
+    <!--  com  CaptureActivity -->
+    <!--  com  OToastNavigate -->
+    <string name="you_do_not_install_any_navigation">you do not install any navigation</string>
+    <string name="click_open_the_navigation">click open the navigation：</string>
+    <string name="baidu_navigation_is_not_open_to_use">baidu navigation is not open to use</string>
+    <string name="scott_navigation_not_opened_to_use">scott  navigation not opened to use</string>
+    <!--  com  OWXShare -->
+    <string name="cool_your_friends_to_share_a_place_to_you">cool your friends to share a place to you</string>
+    <!--  octr  OCtrlBaseHttp -->
+    <string name="runtime_exception">runtime exception</string>
+    <string name="exception_handling_network">exception handling network</string>
+    <string name="business_logic_is_abnormal">business logic is abnormal</string>
+    <string name="java_code_exception">java code exception</string>
+    <!--  model  DataCarInfo -->
+    <string name="not_enter_vehicle_name">not enter vehicle name！</string>
+    <string name="not_enter_vehicle_brands">not enter vehicle brands！</string>
+    <string name="not_enter_vehicle_series">not enter vehicle series！</string>
+    <string name="not_enter_vehicle_model">not enter vehicle model！</string>
+    <string name="not_enter_vehicle_vin_number">not enter vehicle vin number！</string>
+    <string name="not_enter_vehicle_engine_number">not enter vehicle engine number！</string>
+    <!--  model  ManagerChat -->
+    <string name="hello_what_can_i_help_you">hello!what can i help you</string>
+    <!--  model  ManagerSwitchs -->
+    <string name="fortified_prompt_box_switch">fortified prompt box switch</string>
+    <string name="boot_prompt_box_switch">boot prompt box switch</string>
+    <string name="prompt_box_machine_will_switch">prompt box machine will switch</string>
+    <string name="seek_prompt_box_car_switch">seek prompt box car switch</string>
+    <string name="stall_prompts_the_switch">stall prompts the switch</string>
+    <!--  ViewMe  Language -->
+    <!--  Clip  ClipPopChooseBrand -->
+    <string name="select_the_vehicle_brands">select the vehicle brands</string>
+    <!--  Clip  ClipMovingPic -->
+    <string name="country_garden_in_the_campus_area_name">country garden in the campus area name</string>
+    <!--  Clip  ClipSearchHead -->
+    <string name="search">search</string>
+    <!--  gesture  GestureEditPage -->
+    <string name="gestures_password_has_been_canceled">gestures password has been canceled!</string>
+    <string name="cancel_the_gestures_password">cancel the gestures password</string>
+    <string name="link_at_least_four_points_please_enter_again">link at least four points please enter again</string>
+    <string name="do_not_agree_with_the_last_drawing_please_draw_again">do not agree with the last drawing please draw again</string>
+    <!--  gesture  GestureVerityPage -->
+    <string name="password_is_correct">password is correct!</string>
+    <string name="please_modify_gesture_password_as_soon_as_possible">please modify gesture password as soon as possible!</string>
+    <string name="password_input_gestures">password input gestures</string>
+    <string name="password_mistake">password mistake</string>
+
+
+    <!--  ViewLoginreg  ViewReg -->
+    <string name="password_simbol">password:</string>
+    <!--  clip  ClipDatetimePicker -->
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="monday">monday</string>
+    <string name="tuesday">tuesday</string>
+    <string name="wednesday">wednesday</string>
+    <string name="thursday">thursday</string>
+    <string name="friday">friday</string>当前版本号：10.1.0.6129
+    版本更新日期：2016.12.09
+
+    <string name="saturday">saturday</string>
+    <string name="sunday">sunday</string>
+    <string name="please_select_a_date">please select a date</string>
+    <string name="confirm">confirm</string>
+    <!--  clip  ClipPopChooseHead -->
+    <string name="please_select_a_picture_oo">please select a picture</string>
+    <!--  clip  ClipPopChooseMinutes -->
+    <!--<string name="vehicle_starts_if_not_used_the_time_is_to_stall">vehicle starts if not used the time is to stall</string>-->
+    <!--  clip  ClipPopConfirmAuthor -->
+    <string name="prompt_information">prompt information</string>
+    <string name="details">details</string>
+    <string name="authorized_limit_simbol">authorized limit simbol:</string>
+    <string name="illegal_query_electronic_fence">illegal query electronic fence</string>
+    <string name="accept">accept</string>
+    <!--  clip  ClipPopConfirmControl -->
+    <string name="operating_hints">operating hints</string>
+    <!--  clip  ClipPopSpeechReceive -->
+    <string name="not_receive_verification_code_ooo">not receive verification code，</string>
+    <string name="click_here_to">click here to</string>
+    <string name="check_the_solution_ooo">check the solution</string>
+    <!--  clip  ClipPopUserLinking -->
+    <string name="manually_enter_contacts">manually_enter_contacts</string>
+    <string name="choose_from_a_local_contact">choose from a local contact</string>
+    <string name="change_nickname">change nickname</string>
+    <string name="nickname_cannot_be_empty">nickname cannot be empty!</string>
+    <!--  clip  ClipPopWarning -->
+    <string name="received_a_new_message">received a new message:</string>
+    <string name="article">article</string>
+
+    <!--  viewme  pay -->
+    <string name="license_plate_number_not_choose_vehicles">license plate number: not choose vehicles</string>
+    <string name="method_of_payment_simbol">Method of payment :</string>
+    <string name="to_top_up_your_friends">To top-up your friends</string>
+    <string name="scavenger_recharge_voucher">scavenger recharge voucher</string>
+    <string name="top_up_failure">top up failure</string>
+    <string name="pay_not_success">pay not success!</string>
+    <string name="successful_payment">uccessful payment</string>
+    <string name="cancel_the_payment">cancel the payment</string>
+    <string name="refuse_to_pay">refuse to pay</string>
+    <string name="alipay_pay">alipay pay</string>
+    <string name="wechat_pay">wechat pay</string>
+    <string name="mobile_phone_number_aa">mobile phone number:</string>
+    <string name="authentication_is_successful_aa">authentication is successful!</string>
+    <!--  OCtrlGps -->
+    <!--  ViewFindPay -->
+    <string name="viewfindpay_no_wechatpay">Cannot use WeChat pay!</string>
+    <!--  ViewPayFriend -->
+    <string name="top_up_success">Top-up success </string>
+    <!--  card_explain.xml -->
+    <string name="card_collect_rule_title">【Set of rules of card】</string>
+    <!--  card_indicator_layout.xml -->
+    <string name="badge">【badge】</string>
+    <string name="primary">primary</string>
+    <string name="advanced">advanced</string>
+    <string name="suxury">suxury</string>
+    <string name="extravagant">extravagant</string>
+    <string name="intermediate">intermediate</string>
+    <string name="ultimate">ultimate</string>
+    <!--  include_select-time.xml -->
+    <!--  toast_navigate.xml -->
+    <string name="open_navigation">open_navigation</string>
+    <string name="navigation_now">navigation now?</string>
+    <string name="back">back</string>
+    <string name="baidu_navigation">baidu navigation</string>
+    <string name="gaode_navigation">gaode navigation</string>
+    <!--  view_anser_set.xml -->
+    <string name="problem_set">Security Settings</string>
+    <!--  view_loginreg-emailaderess_findpassword.xml -->
+    <string name="aderess"> aderess:</string>
+    <string name="enter_aderess">Please enter the email address</string>
+    <!--  viewme_carinfo_modify.xml -->
+    <string name="carinfo_modify">Vehicle information modify</string>
+    <!--  view_me_pay_firend.xml -->
+    <string name="top_up_vehicles">Top-up vehicles: </string>
+    <string name="top_up_now">Prepaid phone immediately</string>
+    <!--  view_me_set 维修模式 -->
+    <string name="maintenance_mode">维修模式</string>
+    <string name="maintenance_mode_instructions">车辆维修打开此开关时，将阻止所有APP客户端控制该辆车。直至关闭维修模式，保障维修安全。</string>
+    <!--   蓝牙 -->
+    <!--   登陆注册 -->
+    <string name="loginreg_please_see_agree">请先阅读并同意</string>
+    <string name="loginreg_i_have_agree">我已阅读并同意</string>
+    <!--   维修模式 -->
+    <string name="mantancemode_close">维修模式已关闭</string>
+    <string name="login_intro">
+1.First of all, please check the phone number of the input is correct, if overdue bills.
+\n\n
+2.Second, check the security software in the mobile phone whether to intercept the SMS, authentication code, please look for the 【cool la-la-la network】。\n\n
+3.If the above methods are not, please try restart the phone
+。\n\n
+    </string>
+    <string name="me_about">
+&#160;&#160;&#160;&#160;&#160;&#160;Guangdong cool network technology co., LTD. Is "cloud control" the first car networking platform operators, focus on provide cloud services for all kinds of car networking products, mainly include: car networking technology industry solutions, to provide large data mining and analysis services, custom App application, etc
+。\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;Among them, cool cloud platform (hereinafter referred to as "cool" cloud) series products are our company cooperate with the famous vehicle electronic equipment manufacturers to develop, based on "cloud car networking control", "auto CANBUS bus data fetching" core technology. For the majority of owners to provide intelligent, convenient and safe driving experience
+。\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;Cool! Cool ring (hereinafter referred to as "cool friends circle") for the majority of owners to provide dedicated to exchange platform service, member of the implementation to the car, driving fun, advocating more fashion, more intimate, more qualitative smart car life
+。\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;"Union world, intelligence control in the future!" Set sail, cool driving tour
+！\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;More surprises please attention Cool WeChat public number
+:kaichangkeji</string>
+      <string name="me_licence">
+&#160;&#160;&#160;&#160;&#160;&#160;Respect of customer, thank you for using cool utility vehicle networking platform (hereinafter referred to as: cool!), in the cool APP before, please read carefully and comply with the following provisions:
+\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;Agreement text includes the services you use and its related terms, if you have any additional subsequent agreement, and you chose the additional services, this additional agreement should be as part of the agreement. Cool la-la-la multi-function car networking platform interconnected system (hereinafter referred to as \"cool!\") related software and services related to the contents of all by the guangdong cool! Network technology co., LTD. (hereinafter referred to as \"cool! The company\").
+\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;1. The service content \n
+&#160;&#160;&#160;&#160;&#160;&#160;1.1 Cool services including car terminal software and cool, company website and operation related to it operations center; , both in the performance form, the terminal software and is used with a variety of software and services
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;1.2 Cool! Now offer services including but not limited to the following content
+：\n
+&#160;&#160;&#160;&#160;&#160;&#160;1.2.1 Vehicle testing services, such as vehicle physical examination, scoring; The fault information query, proposals, cars remind, etc.;
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;1.2.2 The maintenance service, such as: recommended maintenance tips, maintenance supplies, maintenance/repair station recommended, make an appointment to repair/maintenance, etc;
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;1.2.3 Driving directions, such as driving habits, consumption statistics, illegal query information, etc.;
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;1.2.4Vehicle control, for example: start the vehicle, open the trunk, fortification removal, etc.;
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;1.3 Cool services include changes in the late, will be cool! Official channels provided by the company to the public.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;1.4http://www.91kulala.com for cool\'s official website, based on the Internet and mobile Internet will provide related services (hereinafter referred to as \"web services\"), if you want to completely get and appropriate use of the network services, such as please follow the tips in the web page to finish all the registration procedures.
+\n\n
+
+&#160;&#160;&#160;&#160;&#160;&#160;2. Open condition \n
+&#160;&#160;&#160;&#160;&#160;&#160;2.1 You need to purchase in advance the original cool company intelligent vehicle terminal, and the terminal installed on your vehicle.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;2.2 When you check in web site registration process for service agreement I agree and complete the account registration and related vehicle and terminal equipment certification process, all cool will open for you and provide cool, the companys services
+。\n\n
+
+&#160;&#160;&#160;&#160;&#160;&#160;3. Related charges and payment
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;3.1 Each vehicle terminal equipment to provide 1 year of cool company service free of charge, from the car terminal device to activate the same day.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;3.1.1 During the service period, provide free cool company see cool company service on the website of the information.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;3.2 You can choose according to your demand, free service period after the end of the package types. The specific content and charge standard package see cool company service on the website of the information.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;3.3 In addition to the service period of free content, you can also choose to cool the value-added services company. Value-added services, opening time and the content of the charge standard see cool company service on the website of the information.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;3.4 Other third parties to provide service charges (such as emergency rescue, on-site service provider or trailer company, etc.) and related web services related to systems (such as personal computers, mobile phones and other related to access to the Internet or mobile Internet device) the costs (such as pay for access to the Internet and telephone and Internet access, pay phone, etc.) for the use of mobile Internet, you need to burden on its own
+。\n\n
+
+&#160;&#160;&#160;&#160;&#160;&#160;4. Service changes, interrupt or stop
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;4.1 In order to ensure the cool novelty and practicability of the company, cool it will change in time, interrupt or stop network services. Such as change, interrupt or stop web services more than 24 hours, cool it will notice in advance before modification, interrupt or stop.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;4.2 In order to ensure the quality of service, cool will from time to time to the network service platform or maintenance/repair and related equipment, thus reasonable cause service interruption, cool do not need to take any responsibility for this, but cool! Should be informed in advance as much as possible.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;4.3If any of the following situations occurs, you will not be able to enjoy the cool! The company of all, or part of the corresponding service:
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;4.3.1 You submit personal information untrue, inaccurate, and related information;
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;4.3.2 You do not complete and appropriate rules for use of comply with the provisions of the provisions of this agreement.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;4.3.3 You do not buy the original cool company intelligent vehicle terminal.
+\n\n
+
+&#160;&#160;&#160;&#160;&#160;&#160;5. Using rules and relevant liability
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.1 You are cool after the success of the company website registration, cool! The company will generate your user account and password, the user account and password please safekeeping and for all behaviors and activities of this account bear corresponding responsibility.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.2 In order to ensure you are able to fully and effectively enjoy cool company service, cool require you to provide accurate personal information, if there is any change in personal information, should be updated in a timely manner.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.3 To ensure the security of your account, you should not to transfer account, password, or lend to others. If you find account illegally used by others, shall be notified immediately to cool. Caused by negligence leading to account, password hacking or keeping illegally used by others, cool it will fully assist you disable or restore the account, but cool! Do not have to be responsible for the theft, misuse, such as
+。
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4 Once you order and/or use of the service, it indicates that you have agreed to you or your vehicle of all data provided to us free of charge, and authorize us to use your relevant information, including but not limited to the following conditions:
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.1 To you and your vehicle or your vehicle management agencies provide all services
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.2 Is your account and contact you
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.3 Check or maintain your cool company terminal equipment
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.4 Evaluate and continuously improve our service
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.5 Cooperate with you or other agreement parties perform the service agreement
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.6 To prevent fraud or improper use of the service
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.7 Comply with the legal provisions of the state, including has come into force may be involved in criminal investigation of a court order
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.8 Protecting the rights of you or other parties, property or safety
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.9 Provide you with a new or additional products or services
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.10 Cool! The company all send to you by relevant commercial advertising, sales promotion information or business information such as service data
+；\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.4.11 For the development of products or improve the quality of the market and customer investigation
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.5 You promised to legally use cool to provide all the services, and in the process of using Internet comply with the relevant laws and regulations
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.6 In order to guarantee the legitimacy of our service and quality, cool! Company to cool network service of audit and supervision, including but not limited to released to you on the cool la-la-la company, checking the contents of storage, such as when you are using web services in violation of regulations, cool it will take the necessary measures to alleviate the influence caused by improper behavior
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.7 Cool it will take including but not limited to web announcement, Email, SMS alerts, to cool company service to modify or supplement, etc, to make a statement, notification, warning, etc., are considered to be part of this agreement, if you do not agree with, can press this agreement to provide contact information contact cool! And stop using cool company service, if you continue to use the cool company service, as you agree to the content of such statement, notification, warning
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.8 You understand and agree that, cool company system of GPS positioning results will provide positioning service for the pilot, will not be used for other USES. Cool! The company in the system is only for the driver reference GPS positioning results. If the abnormal situation, please refer to our actual vehicle driving road conditions
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.9
+You understand and agree that, cool company locate in location data provided by the system, provide a general reference only, not promises to provide high precision positioning and planning path. Provided in positioning system (GPS) information is only for the driver reference, the final judgment will be subject to the local traffic rules. \ n
+
+Besides the above items, such as has not obtained prior consent of the user, cool! Will not use the user privacy information for any other purposes.
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.10 You understand and agree that any improper use cool! The company service the risk will be fully borne by you personally
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.11Features provided by the cool, because of the different models you are different, the factory or installation instructions shall prevail
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.12A moving vehicle or special circumstances, please do not operate in strict accordance with the norms of operation, safe use, such as the consequences of irregularities, cool company does not undertake any responsibility
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.13In use process, if there is any need to please to cool now officially designated after-sales maintenance of after-sales service points or seek official for after-sales maintenance technician, not cool official any tear open outfit, modification, the consequences of cool company does not undertake any responsibility
+。\n
+&#160;&#160;&#160;&#160;&#160;&#160;5.14 Cool! Company to cool the product have the final explanation right
+。\n\n
+
+&#160;&#160;&#160;&#160;&#160;&#160;6. The applicable law and on the solution of the dispute
+\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;This agreement to follow the law and subject to the jurisdiction of the Peoples Republic of China
+。\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;Related to this agreement any dispute, both sides should be friendly consultation in the first place, if no settlement is reached, the dispute will be submitted to guangzhou arbitration commission for arbitration, the decision of the arbitration will be final and binding upon both parties. Arbitration of all charges will be borne by the guilty party.
+\n</string>
+    <string name="card_collect_rule">Set card can do
+？\nCan get exclusive badge, in cool friends circle posts have their own identity, highlight the noble identity; Can use their own personality dress up accessories
+。\n\n2、How to get a card
+？\nEvery login random get treasure box, treasure box is divided into wooden treasure box a golden, silver treasure box, box, sapphire treasure chest, purple drill treasure box, can get the corresponding card, the more noble card rates appear smaller, can through synthetic corresponding higher levels of CARDS
+。\nOfficial irregular activities can obtain corresponding card, speed up to get the supreme card
+。\n\n3、What is the difference between different treasure chest
+？\nWooden treasure box a golden, silver treasure box, box, sapphire treasure chest, purple drill treasure case corresponding to the card as follows: primary, intermediate, advanced, luxurious card, costly. Ultimate card is extremely rare to pass the treasure chest, only by synthesis
+。\n\n4、How many supreme card
+？\nUltimate card collection, infinity can continue to collect, after getting a supreme badges will be more advanced
+。</string>
+    <string name="score_rule">
+一、Play cool every day services, can get the integral, integral and service types and clinch a deal amount is related to, play can be the following business integration
+：\n
+    \n
+1、Improve the basic information for user information
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;Set the birthday
++10\n
+&#160;&#160;&#160;&#160;&#160;&#160;Binding email
++10\n
+&#160;&#160;&#160;&#160;&#160;&#160;Set the security question
++20\n
+&#160;&#160;&#160;&#160;&#160;&#160;Set head
++20\n
+&#160;&#160;&#160;&#160;&#160;&#160;Set the gender +10\n
+&#160;&#160;&#160;&#160;&#160;&#160;Set a Nickname+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;Set up area
++5\n
+&#160;&#160;&#160;&#160;&#160;&#160;Set the individuality signature
++5\n
+&#160;&#160;&#160;&#160;&#160;&#160;More users center make integral style is online
+\n
+2、登陆\n
+&#160;&#160;&#160;&#160;&#160;&#160;Log in every day
++5\n
+&#160;&#160;&#160;&#160;&#160;&#160;Every seven days landed
++20\n
+3、Top-up consumption\n
+&#160;&#160;&#160;&#160;&#160;&#160;+10Integral/yuan, every top + 100 points。\n
+4、Use cool service
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;Every day for the first time open the function or application\n
+&#160;&#160;&#160;&#160;&#160;&#160;Deputy owner management
++1\n
+&#160;&#160;&#160;&#160;&#160;&#160;State records +1\n
+&#160;&#160;&#160;&#160;&#160;&#160;Electronic fence +1\n
+&#160;&#160;&#160;&#160;&#160;&#160;Parking trajectory
++1\n
+&#160;&#160;&#160;&#160;&#160;&#160;information +1\n
+&#160;&#160;&#160;&#160;&#160;&#160;Personality is dressed up
++1\n
+&#160;&#160;&#160;&#160;&#160;&#160;Collection of card game
++1\n
+    \n
+二、每日做任务赚积分\n
+&#160;&#160;&#160;&#160;&#160;&#160;Click on the [found] - [points] - to participate in the daily task 】 【 earning integral task
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;The daily login + 5
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;Share the APP to WeChat friends, friends + 20
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;Launch vehicle + 5
+\n
+&#160;&#160;&#160;&#160;&#160;&#160;Download the car skin
++5\n
+&#160;&#160;&#160;&#160;&#160;&#160;Look at the card +5\n
+&#160;&#160;&#160;&#160;&#160;&#160;Integral cannot change now
+\n
+</string>
+    //保养模块
+    <string name="set_now">set now</string>
+    <string name="mantain_remind">mantain</string>
+    <string name="maintain_mileage">maintain mileage ： </string>
+    <string name="maintain_time">maintain time ： </string>
+    <string name="maintain_car">maintain car ： </string>
+    <string name="maintain_mileage_select">maintain mileage select</string>
+    <string name="maintain_time_select">maintain time select</string>
+    <string name="maintain_car_select">maintain car select</string>
+<!--    ViewSwitchMantance-->
+</resources>

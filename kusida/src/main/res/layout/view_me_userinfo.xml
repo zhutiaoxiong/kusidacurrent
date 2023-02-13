@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <view.view4me.set.ClipTitleMeSet
+            android:id="@+id/title_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            androidme:text="@string/personal_information" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <common.pinyinzhuanhuan.CircleImg
+                android:id="@+id/img_face"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/head_no"/>
+
+            <ImageView
+                android:id="@+id/img_vip"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:paddingLeft="55dp"
+                android:paddingTop="55dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_vip"/>
+
+            <ImageView
+                android:id="@+id/img_mark"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@+id/img_vip"
+                android:scaleType="fitXY"
+                android:src="@drawable/thebadge1"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_top"
+            android:scaleType="fitXY"
+            android:src="@color/white"/>
+
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_nickname"
+            style="@style/Single_line_with_background"
+            androidme:lefttxt="@string/nickname_simbol"
+            androidme:righttxt="@string/please_enter_the_nickname"/>
+
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_phone"
+            style="@style/Single_line_with_background"
+            androidme:lefttxt="@string/account_number_phone_number"
+            androidme:righttxt="@string/no_phone_number"/>
+
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_score"
+            style="@style/Single_line_with_background"
+            androidme:lefttxt="@string/my_points_simbol"
+            androidme:righttxt="0"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            />
+
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_sex"
+            style="@style/Single_line_with_background"
+            androidme:lefttxt="@string/sex_simbol"
+            androidme:righttxt="@string/not_to_choose"/>
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_birthday"
+            style="@style/Single_line_with_background"
+            androidme:lefttxt="@string/birthsday_simbol"
+            androidme:righttxt="@string/not_to_choose"/>
+
+
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_address"
+            style="@style/Single_line_with_background"
+            androidme:lefttxt="@string/regon_simbol"
+            androidme:righttxt="@string/not_to_choose"/>
+
+        <view.clip.ClipLineBtnInptxt
+            android:id="@+id/txt_sign"
+            style="@style/Single_line_with_background"
+            androidme:lefttxt="@string/individuality_signature_simbol"
+            androidme:righttxt="@string/not_to_choose"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/layer_toast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/layer_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

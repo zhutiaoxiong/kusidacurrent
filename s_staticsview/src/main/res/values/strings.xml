@@ -1,0 +1,29 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+    <string name="permission_title">酷斯达数字车钥匙</string>
+    <string name="reg_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="tip">提示</string>
+    <string name="cancle">取消</string>
+    <string name="confirm">确定</string>
+    <string name="click_on_sure">点击确认?</string>
+    <string name="choose_title">选择控制模式</string>
+    <string name="choose_wifi">移动网络或者wifi</string>
+    <string name="choose_bluetooth">蓝牙</string>
+    <string name="no_car">无车辆</string>
+    <string name="please_enter_a_nickname">请输入昵称</string>
+    <string name="please_enter_the_numbers">请输入数字</string>
+    <string name="please_enter_the_login_password">请输入登录密码</string>
+    <string name="please_enter_the_id_number">请输入身份证号</string>
+    <string name="please_enter_the_phone_number">请输入手机号</string>
+    <string name="please_enter_a_new_phone_number">请输入新手机号</string>
+    <string name="input_the_new_phone_number_again">再次输入新手机号</string>
+    <string name="please_enter_the_email">请输入E-mail</string>
+    <string name="enter_the_email_again">再次输入E-mail</string>
+    <string name="please_input_id_number">请输入身份证号</string>
+    <string name="input_id_number_again">再次输入身份证号</string>
+    <string name="please_enter_a_new_password">请输入新密码</string>
+    <string name="to_enter_a_new_password">再输入一次新密码</string>
+    <string name="submitted_successfully">提交成功</string>
+    <string name="submit_failed">提交失败</string>
+</resources>

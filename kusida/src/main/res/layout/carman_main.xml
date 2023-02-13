@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription" >
+
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidme:leftres="@drawable/titlehead_back"-->
+<!--        androidme:rightres="@drawable/titlehead_add"-->
+<!--        androidme:text="车辆管理" />-->
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:rightres="@drawable/titlehead_add"
+        androidme:text="车辆管理" />
+    <ListView
+        android:id="@+id/list_cars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4dp"
+        android:layout_below="@+id/title_head"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_shake"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="invisible">-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="138dp"-->
+            <!--android:layout_marginLeft="9dp"-->
+            <!--android:layout_marginRight="9dp"-->
+            <!--android:layout_marginTop="61dp"-->
+            <!--android:src="@drawable/shake_isactive"-->
+            <!--android:scaleType="fitXY"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+</RelativeLayout>

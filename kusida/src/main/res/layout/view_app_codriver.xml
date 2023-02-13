@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="借车" />
+    <!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+    <!--        android:id="@+id/title_head"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        androidme:leftres="@drawable/titlehead_back"-->
+    <!--        androidme:rightres="@drawable/icon_scan"-->
+    <!--        androidme:text="借车"/>-->
+    <view.view4me.set.ClipSetItem
+        android:id="@+id/txt_authorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="@string/authorization_management"
+        android:layout_marginTop="8dp"
+        />
+    <!--    <view.clip.ClipLineBtnTxt-->
+    <!--        android:id="@+id/txt_authorization"-->
+    <!--        style="@style/Single_line_with_background"-->
+    <!--        androidme:text="@string/authorization_management"/>-->
+    <view.view4me.set.ClipSetItem
+        android:id="@+id/txt_userlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="@string/contact_list"
+        android:layout_marginTop="20dp"
+        />
+    <!--    <view.clip.ClipLineBtnTxt-->
+    <!--        android:id="@+id/txt_userlist"-->
+    <!--        style="@style/Single_line_with_background"-->
+    <!--        androidme:text="@string/contact_list"/>-->
+    <view.view4me.set.ClipSetItem
+        android:id="@+id/txt_authored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="@string/have_to_authorized_deputy_owner_colon"
+        android:layout_marginTop="20dp"
+        />
+    <!--    <view.clip.ClipLineBtnTxt-->
+    <!--        android:id="@+id/txt_authored"-->
+    <!--        style="@style/Single_line_with_background"-->
+    <!--        androidme:text="@string/have_to_authorized_deputy_owner_colon"/>-->
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+               android:layout_width="match_parent"
+                android:layout_height="45dp"
+                tools:ignore="HardcodedText,ContentDescription">
+    <LinearLayout
+        android:id="@+id/lin_blueswitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_left"
+            style="@style/Single_line_text_trans"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:text="摇一摇开关"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerInside"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</RelativeLayout>

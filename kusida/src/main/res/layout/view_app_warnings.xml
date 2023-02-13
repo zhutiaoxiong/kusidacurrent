@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription,ButtonStyle">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="@string/app_state_recode_title"/>
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidme:leftres="@drawable/titlehead_back"-->
+<!--        androidme:text="@string/app_state_recode_title"/>-->
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_head"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_control"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:text="@string/control"
+            android:textSize="18dp"
+            android:textColor="@color/light_blue"/>
+
+        <Button
+            android:id="@+id/btn_warning"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:text="@string/the_alarm"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_safety"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:text="@string/security"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <com.kulala.staticsview.listview.ListViewPushRefresh
+        android:id="@+id/list_states"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line2"
+        android:layout_below="@+id/lin1"
+        android:dividerHeight="18dp"
+        android:divider="@color/white"/>
+
+
+    <include
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/include_select_time"/>
+</RelativeLayout>

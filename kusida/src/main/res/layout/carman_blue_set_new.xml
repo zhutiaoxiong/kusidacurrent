@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidMe="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidMe:text="蓝牙"/>
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidMe:leftres="@drawable/titlehead_back"-->
+<!--        androidMe:text="蓝牙"/>-->
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/carman_blue_unbind"/>
+
+            <TextView
+                android:id="@+id/txt_blue_state"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:gravity="center"
+                android:text="蓝牙状态"
+                android:textColor="@color/blue_light"
+                android:textSize="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp">
+                <TextView
+                    android:id="@+id/input_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+
+                    android:background="@drawable/bgst_white_round8"
+                    android:gravity="left|center_vertical"
+                    android:hint="请选择蓝牙名称"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_half_white"
+                    android:textSize="15dp"/>
+                <ImageView
+                    android:id="@+id/img_scan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="2dp"
+                    android:scaleType="fitXY"
+                    android:padding="4dp"
+                    android:src="@drawable/icon_scan"/>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bgst_round8_467d9f"
+                android:text="激活"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txt_intro"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left|top"
+                android:text="激活码是产品模组上的硬件码,用户购买产品后,由安装工程师操作激活"
+                android:textColor="#6d6d6d"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

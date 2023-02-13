@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#efeff4"
+              android:orientation="vertical">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="收藏点"
+        />
+
+    <com.kulala.staticsview.listview.SwipeListView
+        android:id="@+id/listview_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_head"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:divider="@color/gray_light"
+        android:dividerHeight="1dp"
+        android:listSelector="#03000000"
+        android:scrollbars="none"
+        />
+
+    <RelativeLayout
+        android:id="@+id/lin_pop_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"/>
+    <RelativeLayout
+        android:id="@+id/re_nolayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+        <ImageView
+            android:id="@+id/iv_norecord"
+            android:layout_width="255dp"
+            android:layout_height="255dp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@drawable/annual_reminder_no_activecar"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#b2b3b5"
+            android:layout_below="@+id/iv_norecord"
+            android:text="您还没有任何记录哟!"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/Single_line_with_background"
+                android:padding="0dp"
+                android:layout_height="45dp"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_left"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/right_chacha"/>
+
+    <TextView
+        android:id="@+id/txt_info"
+        style="@style/Single_line_text_trans"
+        android:layout_height="44dp"
+        android:layout_toLeftOf="@+id/img_right"
+        android:layout_toRightOf="@+id/img_left"
+        android:paddingLeft="10dp"
+        android:text="文字"/>
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/right_chacha"/>
+    <ImageView
+        android:id="@+id/img_red_point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_toLeftOf="@+id/img_right"
+        android:layout_marginTop="17dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_red_point"
+        android:clickable="false"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/img_cover_gray"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scaleType="fitXY"
+        android:src="@color/gray"
+        android:alpha="0.5"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_splitline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@color/white"/>
+
+</RelativeLayout>

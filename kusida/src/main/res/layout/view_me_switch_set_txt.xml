@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidme:leftres="@drawable/titlehead_back"-->
+<!--        androidme:text="什么是摇一摇功能" />-->
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="什么是摇一摇功能" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="使用摇一摇功能手机该如何设置"
+                android:textSize="24dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shake_spline"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/text_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:textSize="16dp"
+                android:padding="5dp"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="打开摇一摇功能后，当用户携带手机靠近车辆后，手机蓝牙会自动连接车辆，这时用户可以通过摇一摇的特定手势来解锁或者锁闭车辆，整个过程无需亮屏或打开APP，使车主可以非常方便的拿手机当车钥匙来开关车锁。"/>
+        </LinearLayout>
+<!--                android:text="摇一摇功能的手机设置\n\n
+        由于系统的省电设置与后台进程限制，会误将正在运行的酷斯达数字车钥匙APP进程杀掉，为保证摇一摇功能的正常使用，请参照如下设置方法：\n\n
+        1、锁定酷斯达数字车钥匙APP或添加到白名单\n\n
+        设置方法：\n\n
+        点击手机下方任务键“□”->多任务页面->找到酷斯达数字车钥匙APP任务页面（或上滑页面）->点击锁定图标锁定APP（或长按酷斯达数字车钥匙APP图标加入白名单）\n\n
+        2、后台保护设置\n\n
+        设置方法：\n\n
+        设置/手机管家/安全中心/i 管家（不同品牌安卓手机有差别）->应用程序/权限管理->自启动权限管理->酷斯达数字车钥匙->允许自动启动。\n\n
+        3、电池/电量管理设置\n\n
+        在省电策略中，APP可能被冻结，需设置APP不受省电策略的限制。\n\n
+        设置方法：\n\n
+        电池/电量管理->设置酷斯达数字车钥匙APP为不限制/“后台高耗电应用”项目上允许酷斯达数字车钥匙APP（分手机的“锁屏清理应用”需要设置酷斯达数字车钥匙APP为“不清理”）\n\n
+        4、其它注意设置\n\n
+        4.1关闭“省电模式”/“勿扰模式”。\n\n
+        4.2在“通知和状态栏”设置中关闭酷斯达数字车钥匙APP应用的“通知亮屏提示”。"-->
+    </ScrollView>
+
+
+</LinearLayout>

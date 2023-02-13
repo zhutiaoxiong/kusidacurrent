@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="搜索到《停车场》相关133个结果"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#b2b3b5"
+        android:textSize="12dp"/>
+
+</RelativeLayout>

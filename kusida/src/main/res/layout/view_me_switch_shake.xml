@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription">
+
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidme:leftres="@drawable/titlehead_back"-->
+<!--        androidme:text="摇一摇" />-->
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="快速开关锁" />
+
+    <view.clip.ClipLineBtnTxt
+        android:id="@+id/txt_selectcar"
+        style="@style/Single_line_with_background"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        androidme:leftres="@android:color/transparent"
+        androidme:splitLine="false"
+        androidme:text="无可用车辆" />
+
+    <LinearLayout
+        android:id="@+id/lin_blueswitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_head"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Single_line_text_trans"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="摇一摇开关"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/img_blueswitch"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/car_set_on"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/spiline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lin_blueswitch"
+        android:layout_marginTop="15dp" />
+    <RelativeLayout
+        android:id="@+id/lin_blue_vibration"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/spiline"
+        >
+        <TextView
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:text="连接成功震动提醒开关"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/img_blue_vibration"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/car_set_on"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <view.find.ProItem
+        android:id="@+id/shake_level_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:bottomTxt="中"
+        androidme:topText="摇一摇力度设置"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/lin_blue_vibration"
+        android:visibility="visible"
+       />
+    <ImageView
+        android:id="@+id/spiline_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/shake_level_set"
+        android:layout_marginTop="15dp"
+        />
+    <!--<LinearLayout-->
+    <!--android:layout_below="@+id/spiline"-->
+    <!--android:id="@+id/lin_blue_shake_tips"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/background_top"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--style="@style/Single_line_text_trans"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:text="摇一摇操作指南"-->
+    <!--tools:ignore="HardcodedText"/>-->
+    <!--</LinearLayout>-->
+    <View
+        android:id="@+id/line_two"
+        android:layout_below="@+id/spiline_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/down_line"/>
+    <view.view4me.set.ClipSetItem
+        android:id="@+id/txt_shake_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="什么是摇一摇功能"
+        androidme:textcolor="#686868"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/line_two"
+        />
+    <view.view4me.set.ClipSetItem
+        android:id="@+id/txt_shake_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="安卓手机使用摇一摇功能如何设置"
+        androidme:textcolor="#686868"
+        android:layout_below="@+id/txt_shake_set"
+        android:layout_marginTop="32.5dp"
+        />
+    <view.view4me.set.ClipSetItem
+        android:id="@+id/txt_shake_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="摇一摇功能操作说明"
+        androidme:textcolor="#686868"
+        android:layout_marginTop="32.5dp"
+        android:layout_below="@+id/txt_shake_tips"
+        android:visibility="gone"
+        />
+    <View
+        android:id="@+id/line_three"
+        android:layout_below="@+id/txt_shake_phone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/down_line"/>
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_shake_set"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        android:layout_below="@+id/spiline_1"-->
+<!--        androidme:lefttxt="什么是摇一摇功能"-->
+<!--        androidme:righttxt="" />-->
+
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_shake_tips"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        android:layout_below="@+id/txt_shake_set"-->
+<!--        androidme:lefttxt="安卓手机使用摇一摇功能如何设置"-->
+<!--        androidme:righttxt="" />-->
+
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_shake_phone"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        android:layout_below="@+id/txt_shake_tips"-->
+<!--        androidme:lefttxt="摇一摇功能操作说明"-->
+<!--        androidme:righttxt="" />-->
+
+    <view.clip.ClipLineBtnInptxt
+        android:id="@+id/txt_shake_product"
+        style="@style/Single_line_with_background"
+        android:layout_below="@+id/txt_shake_phone"
+        androidme:lefttxt="支持摇一摇的产品有哪些"
+        androidme:righttxt=""
+        android:visibility="invisible"/>
+
+    <view.clip.ClipLineBtnInptxt
+        android:id="@+id/txt_shake_bind"
+        style="@style/Single_line_with_background"
+        android:layout_below="@+id/txt_shake_product"
+        androidme:lefttxt="蓝牙设备该如何绑定"
+        androidme:righttxt=""
+        android:visibility="invisible"/>
+
+    <!--<view.clip.ClipLineBtnTxt-->
+    <!--android:id="@+id/txt_shake_set"-->
+    <!--style="@style/Single_line_with_background"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--androidme:leftres="@android:color/transparent"-->
+    <!--androidme:splitLine="true"-->
+    <!--androidme:text="使用摇一摇手机该如何设置"-->
+    <!--android:layout_below="@+id/spiline"-->
+    <!--/>-->
+
+
+    <!--<TextView-->
+    <!--android:layout_below="@+id/lin_blue_shake_tips"-->
+    <!--android:id="@+id/txt_info"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:text="开启摇一摇功能后,酷斯达数字车钥匙APP处于启动状态下，使用手机按下电源键再摇一摇即可实现车辆的快速设防或撤防。"-->
+    <!--android:textColor="@color/gray"-->
+    <!--android:textSize="12dp"-->
+    <!--android:visibility="gone"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="100" />
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/re_shake"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="88dp"-->
+    <!--android:layout_marginLeft="18dp"-->
+    <!--android:layout_marginRight="18dp"-->
+    <!--android:layout_marginTop="93dp"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/open_shake" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/re_windows"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="invisible">
+        <RelativeLayout
+            android:id="@+id/re2_a"
+            android:layout_width="328dp"
+            android:layout_height="194dp"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/shake_tip_bg" />
+            <LinearLayout
+                android:id="@+id/li1"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+              <ImageView
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/img_shake_warning"
+                  android:layout_gravity="center_vertical"
+                  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/carstate_giveone"
+                    android:textSize="16dp"
+                    android:text="注意事项"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_below="@+id/li1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="42.5dp"
+                android:textSize="12dp"
+                android:text="1.手机蓝牙保持常开;\n2.设置保活:手机设置中找【应用启动管理】项目并设置允许本APP后台活动，以便手机在灭屏时自动连接蓝牙及识别摇一摇手势动作;"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                <Button
+                    android:id="@+id/btn_know"
+                    android:layout_width="0dp"
+                    android:layout_height="42.5dp"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textColor="@drawable/skin_color_button"
+                    android:text="知道了"
+                    android:gravity="center"
+                    android:background="@drawable/shake_control_bg"/>
+                <Button
+                    android:id="@+id/btn_cancle"
+                    style="@style/ButtonChangeBgAndTextColor"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="取消"
+                    android:gravity="center"
+                    android:background="@drawable/img_shake_toast_03"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

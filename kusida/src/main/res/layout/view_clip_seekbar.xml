@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="28dp" android:layout_height="81dp">
+<ImageView
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/door_seek_bg"
+    />
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="24dp"
+        android:layout_height="44dp"
+        android:src="@drawable/door_thumb"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

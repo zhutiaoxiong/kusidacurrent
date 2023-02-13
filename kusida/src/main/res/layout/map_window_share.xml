@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText,ContentDescription" >
+        <TextView
+            android:id="@+id/txt_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:minWidth="45dp"
+            android:background="@drawable/bg_map_window_share_l"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+        <ImageView
+            android:layout_toRightOf="@+id/txt_favorite"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:src="@color/white_alpha50pc"/>
+        <TextView
+            android:id="@+id/txt_share"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/txt_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:minWidth="45dp"
+            android:background="@drawable/bg_map_window_share_c"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+        <ImageView
+            android:layout_toRightOf="@+id/txt_share"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:src="@color/white_alpha50pc"/>
+        <TextView
+            android:id="@+id/txt_navoritee"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/txt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:minWidth="45dp"
+            android:background="@drawable/bg_map_window_share_r"
+            android:gravity="center"
+            android:text="导航"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/img_triangle"
+            android:layout_width="18dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/txt_favorite"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_window_share_triangle" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_dropdown"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/polygon"
+        />
+    <TextView
+        android:id="@+id/car_brand"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16dp"
+        android:text="粤888888"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+</LinearLayout>

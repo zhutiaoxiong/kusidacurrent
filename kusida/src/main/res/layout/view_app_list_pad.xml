@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_all"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom">
+
+        <common.map.FullScreenMap
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lin_pos"/>
+
+        <RelativeLayout
+            android:id="@+id/lin_pos"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txt_address_name"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="花城广场"
+                android:textColor="#242323"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@+id/txt_address_name"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:singleLine="true"
+                android:text="距离您17km 花城广场18街56号"
+                android:textColor="#b2b3b5"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_movetocar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/applist_carpos_center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/common_service"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:text="常用服务"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+        <!-- 应用列表 -->
+        <LinearLayout
+            android:id="@+id/li1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/common_service"
+            android:orientation="horizontal">
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/li1"
+            android:orientation="horizontal">
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <view.view4app.ViewAppListItem
+                android:id="@+id/item10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

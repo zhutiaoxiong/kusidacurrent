@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/lin_base"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/img_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shefangbg"/>
+        <!--android:src="@drawable/img_bg_confirm"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/Single_line_text_trans"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="启动保护"
+                android:textStyle="bold"
+                android:textColor="@color/blue_light"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/txt_info"
+                style="@style/Single_line_text_trans"
+                android:layout_height="0dp"
+                android:layout_weight="100"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="开锁或熄火已超过两分钟，车辆已进入“启动保护”状态，操作“开锁”退出该状态即可使用车内按键启动。"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/txt_infosm"
+                style="@style/Single_line_text_trans"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:text="可点击左上角车标进入快捷设置关闭/打开“启动保护”功能"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/spiline_x"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/btn_confirm"
+            android:background="@color/annual_transparent"
+            android:scaleType="fitXY"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/Single_line_text_trans"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="我知道了"
+                android:background="@color/all_background_color"
+                android:layout_alignParentBottom="true"
+                />
+    </RelativeLayout>
+</RelativeLayout>

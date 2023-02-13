@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_question_name"
+            style="@style/Single_line_text_trans"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/problem_a"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <View
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/down_line"/>
+
+        <TextView
+            style="@style/Single_line_text_trans"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/the_answer"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lin1">
+
+        <RelativeLayout
+            android:id="@+id/linlin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:id="@+id/spinner_question"
+                style="@style/Single_line_text_trans"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:clickable="false"
+                android:padding="10dp"
+                android:src="@drawable/icon_answer_down"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line2"
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/linlin1"
+            android:background="@drawable/down_line"/>
+
+        <EditText
+            android:id="@+id/txt_answer"
+            style="@style/Single_line_text_trans"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/line2"
+            android:layout_margin="5dp"
+            android:background="@color/all_background_color"
+            android:inputType="text"
+            android:maxLength="31"
+            android:textColor="@color/black"/>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/line2"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_weight="50">-->
+
+        <!--<Spinner-->
+        <!--android:id="@+id/spinner_answer"-->
+        <!--style="@style/Single_line_text_trans"-->
+        <!--android:spinnerMode="dropdown"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_margin="5dp"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/txt_answer1"-->
+        <!--style="@style/Single_line_text_trans"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="@color/background_all"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="广东"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="18dp"/>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="45dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:clickable="false"-->
+        <!--android:padding="10dp"-->
+        <!--android:src="@drawable/icon_answer_down"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/lin_answer2"-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_weight="50">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/txt_answer2"-->
+        <!--style="@style/Single_line_text_trans"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="@color/background_all"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="中山"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="18dp"/>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="45dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:clickable="false"-->
+        <!--android:padding="10dp"-->
+        <!--android:src="@drawable/icon_answer_down"/>-->
+        <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+
+</RelativeLayout>

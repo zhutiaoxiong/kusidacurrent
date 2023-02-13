@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#efeff4"
+             >
+
+    <RelativeLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="291dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.5"
+            android:background="@drawable/gray_bg_12radius"
+            android:hint="搜索"
+            android:inputType="textPhonetic"
+            android:paddingLeft="28dp"
+            android:textColorHint="#000000"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="15dp"
+            android:src="@drawable/img_record_search"/>
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#0179ff"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_candel"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:layout_below="@id/input_layout"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="查找历史"
+            android:textColor="#d2d3d5"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:src="@drawable/deleteall"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:src="#d2d3d5"/>
+    </RelativeLayout>
+    <com.kulala.staticsview.listview.SwipeListView
+        android:id="@+id/listview_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="#d2d3d5"
+        android:dividerHeight="1dp"
+        android:paddingLeft="10dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/lin_candel"
+        />
+
+
+    <ListView
+        android:id="@+id/list_show"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray_light"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="#00000000"
+        android:paddingLeft="10dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/input_layout"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="@string/message"/>
+
+    <TextView
+        android:id="@+id/txt_nomessage"
+        style="@style/Single_line_text_trans"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/title_head"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:text="@string/no_message"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/lin_havemessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_head"
+        android:background="@color/background_top"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txt_message"
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:minHeight="25dp"
+            android:paddingLeft="5dp"
+            android:singleLine="false"
+            android:text="消息：加盟教科文息：加盟教科文息：加盟教科文息：加盟教科文息：加盟教科文息：加盟教科文息：加盟教科文"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/txt_time"
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="时间：2016-16-16"
+            android:textSize="14dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

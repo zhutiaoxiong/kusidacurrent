@@ -1,0 +1,122 @@
+ apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        applicationId "com.client.proj.kusida"
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        ndk{
+            abiFilters  "armeabi-v7a", "arm64-v8a","armeabi"
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("../androidJava_key.jks")
+            storePassword "lancelot"
+            keyAlias "kelvin"
+            keyPassword "lancelot"
+        }
+    }
+
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            android.applicationVariants.all {
+                variant ->
+                variant.outputs.all { output ->
+                    def releaseApkName ='kusida--'+ variant.productFlavors.get(0).getName() + versionName + '.apk'
+                    outputFileName = releaseApkName
+                }
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    //cmd: gradle assembleRelease
+    //meta-data android:name="UMENG_CHANNEL" android:value="${CHANNEL_VALUE}"
+    productFlavors {
+        qq {}
+        baidu {}
+        huawei {}
+        _360 {}
+        officcal {}
+        xiaomi {}
+        oppo {}
+        vivo {}
+        meizu{}
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+        }
+    }
+    repositories{
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'com.liulishuo.filedownloader:library:1.7.6'
+//
+    implementation project(':s_links_ts')
+    implementation project(':s_dispatcher')
+    implementation project(':s_staticsfunc')
+//
+    implementation project(':s_timepicker')
+    implementation project(':s_staticsview')
+
+    implementation project(':s_wearfunc')
+
+//    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation (name: 'alipaySdk-15.6.8-20191021122514', ext: 'aar')
+    implementation 'com.qiniu:qiniu-android-sdk:8.0.5'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+//    implementation 'com.github.Blincheng:AddressSelector:v1.0.4'
+    implementation 'com.zxy.android:tiny:0.1.0'
+//    implementation 'top.zibin:Luban:1.1.8'
+//    implementation 'org.apache.commons:commons-lang3:3.8.1'
+
+//    implementation 'com.github.chihane:JDAddressSelector:1.1.4'
+    implementation 'fm.jiecao:jiecaovideoplayer:5.8.1'
+    implementation 'com.zhy:base-adapter:3.0.3'
+//    implementation 'com.tencent:mmkv:1.0.23'
+    api 'com.tencent.mm.opensdk:wechat-sdk-android:6.8.0'
+//    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    implementation 'com.tencent.bugly:crashreport_upgrade:1.6.1'
+//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    implementation 'com.tencent.bugly:nativecrashreport:3.9.2'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+//    implementation 'io.github.youth5201314:banner:2.2.2'
+    implementation 'com.to.aboomy:pager2banner:0.0.3'
+    implementation 'com.blankj:utilcode:1.25.9'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7'
+//    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation 'com.orhanobut:logger:2.2.0'
+
+}

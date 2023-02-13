@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_top_wear">#ff303035</color>
+    <color name="background_wear">#ff242323</color>
+    <color name="gray_dark_wear">#ff555555</color>
+    <color name="gray_light_wear">#ffdadada</color>
+</resources>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="HardcodedText,ContentDescription" >
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="@string/contact_us"
+        />
+
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_online"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        androidme:lefttxt="@string/online_consultation"-->
+<!--        androidme:rightres="@drawable/icon_common_arrow_right" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/button_selector_white_withboard"-->
+<!--        android:visibility="gone">-->
+
+<!--        <view.clip.ClipLineBtnInptxt-->
+<!--            style="@style/Single_line_with_background"-->
+<!--            androidme:lefttxt="@string/service_hotline"-->
+<!--            androidme:righttxt="" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_callme"-->
+<!--            style="@style/Single_line_text_trans"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:gravity="right|center_vertical"-->
+<!--            android:text="020-89625923"-->
+<!--            android:textColor="@color/green_light"-->
+<!--            android:textSize="20dp" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_mail"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        androidme:lefttxt="@string/plane_email"-->
+<!--        androidme:righttxt="service@91kulala.com" />-->
+
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_phone_seles"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        androidme:lefttxt="@string/dealers_hotline"-->
+<!--        androidme:righttxt=""-->
+<!--        android:visibility="gone"/>-->
+
+<!--    <view.clip.ClipLineBtnInptxt-->
+<!--        android:id="@+id/txt_bolo"-->
+<!--        style="@style/Single_line_with_background"-->
+<!--        androidme:lefttxt="@string/the_official_wechat"-->
+<!--        androidme:righttxt="kulala91" />-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/ti"
+            style="@style/Single_line_text_trans"
+            android:layout_height="30dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/scan_concern_wechat_public_number"
+            android:textSize="16dp" />
+        <ImageView
+            android:id="@+id/img_qrcode"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/ti"
+            android:layout_centerHorizontal="true" />
+            <!-- android:src="@drawable/logo_cloud" -->
+    </RelativeLayout>
+
+</RelativeLayout>

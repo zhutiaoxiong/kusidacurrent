@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="androidMe">
+        <attr name="text" format="string"/>
+        <attr name="textcolor" format="color"/>
+        <attr name="leftres" format="reference"/>
+        <attr name="rightres" format="reference"/>
+        <attr name="splitLine" format="boolean"/>
+    </declare-styleable>
+
+</resources>

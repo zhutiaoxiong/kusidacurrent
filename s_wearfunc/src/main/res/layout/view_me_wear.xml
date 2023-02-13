@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              android:background="@color/background_wear"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+
+    <com.kulala.staticsview.titlehead.ClipTitleHead
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:leftres="@drawable/titlehead_back_wear"
+        androidme:text="手表控车"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="@color/gray_dark_wear"
+        android:text="手表和手机连接后才能操作"/>
+
+    <com.kulala.staticsview.line.ClipLineBtnTxt
+        style="@style/Single_line_with_background_wear"
+        android:id="@+id/txt_wear_switch"
+        androidme:rightres="@drawable/switch_off_wear"
+        androidme:splitLine="true"
+        androidme:text="手表控车"/>
+
+</LinearLayout>

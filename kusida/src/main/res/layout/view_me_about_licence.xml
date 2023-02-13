@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="用户使用协议"
+        />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/txt_title"-->
+                <!--style="@style/Single_line_text_trans"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="18dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/txt_info"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:gravity="left|top|center_horizontal"-->
+                <!--android:singleLine="false"-->
+                <!--android:text="@string/me_licence"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="16dp"/>-->
+
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+</LinearLayout>

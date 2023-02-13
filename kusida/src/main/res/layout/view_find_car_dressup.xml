@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_all"
+              android:orientation="vertical">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="@string/personality_is_dressed_up" />
+<!--    <com.kulala.staticsview.titlehead.ClipTitleHead-->
+<!--        android:id="@+id/title_head"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        androidme:leftres="@drawable/titlehead_back"-->
+<!--        androidme:rightres="@drawable/viewfind_download"-->
+<!--        androidme:text="@string/personality_is_dressed_up"/>-->
+    <ImageView
+        android:id="@+id/img_bought"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:padding="13dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/viewfind_bought"
+        android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/list_skins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/white"
+            android:layout_below="@+id/title_head"
+            android:dividerHeight="1dp"/>
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidMe="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <view.view4me.set.ClipTitleMeSet
+            android:id="@+id/title_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            androidMe:righttxt="修改"
+            androidMe:text="详情"/>
+
+        <com.kulala.staticsview.line.ClipLineInfo
+            android:id="@+id/txt_carname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            androidMe:lefttxt="你的爱车："
+            androidMe:righttxt="车牌号"/>
+
+        <com.kulala.staticsview.line.ClipLineInfo
+            android:id="@+id/txt_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            androidMe:lefttxt=""
+            androidMe:righttxt="品牌"/>
+
+        <com.kulala.staticsview.line.ClipLineInfo
+            android:id="@+id/txt_series"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            androidMe:lefttxt=""
+            androidMe:righttxt="车系"/>
+
+        <com.kulala.staticsview.line.ClipLineInfo
+            android:id="@+id/txt_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            androidMe:lefttxt=""
+            androidMe:righttxt="车型"/>
+
+        <com.kulala.staticsview.line.ClipLineInfo
+            android:id="@+id/txt_vin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            androidMe:lefttxt="车架号(后6位)："
+            androidMe:righttxt="000000"/>
+
+        <com.kulala.staticsview.line.ClipLineInfo
+            android:id="@+id/txt_engine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            androidMe:lefttxt="发动机码(后6位)："
+            androidMe:righttxt="000000"/>
+
+    </LinearLayout>
+
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"/>
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_below="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bgst_round8_467d9f"
+        android:text="放弃授权"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:id="@+id/lin_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin1"
+        android:layout_marginTop="16dp"
+        android:background="@color/all_background_color"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="left|center_vertical"
+            android:text="产品保修期"
+            android:textColor="@color/blue_light"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txt_bao_info"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left|center_vertical"
+            android:text="激活日期"
+            android:textColor="@color/gray_half_white"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:id="@+id/img_bao"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/carman_bao_in"/>
+
+        <TextView
+            android:id="@+id/txt_bao_type"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="保修中"
+            android:textColor="@color/blue_light"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

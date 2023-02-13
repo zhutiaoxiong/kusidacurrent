@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="66dp"
+    android:layout_height="144dp"
+    android:id="@+id/image_bg"
+    >
+
+    <ImageView
+        android:id="@+id/image_seat_status"
+        android:layout_width="66dp"
+        android:layout_height="123dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/img_seat_light_blue"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:id="@+id/image_seat_type"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="49dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+        <TextView
+            android:id="@+id/txt_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image_seat_status"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:text="座椅通风"
+            />
+
+
+</RelativeLayout>

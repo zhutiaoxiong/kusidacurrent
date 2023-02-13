@@ -1,0 +1,110 @@
+﻿<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.kulala.linkspods">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<!--    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>-->
+    <!--蓝牙-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+<!--    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>-->
+    <uses-permission android:name="android.permission.PERMISSION_READ_ENCRYPTED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--<uses-permission android:name="android.permission.DEVICE_POWER" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false"/>
+
+<!--    <permission-->
+<!--        android:name="com.kulala.dubai.permission.QN_DATA"-->
+<!--        android:protectionLevel="signatureOrSystem"/>-->
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.kulala.dubai.permission.QN_DATA"/>
+    <application
+        android:persistent="true"
+        android:allowBackup="true">
+        <!--android:persistent="true"免受out-of-memory killer的影响-->
+        <!--<activity-->
+            <!--android:name=".views.OnePxActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize|navigation|keyboard"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="false"-->
+            <!--android:finishOnTaskLaunch="false"-->
+            <!--android:launchMode="singleInstance"-->
+            <!--android:process=":process"-->
+            <!--android:theme="@style/undeadActivityStyle"-->
+            <!--&gt;-->
+        <!--</activity>-->
+        <!--android:process=":KulalaServiceA"-->
+        <service
+            android:name="com.kulala.linkscarpods.blue.KulalaServiceA"
+            android:exported="false"
+            android:enabled="true"
+            android:process=":KulalaServiceACarpods">
+            <intent-filter android:priority="1000">
+                <action android:name="SERVICE_B_HEART_BEET"/>
+                <action android:name="BLUETOOTH_NEED_STOPCONN_CLEARDATA"/>
+                <action android:name="BLUETOOTH_NEED_SENDMESSAGE"/>
+                <action android:name="BLUETOOTH_NEED_CHANGE_CAR"/>
+                <action android:name="BLUETOOTH_NEED_CHANGE_CAR_DATA"/>
+                <action android:name="BLUETOOTH_NEED_SENDMESSAGE_LCD"/>
+                <action android:name="BLUETOOTH_NEED_CHANGE_LCDKEY"/>
+                <action android:name="BLUETOOTH_NEED_STOPCONN_CLEARDATA_LCD"/>
+
+                <!--<action android:name="SERVICE_1_SOUND_CONTROL"/>-->
+                <action android:name="SERVICE_2_HEART_BEET"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="SEND_CAR_STATUS_BLUETOOTH_PROGRESS" />
+                <action android:name="SEND_CAR_STATUS_SERVICEC_TO_SERVICECA" />
+
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.kulala.linkscarpods.service.KulalaServiceC"
+            android:exported="false"
+            android:enabled="true"
+            android:process=":KulalaServiceCCarpods">
+            <intent-filter android:priority="1000">
+                <action android:name="SERVICE_INIT_SOCKET_GET"/>
+                <action android:name="SERVICE_INIT_NOTIFI_GET"/>
+                <action android:name="SERVICE_SEND_MESSAGE"/>
+                <action android:name="SERVICE_1_HEART_BEET"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="IS_NEED_SERVICEA_TO_SERVICE_C"/>
+
+            </intent-filter>
+        </service>
+        <service android:name="com.kulala.linkscarpods.blue.TestService">
+            <intent-filter>
+                <action android:name="com.hungrytree.receiver.BleService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+<!--        <service-->
+<!--            android:name="com.ble.ble.BleService"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="false"/>-->
+
+        <!--<receiver-->
+            <!--android:name=".permission.NetStateReceiver"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter  android:priority="1000">-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+                <!--<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>-->
+                <!--<action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>-->
+                <!--<action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>-->
+                <!--<action android:name="android.intent.action.ANSWER"/>-->
+                <!--<action android:name="android.intent.action.CALL"/>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+                <!--<action android:name="android.intent.action.USER_PRESENT"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+    </application>
+</manifest>

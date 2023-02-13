@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#616984">
+
+    <RelativeLayout
+        android:id="@+id/card_rule_layoout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/card_collect_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cancle_read_rule"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/card_collect_rule_title"
+            android:textColor="#07143d"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/cancle_read_rule"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chacha_click" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/mysclorrview"
+        android:layout_width="match_parent"
+        android:layout_height="389dp"
+        android:layout_below="@+id/card_rule_layoout"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_rule_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="false"
+                android:text="@string/card_collect_rule"
+                android:textColor="#babdc7" />
+
+            <TextView
+                android:id="@+id/the_badge"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/card_rule_content"
+                android:gravity="center"
+                android:text="@string/badge"
+                android:textColor="#07143d" />
+
+            <RelativeLayout
+                android:id="@+id/the_badge_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_badge">
+
+                <ImageView
+                    android:id="@+id/the_badge_1"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="44dp"
+                    android:src="@drawable/thebadge1" />
+
+                <ImageView
+                    android:id="@+id/the_badge_2"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/the_badge_1"
+                    android:src="@drawable/thebadge2" />
+
+                <ImageView
+                    android:id="@+id/the_badge_3"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/the_badge_2"
+                    android:src="@drawable/thebadge3" />
+
+                <ImageView
+                    android:id="@+id/the_badge_4"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/the_badge_3"
+                    android:src="@drawable/thebadge4" />
+
+                <ImageView
+                    android:id="@+id/the_badge_5"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/the_badge_4"
+                    android:src="@drawable/thebadge5" />
+
+                <ImageView
+                    android:id="@+id/the_badge_6"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/the_badge_5"
+                    android:src="@drawable/thebadge6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/the_badge_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_badge_layout"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/the_badge_text_1"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:text="@string/primary"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/the_badge_text_2"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/the_badge_text_1"
+                    android:gravity="center"
+                    android:text="@string/intermediate"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/the_badge_text_3"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/the_badge_text_2"
+                    android:gravity="center"
+                    android:text="@string/advanced"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/the_badge_text_4"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/the_badge_text_3"
+                    android:gravity="center"
+                    android:text="@string/suxury"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/the_badge_text_5"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/the_badge_text_4"
+                    android:gravity="center"
+                    android:text="@string/extravagant"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/the_badge_text_6"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/the_badge_text_5"
+                    android:gravity="center"
+                    android:text="@string/ultimate"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

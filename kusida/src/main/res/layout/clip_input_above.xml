@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/annual_input_above_bg_side"
+                tools:ignore="HardcodedText,ContentDescription">
+
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/annual_input_above_bg_round"
+            android:gravity="left|top"
+            android:hint="备注"
+            android:inputType="textMultiLine"
+            android:maxLength="40"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="90dp"
+            android:text="120"
+            android:textColor="@color/gray"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/annual_btn_round_blue_dark"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+    </RelativeLayout>

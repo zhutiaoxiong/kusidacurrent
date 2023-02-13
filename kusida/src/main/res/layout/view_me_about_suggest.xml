@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        androidme:text="@string/complaints_suggestions_title"
+        />
+
+    <ScrollView
+        android:id="@+id/laye_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_head">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Single_line_text_trans"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:singleLine="false"
+                android:text="@string/prompt_the_problem_is_solved_please_contact_mounting_point"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                style="@style/Single_line_text_trans"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:singleLine="false"
+                android:text="@string/please_choose"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/all_background_color"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:stretchColumns="0,1">
+
+                <TableRow>
+
+                    <view.clip.child.CheckBoxOMG
+                        android:id="@+id/select_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        androidme:pos="1"
+                        androidme:text="@string/i_want_to_ridicule"/>
+
+                    <view.clip.child.CheckBoxOMG
+                        android:id="@+id/select_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        androidme:pos="2"
+                        androidme:text="@string/business_cooperation"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <view.clip.child.CheckBoxOMG
+                        android:id="@+id/select_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        androidme:pos="3"
+                        androidme:text="@string/software_functions"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <view.clip.child.CheckBoxOMG
+                        android:id="@+id/select_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        androidme:pos="4"
+                        androidme:text="@string/hardware_quality"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <view.clip.child.CheckBoxOMG
+                        android:id="@+id/select_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        androidme:pos="5"
+                        androidme:text="@string/after_sales_service"/>
+
+                    <view.clip.child.CheckBoxOMG
+                        android:id="@+id/select_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        androidme:pos="6"
+                        androidme:text="@string/hardware_prices"/>
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                style="@style/Single_line_text_trans"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="left"
+                android:singleLine="false"
+                android:text="@string/please_enter_a_suggestion_two_hundred_words"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/txt_input"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@color/all_background_color"
+                android:gravity="top|left"
+                android:hint="@string/we_look_forward_to_your_feedback"
+                android:maxLength="200"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/Button_round"
+                android:layout_margin="16dp"
+                android:background="@drawable/btnst_round_blue"
+                android:text="@string/submit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly  project(':s_dispatcher')
+    compileOnly  project(':s_staticsview')
+    api 'com.google.android.gms:play-services-wearable:11.2.2'
+//    implementation 'com.google.android.gms:play-services-wearable:15.0.1'
+//    implementation 'com.google.android.gms:play-services-wearable:9.6.1'
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginStart="29dp"
+    android:layout_marginEnd="29dp"
+    android:background="@drawable/bg_line_white"
+    tools:ignore="HardcodedText,ContentDescription">
+    <TextView
+        android:id="@+id/txt_left"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="23dp"
+        android:text="门店名称"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        />
+   <ImageView
+       android:id="@+id/image"
+       android:layout_width="61dp"
+       android:layout_height="61dp"
+       android:layout_below="@+id/txt_left"
+       android:src="@drawable/img_custom_add"
+       android:scaleType="centerCrop"
+       android:layout_marginStart="23dp"/>
+</RelativeLayout>

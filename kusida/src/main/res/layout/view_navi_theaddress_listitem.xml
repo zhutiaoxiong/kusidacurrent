@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="vertical"
+        android:clickable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:padding="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_gps_location"
+            />
+
+        <TextView
+            android:id="@+id/txt_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="东莞大朗"
+            android:textColor="#242323"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt_address_name_long"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="38dp"
+        android:gravity="top"
+        android:singleLine="true"
+        android:textColor="#b2b3b5"
+        android:text="东莞大朗大川街"
+        android:textSize="12dp"
+        />
+    </LinearLayout>
+</RelativeLayout>

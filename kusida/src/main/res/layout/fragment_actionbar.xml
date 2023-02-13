@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+    <LinearLayout
+        android:id="@+id/lin_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <include
+            android:id="@+id/tab_4"
+            layout="@layout/fragment_actionbar_item_shouye"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"
+            android:visibility="gone"/>
+        <include
+            android:id="@+id/tab_0"
+            layout="@layout/fragment_actionbar_item"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"/>
+
+        <include
+            android:id="@+id/tab_1"
+            layout="@layout/fragment_actionbar_item"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"/>
+
+        <include
+            android:id="@+id/tab_2"
+            layout="@layout/fragment_actionbar_item"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"/>
+
+        <include
+            android:id="@+id/tab_3"
+            layout="@layout/fragment_actionbar_item"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_red_point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_red_point"
+        android:visibility="invisible"/>
+</RelativeLayout>

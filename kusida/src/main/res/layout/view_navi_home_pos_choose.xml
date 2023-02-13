@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4">
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="291dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.5"
+            android:background="@drawable/gray_bg_12radius"
+            android:paddingLeft="28dp"
+            android:hint="搜索"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/find"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="15dp"
+            android:src="@drawable/img_record_search" />
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textColor="#0179ff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cross_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/li_1"
+        android:scaleType="fitXY"
+        android:src="#d2d3d5" />
+
+    <LinearLayout
+        android:id="@+id/li_1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@+id/re1"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/pic_1"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_my_location" />
+
+                <TextView
+                    android:id="@+id/txt_my_location"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/pic_1"
+                    android:gravity="center_vertical"
+                    android:text="当前位置"
+                    android:textColor="#242323"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="#d2d3d5" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/pic_2"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_map_select_point" />
+
+                <TextView
+                    android:id="@+id/txt_map_select_point"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/pic_2"
+                    android:gravity="center_vertical"
+                    android:text="地图选点"
+                    android:textColor="#242323"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/cross_line1"
+        android:layout_height="16dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/li_1"
+        android:scaleType="fitXY"
+        android:src="@color/gray_light" />
+
+    <RelativeLayout
+        android:id="@+id/head_view"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/cross_line1"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txt_adress_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/img_adress_history"
+            android:gravity="center_vertical"
+            android:text="搜索历史"
+            android:textColor="#d2d3d5"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/img_adress_history"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/deleteall" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="#d2d3d5" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_lishi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head_view"
+        android:background="#efeff4"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.kulala.staticsview.listview.SwipeListView
+            android:id="@+id/listview_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="#d2d3d5"
+            android:dividerHeight="1dp"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cross_line1"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray_light"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="#00000000"
+        android:paddingLeft="10dp"
+        android:scrollbars="none"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

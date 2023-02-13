@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/com.kulala.staticsview/"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_all"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <com.kulala.staticsview.titlehead.SwitchHead
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        androidme:lefttext="下载管理"
+        androidme:righttext="城市列表"/>
+
+    <!--android:divider="@drawable/img_crossline"-->
+    <!--android:dividerHeight="1dp"-->
+    <!--android:childDivider="@drawable/img_crossline"-->
+    <ExpandableListView
+        android:id="@+id/list_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_head"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000"
+        android:scrollbars="none"/>
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/lin_wifi"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="57dp"-->
+        <!--android:layout_below="@+id/list_all"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:background="@color/background_top"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--tools:ignore="HardcodedText,ContentDescription">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="WIFI下自动更新"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:alpha="0.5"-->
+            <!--android:gravity="top"-->
+            <!--android:text="WIFI环境下,自动更新离线包,保持获取最新数据"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="14dp"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_wifi_auto"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:src="@drawable/switch_off"/>-->
+
+    <!--</RelativeLayout>-->
+</RelativeLayout>

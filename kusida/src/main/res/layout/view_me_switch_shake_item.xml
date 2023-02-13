@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Single_line_text_trans"
+    android:background="@color/background_top"
+    android:orientation="horizontal">
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_logo"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        style="@style/Single_line_text_trans"
+        android:paddingLeft="10dp"
+        android:text="测AL386L"
+        tools:ignore="HardcodedText" />
+
+    <com.kulala.staticsview.image.smart.SmartImageView
+        android:id="@+id/img_right"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/carman_bt_select_on"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

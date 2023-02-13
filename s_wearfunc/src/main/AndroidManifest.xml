@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.wearkulala.www.wearfunc">
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <application>
+        <!--wear-->
+        <meta-data
+            android:name="com.google.android.wearable.beta.app"
+            android:resource="@xml/wearable_app_desc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--android:value="@integer/google_play_services_version"11220000-->
+        <service android:name="com.wearkulala.www.wearfunc.WearLinkServicePhone">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER"
+                        tools:ignore="WearableBindListener"/>
+            </intent-filter>
+        </service>
+        <!--wear end-->
+
+    </application>
+</manifest>

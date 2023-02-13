@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/annual_background_all"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+
+
+    <annualreminder.view.style.StyleTitleHead
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:leftres="@drawable/titlehead_back"
+        androidme:text="自定义提醒"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <annualreminder.view.style.StyleSingleLineAnnual
+            android:id="@+id/txt_selectcar"
+            style="@style/Style_txt_line_trans"
+            androidme:splitLine="true"
+            androidme:text="年检车辆"/>
+        <annualreminder.view.style.StyleSingleLineAnnual
+            android:id="@+id/txt_time"
+            style="@style/Style_txt_line_trans"
+            androidme:splitLine="false"
+            androidme:text="提醒日期"/>
+
+        <Button
+            android:id="@+id/btn_auto"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:background="@drawable/annual_btn_round_blue_dark"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <include
+        android:id="@+id/item_car"
+        layout="@layout/list_annualadd_select_car_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"/>
+    <!--不能显背景android:background="@drawable/annual_bgst_round_black_btn"-->
+
+    <com.kulala.staticsview.listview.ListViewWarp
+        android:id="@+id/list_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:background="@drawable/annual_bgst_round_black_btn"
+        android:listSelector="#03000000"
+        android:divider="@drawable/img_crossline"
+        android:dividerHeight="1dp"/>
+</RelativeLayout>
+</LinearLayout>

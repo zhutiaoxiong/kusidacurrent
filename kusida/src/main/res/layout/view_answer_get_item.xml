@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_question_name"
+            style="@style/Single_line_text_trans"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/problem_a"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <View
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/white"/>
+
+        <TextView
+            style="@style/Single_line_text_trans"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/the_answer"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lin1">
+
+
+        <TextView
+            android:id="@+id/txt_question"
+            style="@style/Single_line_text_trans"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/when_is_your_birth_place"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <View
+            android:id="@+id/line2"
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/txt_question"
+            android:background="@color/white"/>
+
+        <EditText
+            android:id="@+id/txt_answer"
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/line2"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:inputType="text"
+            android:maxLength="31"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:hint="@string/please_enter_the_corresponding_answer"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/background_top"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_question"-->
+    <!--style="@style/Single_line_text_trans"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:text="问题一：您的出生地点是?"-->
+    <!--android:textSize="16dp"/>-->
+
+    <!--<include-->
+    <!--android:id="@+id/check1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--layout="@layout/view_answer_get_item_select"/>-->
+    <!--<include-->
+    <!--android:id="@+id/check2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--layout="@layout/view_answer_get_item_select"/>-->
+    <!--<include-->
+    <!--android:id="@+id/check3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--layout="@layout/view_answer_get_item_select"/>-->
+    <!--<include-->
+    <!--android:id="@+id/check4"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--layout="@layout/view_answer_get_item_select"/>-->
+    <!--<include-->
+    <!--android:id="@+id/check5"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--layout="@layout/view_answer_get_item_select"/>-->
+
+    <!--</LinearLayout>-->

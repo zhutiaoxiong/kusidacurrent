@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription">
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="291dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.5"
+            android:background="@drawable/gray_bg_12radius"
+            android:hint="请输入地址关键字/备注内容"
+            android:paddingLeft="28dp"
+            android:textColorHint="#000000"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:inputType="textPhonetic"/>
+
+        <ImageView
+            android:id="@+id/find"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="15dp"
+            android:src="@drawable/img_record_search" />
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textColor="#0179ff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:id="@+id/re2"
+    android:layout_below="@+id/re1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+
+
+
+    <ListView
+        android:id="@+id/path_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:divider="#d2d3d5"
+        android:dividerHeight="0.5dp" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re1"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textColor="#d2d3d5"/>
+
+
+        <com.kulala.staticsview.listview.SwipeListView
+        android:id="@+id/list_paths"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#efeff4"
+        android:dividerHeight="6dp"
+        android:layout_below="@+id/re1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"/>
+    <RelativeLayout
+        android:id="@+id/lin_pop_input"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+
+
+
+

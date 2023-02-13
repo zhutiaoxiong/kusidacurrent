@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/background_top">
+
+        <TextView
+            android:id="@+id/txt_boy"
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/underline"
+            android:gravity="center"
+            android:text="@string/men_symbol"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/txt_girl"
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_boy"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/underline"
+            android:gravity="center"
+            android:text="@string/women_symbol"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            style="@style/Single_line_text_trans"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txt_girl"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textSize="14dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</RelativeLayout>

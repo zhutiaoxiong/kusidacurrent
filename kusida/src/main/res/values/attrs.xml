@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabView">
+        <attr name="tabPageIndicator" format="reference"/>
+        <attr name="tabView" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="androidMe">
+        <attr name="openinput" format="boolean"/>
+        <attr name="comand" format="integer"/>
+        <attr name="text" format="string"/>
+        <attr name="textimgr" format="string"/>
+        <attr name="textcolor" format="color"/>
+        <attr name="leftres" format="reference"/>
+        <attr name="rightres" format="reference"/>
+        <attr name="splitLine" format="boolean"/>
+        <attr name="rightimgvisible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="Battery">
+        <attr name="batteryOrientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="batteryColor" format="color"/>
+        <attr name="batteryPower" format="integer"/>
+    </declare-styleable>
+</resources>

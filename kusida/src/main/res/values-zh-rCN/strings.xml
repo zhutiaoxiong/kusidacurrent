@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="language">中文</string>
+    <string name="app_state_recode_title">记录</string>
+    <string name="app_violation_title">违章查询</string>
+    <string name="app_name">酷斯达数字车钥匙</string>
+    <string name="flag_info">发现</string>
+    <string name="flag_me">我的</string>
+    <!-- ViewMe -->
+    <string name="wallet">钱包</string>
+    <string name="share">分享</string>
+    <string name="set">设置</string>
+    <string name="contact_us">联系我们</string>
+    <string name="about">关于</string>
+    <!-- ViewMe  Main-->
+    <string name="nickname">昵称</string>
+    <string name="mobile_phone_no">手机号</string>
+    <string name="currently_there_is_no_available_vehicles">当前无可用车辆!</string>
+    <string name="please_wait_a_moment_data_is_not_loaded">请稍等数据还未加载完成!</string>
+    <!-- ViewMe  carmanager-->
+    <string name="carmanager">车辆管理</string>
+    <string name="new_vehicle">新增车辆</string>
+    <string name="license_plate_number">车牌号码 ：</string>
+    <string name="vehicle_brand">车辆品牌</string>
+    <string name="please_enter_the_license_plate_number">请输入车牌号码</string>
+    <string name="vehicle_system">车    系 </string>
+    <string name="vehicle_system_no_space">车系</string>
+    <string name="vehicle_type">车     型</string>
+    <string name="vehicle_type_no_space">车型</string>
+    <string name="vin_code">车架号</string>
+    <string name="please_enter_vin_code_last_six_number">请输入车架号后六位</string>
+    <string name="engine_number">发动机号 </string>
+    <string name="please_enter_engine_last_six_number">请输入发动机号后六位</string>
+    <string name="purchase_date">购车日期 ：</string>
+    <string name="date_of_insurance">保险日期 ：</string>
+    <string name="year_of_careful_date">年审日期 ：</string>
+    <string name="maintenance_date">保养日期 ：</string>
+    <string name="terminal_number">终端号 ：</string>
+    <string name="can_choose">*可选*</string>
+    <string name="see_details">查看详情</string>
+    <string name="delete">删除</string>
+    <string name="please_enter_a_password">请输入登录密码:</string>
+    <string name="network_bad">网络不良</string>
+    <string name="please_select_a_vehicle_series">请选择车辆系列</string>
+    <string name="please_first_select_the_vehicle_brands">请先选择车辆品牌!</string>
+    <string name="please_first_select_a_vehicle_series">请先选择车辆系列!</string>
+    <string name="modify_the_vehicle">修改车辆</string>
+    <string name="please_select_a_vehicle_model">请选择车辆型号</string>
+    <string name="add_a_new_vehicle">添加新车辆 (</string>
+    <string name="success">) 成功!</string>
+
+    <!-- ViewMe  pay-->
+    <string name="online_payment">在线支付</string>
+    <string name="not_choose_the_vehicle_license_plate_number">车牌号：</string>
+    <string name="as_of_the_date_of_service">服务截止日期：</string>
+    <string name="three_handre_dyuan">330.00元</string>
+    <string name="three_year">三年期</string>
+    <string name="please_select_a_vehicle">请选择车辆</string>
+    <string name="method_of_payment">支付方式</string>
+    <string name="no_available_vehicles">无可用车辆!</string>
+    <string name="alipay_pay_success">支付宝支付成功!</string>
+    <string name="you_do_not_install_pay_treasure_or_cancelled_payment">您未安装支付宝或已取消支付!</string>
+    <string name="please_install_wechat_software">请先安装微信软件!</string>
+    <string name="yuan">元</string>
+    <string name="you_on_the_current_activation_vehicle_do_not_have_to_pay">您当前无已激活车辆！无需支付!</string>
+    <!-- ViewMe  share-->
+    <string name="sharing_software">分享软件：</string>
+    <string name="sharing_website">分享官网：</string>
+    <string name="share_a_circle_of_friends">分享朋友圈</string>
+    <string name="share_wechat">分享微信</string>
+    <!-- ViewMe  set-->
+    <!-- ViewMe  safety-->
+    <string name="security">账号与安全</string>
+    <string name="message_switch">消息开关</string>
+    <string name="privacy_switch">隐私开关</string>
+    <string name="prompt_box_switch">提示框开关</string>
+    <string name="sound_and_vibration">声音与震动</string>
+    <string name="change_phone_number">更改手机号</string>
+    <string name="binding_email">绑定邮箱</string>
+    <string name="scurity_issues">安全问题</string>
+    <string name="click_settings">点击设置</string>
+    <string name="click_modify">点击修改</string>
+    <string name="modify_password">修改密码</string>
+    <string name="not_login">未登录</string>
+    <string name="unbounded">未绑定</string>
+    <!--<!- Gesture code starting &ndash;&gt;-->
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="forget_gesture_code">忘记手势密码?</string>
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="set_gesture_pattern">绘制解锁图案</string>
+    <string name="set_gesture_pattern_reason">设置手势密码，设置二次相同手势</string>
+    <string name="reset_password">选择验证方式</string>
+    <string name="please_choose_the_following_method_to_reset_your_password">请选择以下方式重置您的密码</string>
+    <string name="tip">小提示 ： </string>
+    <string name="the_tip">提示</string>
+    <string name="please_choose_the_following_method_to_reset_your_phone_number">请选择以下方式重置您的手机号</string>
+    <string name="please_choose_the_following_method_to_reset_your_aderess">请选择以下方式重置您的邮箱</string>
+    <string name="please_choose_the_following_method_to_reset_your_security_issues">请选择以下方式重置您的安全问题</string>
+    <string name="mobile_phone_number_find_back">手机号找回</string>
+    <string name="modify_email">修改邮箱</string>
+    <string name="modify_phone_number">修改手机号</string>
+    <string name="modify_security_issues">修改安全问题</string>
+    <string name="the_new_email">新邮箱</string>
+    <string name="please_enter_a_new_email">请输入新邮箱</string>
+    <string name="please_enter_the_corresponding_answer">请输入对应问题的答案</string>
+    <string name="validation">验证</string>
+    <string name="email_back">邮箱找回</string>
+    <string name="mobile_phone_number_to_reset_the_password">手机号码重置密码</string>
+    <string name="mobile_phone_number_to_reset_the_phone_number">手机号码重置手机号</string>
+    <string name="reset_the_phone_number">重置手机号</string>
+    <string name="please_enter_phone_number">请输入手机号码</string>
+    <string name="please_enter_new_phone_number">请输入新手机号码</string>
+    <string name="please_enter_erification_code">请输入验证码</string>
+    <string name="mobile_phone_number">手机号码</string>
+    <string name="verification_code">验证码</string>
+    <string name="not_receive_verification_code">接收不到验证码?</string>
+    <string name="to_obtain">获取</string>
+    <string name="using_voice_verification">请使用语音验证</string>
+    <string name="voice_verification">语音验证</string>
+    <string name="check_the_solution">接收不到验证码，点此查看解决方案</string>
+    <string name="how_to_obtain_authentication_code">如何获取验证码</string>
+    <string name="security_authentication">安全问题验证</string>
+    <string name="the_new_password">新密码 :</string>
+    <string name="the_phone_number">手机号:</string>
+    <string name="please_enter_a_new_password">请输入新密码</string>
+    <string name="please_enter_a_new_password_again">请再次输入新密码</string>
+    <string name="verify_password">验证密码</string>
+    <string name="two_information_input_please_input_again">两次信息输入不相同，请重新输入!</string>
+    <string name="mobile_phone_number_to_reset">手机号重置</string>
+    <string name="email_to_reset">邮箱重置</string>
+    <string name="anquanwenti_to_reset">安全问题重置</string>
+    <string name="mobile_phone_back">手机找回</string>
+    <string name="problem_a">问题一：</string>
+    <string name="the_answer">答案：</string>
+    <string name="when_is_your_birth_place">您的出生地点是?</string>
+    <string name="reset_email_phone_number">手机号码重置邮箱</string>
+    <string name="mobile_phone_number_to_reset_the_security_issues">手机号码重置安全问题</string>
+    <string name="the_answer_can_not_be_empty_please_retry_after_input">问题答案不能为空，请输入后重试</string>
+    <string name="authentication_is_successful">验证成功</string>
+    <string name="question_two">问题二：</string>
+    <string name="question_three">问题三：</string>
+    <string name="email_fill_in_error_please_input_the_correct_email">邮箱填写错误请输入正确的邮箱</string>
+    <string name="email_reset_successfully">邮箱重置成功!</string>
+    <string name="validation_fails">验证失败</string>
+    <string name="we_have_sent_an_email_to_your_mailbox_please_pay_attention_to_check">我们已发送一封邮件到您邮箱中，请注意查收!</string>
+    <string name="password_is_wrong_please_input_english_numbers_underscore_combination">"密码错，请输入6-31位英文,数字,下划线组合!"</string>
+    <string name="repeated_password_is_wrong">重复密码错!</string>
+    <string name="password_reset_successfully">密码重置成功!</string>
+    <string name="please_enter_the_complete_phone_number">请输入完整手机号!</string>
+    <string name="the_phone_number_wrong">电话号码错!</string>
+    <string name="verification_code_for_failure_please_try_again">验证码获取失败，请重试</string>
+    <string name="verfy_code">验  证  码:</string>
+    <string name="reset_success">重置成功</string>
+    <!-- ViewMe  Message-->
+    <string name="message">消息</string>
+    <string name="no_message">没有消息</string>
+    <string name="control">控制</string>
+    <string name="the_alarm">警报</string>
+    <!-- ViewMe  About-->
+    <string name="company_profile">公司简介：</string>
+    <string name="complaints_suggestions">投诉建议：</string>
+    <string name="terms_of_use_and_privacy_policy">使用条款和隐私政策</string>
+    <string name="cool_technology_ltd_All_rights_reserved">酷斯达数字车钥匙科技 版权所有</string>
+    <string name="download_server_error_please_download_again">服务器下载出错！请重新下载!</string>
+    <string name="guangdong_cool_network_technology_co_ltd">广东开畅科技有限公司</string>
+    <string name="user_agreement">《酷斯达数字车钥匙用户使用协议》</string>
+    <!-- ViewMe  Suggest-->
+    <string name="complaints_suggestions_title">投诉建议</string>
+    <string name="prompt_the_problem_is_solved_please_contact_mounting_point">提示：产品的售后服务由经销商和厂商负责,如有问题请联系安装点解决</string>
+    <string name="please_choose">| 请选择</string>
+    <string name="i_want_to_ridicule">我要吐槽</string>
+    <string name="business_cooperation">商务合作</string>
+    <string name="software_functions">软件功能</string>
+    <string name="hardware_quality">硬件质量</string>
+    <string name="after_sales_service">售后服务</string>
+    <string name="hardware_prices">硬件价格</string>
+    <string name="please_enter_a_suggestion_two_hundred_words">| 请输入建议(限200字)</string>
+    <string name="we_look_forward_to_your_feedback">期待您的意见反馈</string>
+    <string name="submit">提交</string>
+    <string name="information_not_filled">信息未填完整！</string>
+    <!-- ViewMe  ContactUs-->
+    <string name="scan_concern_wechat_public_number">扫一扫·关注微信公众号</string>
+    <string name="modify_the_success">修改成功!</string>
+
+    <string name="men_symbol">男 ♂</string>
+    <string name="women_symbol">女 ♀</string>
+    <string name="cancle">取消</string>
+    <!--ViewMe  ViewUserInfoAddress-->
+    <string name="positioning_can_not">定位不能!</string>
+    <string name="region">地区</string>
+    <string name="orientation_to_the_region">定位到的地区</string>
+    <string name="all">全部</string>
+    <!--ViewMe  ViewUserInfoNickname-->
+    <string name="no_input_information">未输入信息</string>
+    <string name="save">保存</string>
+    <string name="please_enter_a_nickname">请输入一个昵称</string>
+    <!--ViewMe  ViewUserInfoScore-->
+    <string name="my_points">我的积分</string>
+    <string name="the_total_score">总积分</string>
+    <string name="the_integral_subsidiary">积分明细</string>
+    <string name="the_daily_task">每日任务</string>
+    <string name="to_complete_the_task">待完成任务</string>
+    <!--ViewMe  ViewUserInfoScoreDetail-->
+    <string name="the_current_total_credit">当前总积分:</string>
+    <!--ViewMe  ViewUserInfoScoreHelp-->
+    <string name="integral_rules">积分规则</string>
+    <string name="how_to_obtain_the_integral">如何获取积分?</string>
+    <!--ViewMe  ViewUserInfoSex-->
+    <string name="sex">性别</string>
+    <string name="men">男</string>
+    <string name="women">女</string>
+    <!--ViewMe  ViewUserInfoSign-->
+    <string name="individuality_signature">个性签名</string>
+    <string name="compelete">完成</string>
+    <!--ViewMe  ViewUserInfoActivity-->
+    <string name="taking_pictures">拍照</string>
+    <string name="choose_from_the_mobile_phone_photo_albums">从手机相册中选择</string>
+    <string name="is_not_set">未设置</string>
+    <string name="not_to_choose">未选择</string>
+    <string name="did_not_fill_in">未填写</string>
+    <string name="personal_information">个人信息</string>
+    <string name="nickname_simbol">昵称:</string>
+    <string name="please_enter_the_nickname">请输入昵称</string>
+    <string name="account_number_phone_number">账号(手机号码)</string>
+    <string name="no_phone_number">无手机号</string>
+    <string name="my_points_simbol">我的积分:</string>
+    <string name="sex_simbol">性别:</string>
+    <string name="birthsday_simbol">生日:</string>
+    <string name="regon_simbol">地区:</string>
+    <string name="individuality_signature_simbol">个性签名:</string>
+    <!--ViewMe  ClipCutPicActivity-->
+    <string name="please_later">请稍后...</string>
+    <string name="image_loading_failure">图片加载失败</string>
+    <string name="move_and_scale">移动和缩放</string>
+
+
+    <!--  ClipPopActivateCar-->
+    <string name="please_enter_the">请输入</string>
+    <string name="equipment_activation_code">的设备激活码</string>
+    <string name="please_make_sure_the_selected_user_agreement_and_enter_the_correct_activation_code">请确认选中用户协议，并输入正确的激活码!</string>
+    <string name="activate_the_device">激活设备</string>
+    <string name="please_enter_the_activation_code">请输入XXX的激活码</string>
+    <!--  loginreg ViewAnswerGetForVerfication-->
+    <string name="the_answer_can_not_be_empty">问题答案不能为空</string>
+    <!--  loginreg ViewFinshInfo-->
+    <string name="enter_the_nickname">输入昵称</string>
+    <string name="enter_the_email">输入E-mail</string>
+    <string name="please_select_a_picture">请选择头像!</string>
+    <string name="please_enter_a_nickname_simbol">请输入昵称!</string>
+    <string name="please_input_binding_mailbox">请输入绑定邮箱!</string>
+    <string name="improve_the_personal_information">完善个人信息</string>
+    <string name="add_a_picture">添加头像:</string>
+    <string name="click_on_the_binding">点击绑定</string>
+    <string name="click_on_the_input">点击输入</string>
+    <string name="enter_the_nickname_aa">输入昵称:</string>
+    <string name="binding_email_aa">绑定邮箱:</string>
+
+
+    <!--  loginreg ViewLogin-->
+    <string name="login_failed_please_try_again">登陆失败，请重试</string>
+    <string name="please_enter_your_correct_phone_number">请正确输入您的11位手机号码！</string>
+    <string name="enter_the_password_for_six_to_eightteen">请输入6-18位密码</string>
+    <string name="login">登录</string>
+    <string name="registered">注册</string>
+    <string name="go_in_to_see">进去看看</string>
+
+    <!--  loginreg ViewLoginRegUserName-->
+    <string name="please_enter_a_correct_phone_number">请输入正确手机号!</string>
+    <string name="please_enter_a_user_name">输入用户名</string>
+    <!--  loginreg ViewPassfind-->ViewReg
+    <string name="the_new_password_is_enabled_please_login">新密码已启用，请登录!</string>
+    <string name="the_new_password_aa">新 密 码:</string>
+    <string name="user_name_aa">用 户 名:</string>
+
+    <!--  loginreg ViewReg-->
+    <string name="registration_failed_please_try_again">注册失败，请重试</string>
+    <string name="verification_code_wrong_please_enter_the_six_digit_verification_code">验证码错!请输入6位数字验证码!</string>
+    <string name="confirm_password">确认密码:</string>
+    <string name="please_make_sure_the_password">请再次输入密码</string>
+    <string name="pelease_enter_the_password">请输入密码</string>
+    <!--  loginreg ViewResetPassWord-->
+    <string name="security_question">密保问题</string>
+
+    <!--  view4App ViewChooseAuthor-->
+    <string name="please_select_authorization_capabilities">请选择授权功能</string>
+    <!--  view4App ViewCodriverList-->
+    <string name="stop_the_authorization">停止授权</string>
+    <string name="have_to_cancel_the_authorization">已取消授权!</string>
+    <string name="you_have_not_set_up_deputy_owner">您还未设置副车主!</string>
+    <string name="have_to_authorized_deputy_owner">已授权副车主</string>
+    <!--  view4App maintain  MaintainPromeBox-->
+    <string name="i_know">知道了</string>
+    <string name="check">查看</string>
+    <string name="remind_me_later">稍后提醒</string>
+    <string name="have_to_maintain">已保养</string>
+    <string name="has_been_completed">已完成</string>
+    <!--  view4App maintain  ViewAddMaintain-->
+    <string name="three_months">3个月</string>
+    <string name="six_months">6个月</string>
+    <string name="twelve_months">12个月</string>
+    <string name="the_vehicle_list">车辆列表</string>
+    <string name="your_car_is_not_active_please_activate_the_vehicle">您的车未激活，请先激活车辆</string>
+    <string name="set_success">设置成功</string>
+    <string name="add_the_maintenance">添加保养</string>
+    <!--  view4App maintain  ViewAddMaintain-->
+    <string name="complete_maintenance">完成保养</string>
+    <string name="delete_records">删除记录</string>
+    <string name="sure_to_delete_the_content_of_the_maintenance_set">确定删除保养设置的内容吗？</string>
+    <string name="sure_to_compelete_the_content_of_the_maintenance_set">确定已完成保养设置的内容吗？</string>
+    <string name="you_do_not_have_any_record">您还没有任何记录哟</string>
+    <!--  view4App ViewAppList-->
+    <string name="deputy_owner_management">副车主管理</string>
+    <string name="electronic_fence">电子围栏</string>
+    <string name="parking_trajectory">车位轨迹</string>
+    <string name="bad_condition_of_the_network">网络状态不良!</string>
+    <!--  view4App ViewAuthorUserInfo-->
+    <string name="authorization_details">授权详情</string>
+    <string name="licensor_nickname">授权人昵称：</string>
+    <string name="nothing">无</string>
+    <string name="authorization_object">授权对象:</string>
+    <string name="authorized_vehicles">授权车辆:</string>
+    <string name="authorized_time_colon">授权时间:</string>
+    <string name="authorized_limit">已授权限</string>
+
+    <!--  view4App ViewCodriverAuthorization-->
+    <string name="please_select_start_time">请先选择开始时间!</string>
+    <string name="time_to_end_after_the_start_time">结束时间要在开始时间之后!</string>
+    <string name="please_select_authorized_vehicles">请选择授权车辆</string>
+    <string name="did_not_choose_the_vehicle">未选择车辆!</string>
+    <string name="please_select_authorized_time">请选择授权时间!</string>
+    <string name="did_not_choose_the_user">未选择用户!</string>
+    <string name="deputy_owner_has_been_authorized">授权成功!</string>
+    <string name="binding_deputy_owner_success">绑定副车主成功!</string>
+    <string name="authorization_management">副车主授权</string>
+    <string name="vehicle_selection">车辆选择</string>
+    <string name="select_contact">选择联系人</string>
+    <string name="from">从 </string>
+    <string name="start_time">开始时间</string>
+    <string name="to"> 至  </string>
+    <string name="end_time">结束时间</string>
+    <string name="determine_authorization">确定授权</string>
+    <string name="qr_code_is_generated">生成二维码</string>
+    <!--  view4App ViewCodriverManage-->
+    <string name="contact_list">好友列表</string>
+    <string name="have_to_authorized_deputy_owner_colon">已授权列表</string>
+    <!--  view4App ViewGpsCarArea-->
+    <string name="cancel_the_fence">取消围栏</string>
+    <string name="set_fence">设置围栏</string>
+    <string name="input_radius_of_the_fence">输入围栏半径</string>
+    <string name="countless_according_to_vehicle_position">车辆位置无数据!</string>
+    <string name="please_enter_the_radius_of_the_fence_unit_km">请输入围栏半径(单位：千米)</string>
+    <string name="please_enter_an_integer">请输入整数！</string>
+    <string name="the_gps_did_not_provide_a_vehicle_coordinates">GPS未提供车辆坐标!</string>
+    <string name="not_set_electronic_fence">未设置电子围栏!</string>
+    <!--  view4App ViewGpsFavorite-->
+    <string name="collect_coordinates">收藏坐标</string>
+    <!--  view4App ViewGpsFavoriteShowPos-->
+    <string name="collection_location">收藏位置</string>
+    <!--  view4App ViewGpsFindCar-->
+    <string name="my_location">我的位置</string>
+    <string name="current_position">车位轨迹</string>
+    <string name="address_the_collection">地址收藏</string>
+    <string name="vehicle_trajectory">行车记录</string>
+    <!--  view4App ViewGpsPathList-->
+    <string name="vehicle_no_data_or_complete_loss_of_time">车辆无数据或未输完整时间!</string>
+    <!--  view4App ViewGpsPathShow-->
+    <string name="test_share_point">测试分享点</string>
+    <!--  view4App ViewQrcode-->
+    <string name="deputy_owner_please_scan">请副车主扫描</string>
+    <!--  view4App ViewUserList-->
+    <string name="add_contact">新增联系人</string>
+    <string name="please_enter_the_contact_number_of_hands">请输入联系人手机号</string>
+    <string name="delete_the_contact">删除</string>
+    <string name="make_a_phone_call">拔打电话</string>
+    <string name="you_enter_the_phone_number_format_error">您输入的手机号格式错误!</string>
+    <!--  view4App ViewViolationDetail-->
+    <string name="fines">罚款金额：</string>
+    <string name="illegal_sites">违章地点：</string>
+    <string name="illegal_reason">违章原因：</string>
+    <string name="violation_of_the_code">违章代码：</string>
+    <string name="processing_state">处理状态：</string>
+    <string name="illegal_points">违章扣分：</string>
+    <string name="have_to_deal_with">已处理</string>
+    <string name="undisposed">未处理</string>
+    <string name="mark">分</string>
+    <string name="violation_of_the_details">违章详情</string>
+    <string name="illegal_sites_five_hundred_yuan">违章地点：500元</string>
+    <string name="illegal_reason_five_hundred_yuan">违章原因：500元</string>
+    <string name="violation_of_the_code_five_hundred_yuan">违章代码：500元</string>
+    <string name="processing_state_five_hundred_yuan">处理状态：500元</string>
+    <string name="illegal_points_five_hundred_yuan">违章扣分：500元</string>
+    <!--  view4App ViewViolationVioList-->
+    <string name="violation_of_the_list">违章列表</string>
+    <string name="do_not_check_on_earth_are_you_have_violations">地球上都查不到你有违章...</string>
+    <!--  view4control OnClickListenerControl-->
+    <string name="please_do_not_click_frequently">请勿频繁点击!</string>
+    <!--  view4control ViewControlCarNew-->
+    <!--  view4control ViewControlPanelControl-->
+
+    <!--  control car -->
+    <string name="title_control_toast_car_on">设置启动时长</string>
+    <string name="title_control_toast_car_on_unlock">开锁状态下启动</string>
+    <string name="title_control_toast_car_off">熄火操作</string>
+    <string name="title_control_toast_open_trunk">开启尾箱</string>
+    <string name="title_control_toast_close_trunk">关闭尾箱</string>
+    <string name="title_control_toast_normal">操作提示</string>
+    <string name="title_control_toast_lock">车辆关锁</string>
+    <string name="title_control_toast_unlock">车辆开锁</string>
+
+    <string name="info_control_toast_car_on">您将要启动发动机，请确保车辆处于安全且通风良好的位置。维修中和档位在非停车档时切勿操作。</string>
+    <string name="info_control_toast_car_off">您将要熄灭发动机，请确认车辆已安全停放好，车辆行驶中请勿操作。</string>
+    <string name="info_control_toast_open_trunk">您将开启尾箱,请确认尾箱有足够的打开上升空间，否则请取消。</string>
+    <string name="info_control_toast_close_trunk">您将关闭尾箱,请确认尾箱关闭时无障碍物，否则请取消。</string>
+    <string name="info_control_toast_find_car">确认要寻车吗?</string>
+    <string name="info_control_toast_lock">确认要关锁车辆么?</string>
+    <string name="info_control_toast_unlock">确认要开锁车辆么?</string>
+
+    <string name="name_car_on">启动</string>
+    <string name="name_car_off">熄火</string>
+    <string name="name_find_car">寻车</string>
+    <string name="name_lock">关锁</string>
+    <string name="name_unlock">开锁</string>
+    <string name="name_open">开启</string>
+    <string name="name_close">关闭</string>
+
+    <string name="open_vehicle">车辆启动</string>
+    <string name="vehicle_flameout">车辆熄火</string>
+    <string name="open_the_trunk">车辆开启尾箱</string>
+    <string name="vehicle_for_car">车辆寻车</string>
+
+    <string name="send_the_timeout">指令发送超时!</string>
+    <!--  view4control ViewControlPanelControl-->
+    <string name="is_to_refresh_the_vehicle_state">正在刷新车辆状态...</string>
+    <string name="the_temperature">温度:--</string>
+    <string name="no_vehicles">无车辆</string>
+    <string name="inactive_vehicles">未激活车辆</string>
+    <string name="active_vehicles">激活车辆</string>
+    <string name="gps_location">gps定位</string>
+    <string name="online">网络在线</string>
+
+    <string name="model_net">网络模式</string>
+    <!--  view4control ViewTreasure-->
+    <string name="the_failure_please_try_again">领取失败请重试</string>
+    <!--  view4control ViewTreaSureGet-->
+    <string name="congratulations_to_you_to_get_a_card">恭喜您获得一张卡片</string>
+    <string name="audi_a5">奥迪A5</string>
+    <string name="intermediate_card">中级卡</string>
+    <!--  view4Info  -->
+    <!--  view4Info  card ClipPopGiveCardPromBox-->
+    <string name="please_enter_the_complete_phone_number_1">请输入完整手机号!</string>
+    <string name="give_cards_to_him">赠送卡片给TA</string>
+    <string name="gift">赠予</string>
+    <!--  view4Info  card ClippopShareCard-->
+    <string name="collection_of_card_game_aa">【集卡游戏】</string>
+    <string name="I_am_is_with_a_cool_smart_car_control_system_for_a_card">我是用酷斯达数字车钥匙智能汽车掌控系统获得一张</string>
+    <string name="everybody_cyclists_to_pk">,各位车友来PK吧</string>
+    <string name="wechat">微信</string>
+    <!--  view4Info  card ItemViewForViewPager-->
+    <string name="primary_card">初级卡</string>
+    <string name="advanced_card">高级卡</string>
+    <string name="suxury_card">豪华卡</string>
+    <string name="extravagant_card">奢华卡</string>
+    <!--  view4Info  card ItemViewForViewPager-->
+    <string name="ultimate_card">至尊卡</string>
+    <!--  view4Info  card ViewCollectAchievement-->
+    <string name="presented_a_successful">赠送成功</string>
+    <string name="synthesis_of_success">合成成功</string>
+    <string name="collection_of_card_game">集卡游戏</string>
+    <string name="card_type">卡片类型</string>
+    <!--  view4Info ViewCarDressUp -->
+    <string name="personality_is_dressed_up">个性装扮</string>
+    <!--  view4Info ViewDownLoadManager -->
+    <string name="have_bought_the_skin">已购买皮肤</string>
+    <string name="can_not_delete_the_default_skin">不能删除默认皮肤!</string>
+    <string name="skin_removed_successfully_to_use_again_please_download_again">皮肤删除成功，要再次使用请重新下载!</string>
+    <string name="download_manager">下载管理</string>
+    <!--  view4Info ViewDownLoadManager -->
+    <!--  view4Info ViewInfoWeb -->
+    <!--  view4Info ViewSelectCar -->
+    <string name="set_up_the_success">设置成功！</string>
+    <string name="select_the_vehicle">选择车辆</string>
+    <!--  view4Info ActivityChat -->
+    <string name="online_consulting">在线咨询</string>
+    <string name="please_enter_here_to_ask_questions">请在此输入提问:</string>
+    <string name="send">发送</string>
+    <!--  view4Info ActivityFlash -->
+    <string name="install_the_apk">安装apk</string>
+    <!--  view4Info ActivityKulalaMain -->
+    <string name="direct_demonstration">直接演示</string>
+    <string name="you_receive">您收到【</string>
+    <string name="gift_card_please_check">】赠送的卡片，请查收！</string>
+    <!--  view4Info ViewBuyCar -->
+    <string name="buy_equipment">购买设备</string>
+    <!--  view4Info ViewPromeBox -->
+    <string name="no_activation_device_please_choose">暂无激活设备，请选择</string>
+    <string name="simulation_demonstration">模拟演示</string>
+    <string name="network_anomaly_temporarily_unable_to_enter_the_demo_mode">暂时无法进入演示模式</string>
+    <string name="network_anomaly_temporarily_unable_to_exit_the_demo_mode">暂时无法退出演示模式</string>
+    <!--  view4Info ViewPromeBoxExit -->
+    <string name="whether_out_of_simulation_demonstration">是否退出模拟演示？</string>
+    <!--  adapter AdapterDownLoad -->
+    <string name="download">下载</string>
+    <string name="white_car">轿车    白色</string>
+    <string name="have_to_buy">已购买</string>
+    <!--  adapter AdapterForMaintain -->
+
+    <string name="is_the_maintenance">正在保养</string>
+    <string name="end_of_the_normal_maintenance">正常保养结束</string>
+    <string name="ahead_of_maintenance_in_advance_end">提前保养结束</string>
+    <string name="time">时间： </string>
+    <string name="months">个月</string>
+    <!--  adapter AdapterInformation -->
+    <string name="title_information_title_of_information">资讯信息标题</string>
+    <string name="system">系统</string>
+    <string name="information_content">资讯信息内容</string>
+    <!--  adapter AdapterShowGpsFavorite -->
+
+    <string name="note">备注：</string>
+    <string name="delete_note">删除备注</string>
+    <string name="editors_note">编辑备注</string>
+    <string name="modify_note">修改备注</string>
+    <string name="see_on_the_map">在地图上查看</string>
+    <string name="share_location">分享位置</string>
+    <string name="navigation">导航</string>
+    <string name="please_enter_the_note_information">请输入备注信息</string>
+    <string name="the_time">时间</string>
+    <string name="address">地址</string>
+    <!--  adapter AdapterSkin -->
+    <string name="the_title">标题</string>
+    <string name="the_daily_login">每日登录</string>
+    <string name="license_plate_number_simbol">车牌号: </string>
+    <string name="the_window_has_been_opened">车窗已开</string>
+    <!--  com  DDWXEntryActivity -->
+    <string name="collection">收藏</string>
+    <string name="be_success">成功</string>
+    <string name="refuse">拒绝</string>
+    <!--  com  WXEntryActivity -->
+    <string name="successful_share">成功分享</string>
+    <string name="cancel_the_share">取消分享</string>
+    <string name="refuse_to_share">拒绝分享</string>
+    <!--  com  CaptureActivity -->
+    <!--  com  OToastNavigate -->
+    <string name="you_do_not_install_any_navigation">您未安装任何导航</string>
+    <string name="click_open_the_navigation">点击打开导航去：</string>
+    <string name="baidu_navigation_is_not_open_to_use">百度导航未开放使用</string>
+    <string name="scott_navigation_not_opened_to_use">高德导航未开放使用</string>
+    <!--  com  OWXShare -->
+    <string name="cool_your_friends_to_share_a_place_to_you">酷斯达数字车钥匙-您的朋友向您分享了一个位置</string>
+    <!--  octr  OCtrlBaseHttp -->
+    <string name="runtime_exception">运行时异常</string>
+    <string name="exception_handling_network">网络处理异常</string>
+    <string name="business_logic_is_abnormal">业务逻辑异常</string>
+    <string name="java_code_exception">java代码异常</string>
+    <!--  model  DataCarInfo -->
+    <string name="not_enter_vehicle_name">未输入车辆名称！</string>
+    <string name="not_enter_vehicle_brands">未输入车辆品牌！</string>
+    <string name="not_enter_vehicle_series">未输入车辆系列！</string>
+    <string name="not_enter_vehicle_model">未输入车辆型号！</string>
+    <string name="not_enter_vehicle_vin_number">未输入车辆VIN号！</string>
+    <string name="not_enter_vehicle_engine_number">未输入车辆发动机号！</string>
+    <!--  model  ManagerChat -->
+    <string name="hello_what_can_i_help_you">您好！有什么可以帮助您的吗?</string>
+    <!--  model  ManagerSwitchs -->
+    <string name="fortified_prompt_box_switch">关锁提示框开关</string>
+    <string name="boot_prompt_box_switch">后备箱提示框开关</string>
+    <string name="prompt_box_machine_will_switch">开锁提示框开关</string>
+    <string name="seek_prompt_box_car_switch">寻车提示框开关</string>
+    <string name="stall_prompts_the_switch">熄火提示框开关</string>
+    <!--  ViewMe  Language -->
+    <!--  Clip  ClipPopChooseBrand -->
+    <string name="select_the_vehicle_brands">选择车辆品牌</string>
+    <!--  Clip  ClipMovingPic -->
+    <string name="country_garden_in_the_campus_area_name">中国家庭院校园区域名字体现</string>
+    <!--  Clip  ClipSearchHead -->
+    <string name="search">搜索</string>
+    <!--  gesture  GestureEditPage -->
+    <string name="gestures_password_has_been_canceled">手势密码已取消!</string>
+    <string name="cancel_the_gestures_password">取消手势密码</string>
+    <string name="link_at_least_four_points_please_enter_again">最少链接4个点, 请重新输入</string>
+    <string name="do_not_agree_with_the_last_drawing_please_draw_again">与上一次绘制不一致，请重新绘制</string>
+    <!--  gesture  GestureVerityPage -->
+    <string name="password_is_correct">密码正确!</string>
+    <string name="please_modify_gesture_password_as_soon_as_possible">请尽快修改手势密码!</string>
+    <string name="password_input_gestures">输入手势密码</string>
+    <string name="password_mistake">密码错误</string>
+
+    <!--  ViewLoginreg  ViewReg -->
+    <string name="password_simbol">  密     码:</string>
+    <!--  clip  ClipDatetimePicker -->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+    <string name="please_select_a_date">请选择日期</string>
+    <string name="confirm">确定</string>
+    <!--  clip  ClipPopChooseHead -->
+    <string name="please_select_a_picture_oo">请选择头像</string>
+    <!--  clip  ClipPopConfirmAuthor -->
+    <string name="prompt_information">提示信息</string>
+    <string name="details">详情</string>
+    <string name="authorized_limit_simbol">已授权限:</string>
+    <string name="illegal_query_electronic_fence">违章查询\n电子围栏</string>
+    <string name="accept">接受</string>
+    <!--  clip  ClipPopConfirmControl -->
+    <string name="operating_hints">操作提示</string>
+    <!--  clip  ClipPopSpeechReceive -->
+    <string name="not_receive_verification_code_ooo">接收不到验证码，</string>
+    <string name="click_here_to">点此</string>
+    <string name="check_the_solution_ooo">查看解决方法</string>
+    <!--  clip  ClipPopUserLinking -->
+    <string name="manually_enter_contacts">添加新好友</string>
+    <string name="choose_from_a_local_contact">通过通讯录添加</string>
+    <string name="change_nickname">修改备注</string>
+    <string name="nickname_cannot_be_empty">昵称不能为空!</string>
+    <!--  clip  ClipPopWarning -->
+    <string name="received_a_new_message">收到新消息:</string>
+    <string name="article">条</string>
+     <!--  viewme  pay -->
+    <string name="license_plate_number_not_choose_vehicles">车牌号：未选择车辆</string>
+    <string name="method_of_payment_simbol">支付方式：</string>
+    <string name="to_top_up_your_friends">给好友充值</string>
+    <string name="scavenger_recharge_voucher">扫码领充值券</string>
+    <string name="top_up_failure">充值失败</string>
+    <string name="pay_not_success">支付未成功!</string>
+    <string name="successful_payment">成功支付</string>
+    <string name="cancel_the_payment">取消支付</string>
+    <string name="refuse_to_pay">拒绝支付</string>
+    <string name="alipay_pay">支付宝支付</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="mobile_phone_number_aa">手机号码:</string>
+    <string name="authentication_is_successful_aa">验证成功!</string>
+    <string name="gestures_password">手势密码</string>
+    <!--  OCtrlGps -->
+    <!--  ViewFindPay -->
+    <string name="viewfindpay_no_wechatpay">不能使用微信支付!</string>
+    <!--  ViewPayFriend -->
+    <string name="top_up_success">充值成功</string>
+    <!--  card_explain.xml -->
+    <string name="card_collect_rule_title">【集卡规则】</string>
+    <!--  card_indicator_layout.xml -->
+    <string name="badge">【徽章】</string>
+    <string name="primary">初级</string>
+    <string name="advanced">高级</string>
+    <string name="suxury">豪华</string>
+    <string name="extravagant">奢华</string>
+    <string name="intermediate">中级</string>
+    <string name="ultimate">至尊</string>
+    <!--  include_select-time.xml -->
+    <!--  toast_navigate.xml -->
+    <string name="open_navigation">打开导航</string>
+    <string name="navigation_now">现在就去导航么?</string>
+    <string name="back">返回</string>
+    <string name="baidu_navigation">百度导航</string>
+    <string name="gaode_navigation">高德导航</string>
+    <!--  view_anser_set.xml -->
+    <string name="problem_set">安全问题设置</string>
+    <!--  view_loginreg-emailaderess_findpassword.xml -->
+    <string name="aderess"> 邮箱:</string>
+    <string name="enter_aderess">请输入邮箱</string>
+    <!--  viewme_carinfo_modify.xml -->
+    <string name="carinfo_modify">车辆信息修改</string>
+    <!--  view_me_pay_firend.xml -->
+    <string name="top_up_vehicles">充值车辆: </string>
+    <string name="top_up_now">立即充值</string>
+    <!--  view_me_set 维修模式 -->
+    <string name="maintenance_mode">维修模式</string>
+    <string name="maintenance_mode_instructions">车辆维修时，请打开此开关，将阻止所有APP客户端下发指令到车直至关闭维修模式，保障维修安全。</string>
+    <!--   蓝牙 -->
+    <!--   登陆注册 -->
+    <string name="loginreg_please_see_agree">请先阅读并同意</string>
+    <string name="loginreg_i_have_agree">我已阅读并同意</string>
+    <!--   维修模式 -->
+    <string name="mantancemode_close">维修模式已关闭</string>
+
+
+    <string name="login_intro">
+1.首先，请检查输入的电话号码是否正确，是否欠费。\n\n
+2.其次，检查手机内的安全软件是否拦截了短信，验证码请认准【酷斯达数字车钥匙网络】。\n\n
+3.如果上述方法都不行，请试试重启手机。\n\n
+    </string>
+    <string name="me_about">
+&#160;&#160;&#160;&#160;&#160;&#160;“酷斯达数字车钥匙”手机控车是广东开畅科技有限公司推出一款极致人车交互车联网产品，开畅科技是一家专注于汽车手机互联系统，车载智能硬件，网络通讯模块，车载蓝牙模块的研发、产销、服务，控车云平台以及手机端APP开发和运维的高新技术企业，开畅科技已经实现了手机控车、数字车钥匙全链条核心技术自主的闭环，“酷斯达数字车钥匙”手机控车产品在稳定性、安全性、易用性等方面均达到了业内先进水平。企业拥有多项发明及实用新型国家专利，并荣获国家高新技术企业认定和多项高新技术产品认定。\n\n
+&#160;&#160;&#160;&#160;&#160;&#160;开畅科技将不断致力推动手机控车、数字车钥匙产品的发展和演变，成为手机控车行业的领跑者。未来我们仍将不懈努力，打造更为极致的人车交互产品，为广大车主消费者带来更多的智慧时尚用车方式及体验。</string>
+    <!--me_licence 使用三个地方，关于，激活车，登录-->
+    <string name="me_licence">
+        <Data><![CDATA[
+　　尊敬的用户，欢迎您使用广东开畅科技有限公司的“酷斯达数字车钥匙”手机汽车应用软件（以下简称“酷斯达数字车钥匙”）。
+<br/>　　为保护您的合法权益，在使用“酷斯达数字车钥匙”前，请仔细阅读《“酷斯达数字车钥匙”用户使用协议》（以下简称“本协议”）并充分理解各条款内容，特别是免除或限制责任条款。当您注册、登陆、使用“酷斯达数字车钥匙”时，则表明您已阅读、理解并同意接受本协议条款声明的全部内容，包括接受广东开畅科技有限公司对协议条款随时所做的任何修改。协议文本包括了您所使用的服务及其相关条款，如后续有任何附加协议，而您又选用了其中的附加服务，则此附加协议也应作为协议的组成部分。
+<br/>　　广东开畅科技有限公司（以下简称“酷斯达数字车钥匙公司”）有权对本协议条款内容进行修改、更新，且无需另行通知，您可以在“酷斯达数字车钥匙”APP的最新版本中查阅相关内容，若您查阅后不同意更新后的协议内容，应立即停止使用“酷斯达数字车钥匙”并注销注册账号，如果您继续选择使用则视为已经完全接受本协议及其修改。
+<br/>
+<br/>一、适用主体范围
+<br/>　　1.1本协议所称“用户”或“您”是指注册、 登录、使用“酷斯达数字车钥匙”的人(未成年人，应在家长或法定监护人的陪同下进行）。
+<br/>　　1.2本协议是“用户”或“您”与酷斯达数字车钥匙公司之间关于下载、安装、注册、使用“酷斯达数字车钥匙”，以及使用“酷斯达数字车钥匙”相关服务所订立的协议。
+<br/>
+<br/>二、服务形式
+<br/>　　2.1您需要下载并安装、注册“酷斯达数字车钥匙”后方可使用其提供的相关服务，“酷斯达数字车钥匙”有iOS、Android两个应用版本，您可根据终端设备类型选择匹配的软件版本；当您安装、注册成功，酷斯达数字车钥匙公司给予您一项个人的、非排他性的许可，以使用“酷斯达数字车钥匙”，您可以非商业目的在终端设备上安装、使用、显示、运行“酷斯达数字车钥匙”。
+<br/>　　2.2除非本协议明确声明，本协议并未对利用“酷斯达数字车钥匙”访问的第三方服务制定服务条款，对于第三方服务是否含有单独的服务条款加以规范，请您在使用相关服务时自行确认；一旦使用，则视为对相关服务条款的接受，由此产生的一切法律责任与纠纷，将由您自行承担。
+<br/>
+<br/>三、安装、卸载、更新升级及商业广告推送
+<br/>　　3.1 酷斯达数字车钥匙公司为不同的终端设备开发了不同的软件版本，您可根据终端设备的类型选择下载适合的版本进行安装，下载安装“酷斯达数字车钥匙”后，应按照提示的步骤进行注册。
+<br/>　　3.2 为提供更加优质、安全的服务，在安装“酷斯达数字车钥匙”时酷斯达数字车钥匙公司可能推荐您安装其他产品，您可以选择安装或不安装。
+<br/>　　3.3为改善用户体验、完善服务内容，酷斯达数字车钥匙公司将不断开发新的功能服务，并不定时对“酷斯达数字车钥匙”的当前版本进行更新升级（可能采取软件替换、修改、功能强化、版本升级等形式）。
+<br/>　　3.4  “酷斯达数字车钥匙”新版本发布后，旧版本可能无法使用，酷斯达数字车钥匙公司不保证旧版本及相应的服务继续可用，请有效核对并进行更新升级；如您同意更新升级，则视为同意接受“酷斯达数字车钥匙”发生的变化。
+<br/>    3.5 “酷斯达数字车钥匙”可能会向您发送相关的商业性广告推送信息，促销信息或服务资料等商业信息，如果您不需要，您可以在“酷斯达数字车钥匙”设置中选择关闭广告信息推送。
+<br/>
+<br/>四、账号及密码安全
+<br/>　　4.1您可通过手机号码进行注册,并可在注册成功后绑定相关车辆、设备。酷斯达数字车钥匙公司有权根据用户需求或产品需要对帐号注册和绑定的方式进行变更。
+<br/>　　4.2当您完成“酷斯达数字车钥匙”的注册程序，应有效维护帐号及密码的安全，应对任何利用您帐号及密码所进行的活动负责。“酷斯达数字车钥匙”无法对非法或未经授权使用您帐号及密码的行为进行甄别，由此出现的问题，酷斯达数字车钥匙公司不承担任何法律责任。
+<br/>
+<br/>五、用户行为规范
+<br/>　　5.1本条款约定并未涵盖所有违反用户行为规范的方式，对违反法律法规或本协议规定的行为，酷斯达数字车钥匙公司有权采取警告或其他法律法规允许的救济方式，由此导致酷斯达数字车钥匙公司损失的，酷斯达数字车钥匙公司有权立即停止提供服务并要求赔偿，还有权保留相关记录并提请司法机关追究法律责任。
+<br/>　　5.2应根据自身需要并结合“酷斯达数字车钥匙”的提示进行操作使用，并为使用“酷斯达数字车钥匙”时的个人行为（含授权行为）及因此衍生的一切后果负责。
+<br/>　　5.3应遵守相关法律、法规、政策及本协议规定，不得利用“酷斯达数字车钥匙”制作、复制、发布、传播干扰“酷斯达数字车钥匙”正常运行、侵犯第三方合法权益或国家法律法规禁止的内容，否则由此导致一切责任及纠纷，将由您自行承担。
+<br/>　　5.4 您在“酷斯达数字车钥匙”上发布、存储内容时，需遵守法律规定，保障发布内容的合法性及品质，酷斯达数字车钥匙公司有权对上传发布的内容进行审查和监督，包括但不限于对您在“酷斯达数字车钥匙”上发布、存储的内容，如您在使用网络服务时违反法律规定，酷斯达数字车钥匙公司将采取必要措施以减轻不当行为造成的影响，并保留法律追究的权利。
+<br/>　　5.5未经酷斯达数字车钥匙公司书面同意，您在使用“酷斯达数字车钥匙”过程中，不得实施包括但不限于以下行为：
+<br/>　　5.5.1移除“酷斯达数字车钥匙”中任何关于著作权或其他专属权利的标志、声明，或以任何方式散播、侵犯第三方专利、商标、著作权、商业机密或其他专属权利的内容；
+<br/>　　5.5.2对“酷斯达数字车钥匙”进行反向工程、反向汇编、反向编译，或者以其他方式尝试发现“酷斯达数字车钥匙公司”的源代码；或在“酷斯达数字车钥匙”的基础上书写或开发衍生软件、产品等；
+<br/>　　5.5.3对酷斯达数字车钥匙公司拥有知识产权的内容进行使用、出租、出借、复制、修改、链接、转载、汇编、发表、出版等；
+<br/>　　5.5.4自行或者授权他人、第三方对“酷斯达数字车钥匙”及其模块、数据进行干扰；
+<br/>　　5.5.5对“酷斯达数字车钥匙”运行过程中释放到任何终端内存中的数据、运行过程中的交互数据，以及运行所必需的系统数据，进行复制、修改、增加、删除、挂接运行或创作任何衍生作品；
+<br/>　　5.5.6通过修改或伪造“酷斯达数字车钥匙公司”运行中的指令、数据，增加、删减、变动“酷斯达数字车钥匙公司”的功能或运行效果。
+<br/>　　5.5.7其他未经酷斯达数字车钥匙公司明示授权的行为。
+<br/>
+<br/>六、免责条款
+<br/>　　6.1您理解并同意，“酷斯达数字车钥匙”功能中的非法进入提示、断电剪线提示以及车辆异常提醒等功能仅作为辅助提醒功能，酷斯达数字车钥匙公司不承担任何车辆被偷盗、车辆被抢夺的责任。
+<br/>　　6.2您理解并同意，“酷斯达数字车钥匙”功能中的GPS车位&轨迹功能仅提供参考用途，酷斯达数字车钥匙公司不承担车辆被盗后的跟踪寻回等责任和义务。
+<br/>　　6.3您理解并同意，“酷斯达数字车钥匙”功能中的GPS定位系统所提供的定位数据，仅提供一般性查阅参考，不承诺提供高精度的定位以及路径规划。定位系统所提供的信息仅供驾驶员参考，最终判断以当地的交通规则为准。
+<br/>　　6.4您理解并同意，“酷斯达数字车钥匙”所提供的功能可能会因您的车型不同而有所不同，以出厂或安装说明为准。
+<br/>
+<br/>　　6.5您同意并清楚，在使用过程中，如有需要售后维修的请到酷斯达数字车钥匙指定的售后服务点寻求售后维护，非酷斯达数字车钥匙公司的官方拆装、改装造成的后果及损失，将由您自行承担。
+<br/>　　6.6您同意并清楚，根据自身需要并结合“酷斯达数字车钥匙”的安全提示进行操作使用，若使用不当可能导致不可预知的风险（如在远程控制类、启动类功能使用过程中导致车辆电子系统被入侵，或导致车辆被盗等），因您使用不当导致的任何损失及责任纠纷，将由您自行承担。
+<br/>　　6.7您同意并清楚，驾驶车辆时查看手机APP，可能导致交通事故，务必在方便、安全的情况下使用“酷斯达数字车钥匙”APP，如因您使用不当导致的任何损失及责任纠纷，将由您自行承担。
+<br/>　　6.8您同意并清楚，基于互联网的特殊性，“酷斯达数字车钥匙”不能担保服务不会中断，也不能完全担保服务的及时性。系统因相关状况无法正常运作，使用户无法使用“酷斯达数字车钥匙”服务受到任何影响时，酷斯达数字车钥匙公司对用户或第三方不负有任何责任，前述状况包括但不限于：
+<br/>　　6.8.1  您绑定到“酷斯达数字车钥匙”的车辆处于无设备所需移动互联网信号时；
+<br/>　　6.8.2  您操作“酷斯达数字车钥匙”的手机端无3G或以上移动互联网信号时；
+<br/>　　6.8.3 “酷斯达数字车钥匙”后台系统停机维护期间。
+<br/>　　6.8.4  电信设备出现故障不能进行数据传输的。
+<br/>　　6.8.5  由于黑客攻击、网络供应商技术调整或故障、网站升级等原因而造成的“酷斯达数字车钥匙”服务中断或延迟。
+<br/>　　6.8.6 因台风、地震、海啸、洪水、停电、战争、恐怖袭击等不可抗力之因素，造成“酷斯达数字车钥匙”系统障碍不能运行的。
+<br/>　　6.9您同意，酷斯达数字车钥匙公司对酷斯达数字车钥匙产品拥有最终解释权。
+<br/>
+<br/>七、信息收集、使用及保护
+<br/>　　7.1酷斯达数字车钥匙公司将采取合理措施保护用户的个人信息。除法律法规规定的情形外，未经用户许可酷斯达数字车钥匙公司不会向第三方公开、透露用户个人信息。酷斯达数字车钥匙公司将采用专业加密存储与传输方式，保障用户个人信息的安全。
+<br/>　　7.2在注册及使用“酷斯达数字车钥匙”的过程中，需提供必要的信息（包括但不限于注册帐号时需填写手机号码，访问手机信息功能等），若您提供的信息不完整，则无法使用“酷斯达数字车钥匙”或在使用过程中受到限制。一般情况下，您可随时浏览、修改自己提交的信息，但出于安全性的考虑，请勿随便修改初始注册信息及其他验证信息，否则由此导致一切责任及纠纷，将由您自行承担。
+<br/>　　7.3 “酷斯达数字车钥匙”在提供服务过程中会使用您手机的短信、电话、GPS等功能，会采集到您的注册信息、行驶轨迹及位置信息（您可通过关闭手机GPS功能或“酷斯达数字车钥匙”GPS使用权限来阻止行驶轨迹、位置信息的采集），这类信息是以不公开姓名、不对您的身份加以识别的方式收集的，您同意酷斯达数字车钥匙公司或其合作伙伴或许可第三人将该信息用于“酷斯达数字车钥匙”消息提醒、新版本更新等重要信息的通知（如您不希望接收此类通知，可通过更改设置选择拒绝接收）或用于提供和改进产品功能及服务等。
+<br/>　　7.4您理解并同意酷斯达数字车钥匙公司会采取合理措施保障您使用“酷斯达数字车钥匙”过程中产生的数据存储期限，但是，酷斯达数字车钥匙公司仍有权根据实际情况自行决定“酷斯达数字车钥匙”产生数据的最长储存期限，同时，酷斯达数字车钥匙公司并不能就此提供完全保证，包括但不限于以下情形：
+<br/>　　7.4.1您自行删除相关数据导致的数据储存失败；
+<br/>　　7.4.2您下载、安装的其他软件或访问的其他网站中含有病毒、木马程序或其他恶意程序，导致“酷斯达数字车钥匙”无法正常使用，进而导致数据存储失败；
+<br/>　　7.4.3当您卸载“酷斯达数字车钥匙”， 酷斯达数字车钥匙公司可永久地删除您的数据，当您再次安装使用时，酷斯达数字车钥匙公司没有义务向返还任何数据。
+<br/>　　7.5您在使用“酷斯达数字车钥匙”过程中，须自行承担如下风险内容，包括但不限于：
+<br/>　　7.5.1由于不可抗力因素可能引起的个人信息丢失、泄漏等风险；
+<br/>　　7.5.2 您须选择与所安装终端设备相匹配的软件版本，否则，由于软件版本与终端设备型号不相匹配所导致的任何问题或损害；
+<br/>　　7.5.3 用户在使用“酷斯达数字车钥匙”访问第三方网站时，因第三方网站及相关内容所可能导致的风险；
+<br/>　　7.5.4 您通过分享发布的内容被他人查阅、转发、分享等可能带来的责任和风险；
+<br/>　　7.5.5 由于无线网络信号不稳定等原因，所引起的账号登录失败、资料同步不完整、页面打开速度慢等产生的风险；
+<br/>　　7.5.6擅自卸载“酷斯达数字车钥匙”或绑定的关联设备所产生的责任与风险。
+<br/>　　
+<br/>八、流量服务费
+<br/>　　8.1“酷斯达数字车钥匙”属于实时在线应用，在使用过程中会产生移动数据流量费用，并且后台会产生服务维护费用，您可以通过“酷斯达数字车钥匙”钱包功能去了解相关流量服务资费信息，并承担相关费用。
+<br/>
+<br/>九、其他
+<br/>　　9.1本协议条款无论何种原因部分无效或不可执行，其余条款仍然有效，对双方均具有约束力。
+<br/>　　9.2本协议中的标题仅为阅读方便，并不作为相关条款的解释依据。
+<br/>　　9.3本协议的生效、履行、解释及纠纷解决，均适用中华人民共和国法律。您与酷斯达数字车钥匙公司发生的任何争议纠纷，首先应友好协商，协商不成，任何一方均可向酷斯达数字车钥匙公司所在地人民法院提起诉讼。
+<br/>
+<br/>酷斯达数字车钥匙公司
+]]> </Data>
+    </string>
+
+    <string name="card_collect_rule">1、集卡可以做什么？\n可以获得专属的徽章，在酷友圈发帖有专属的标识，彰显高贵身份；可以使用专属的个性装扮饰品。\n\n2、如何获得卡片？\n每天登录都会随机获得宝箱，宝箱分为木质宝箱、白银宝箱、黄金宝箱、青玉宝箱、紫钻宝箱，可以获得对应的卡片，越高贵的卡片出现几率会更小，可以通过合成相应更高等级的卡片。\n参加官方不定期的活动可以获得相应卡片，加快获得至尊卡的时间。\n\n3、不同宝箱有什么区别？\n木质宝箱、白银宝箱、黄金宝箱、青玉宝箱、紫钻宝箱对应获得的卡片为：初级卡、中级卡、高级卡、豪华卡、奢华卡。至尊卡极其稀有无法通过宝箱获取，只能通过合成。\n\n4、至尊卡有多少张？\n至尊卡可以无限收集，获得一张后可以继续收集，至尊徽章会变的更高级。</string>
+<string name="score_rule">
+一、每天玩转酷斯达数字车钥匙各项服务，可以获得积分，积分与服务类型和成交金额相关，玩转以下业务可以获得积分：\n
+    \n
+1、完善用户信息基本信息\n
+&#160;&#160;&#160;&#160;&#160;&#160;设置生日+10\n
+&#160;&#160;&#160;&#160;&#160;&#160;绑定邮箱+10\n
+&#160;&#160;&#160;&#160;&#160;&#160;设置安全问题+20\n
+&#160;&#160;&#160;&#160;&#160;&#160;设置头像+20\n
+&#160;&#160;&#160;&#160;&#160;&#160;设置性别+10\n
+&#160;&#160;&#160;&#160;&#160;&#160;设置昵称+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;设置地区+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;设置个性签名+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;更多用户中心赚积分玩法即将上线\n
+2、登陆\n
+&#160;&#160;&#160;&#160;&#160;&#160;每天登陆+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;每连续7天登陆+20\n
+3、充值消费\n
+&#160;&#160;&#160;&#160;&#160;&#160;+10积分/元，每笔最高+100积分。\n
+4、使用酷斯达数字车钥匙服务\n
+&#160;&#160;&#160;&#160;&#160;&#160;每天第一次打开功能或者应用\n
+&#160;&#160;&#160;&#160;&#160;&#160;副车主管理+1\n
+&#160;&#160;&#160;&#160;&#160;&#160;状态记录+1\n
+&#160;&#160;&#160;&#160;&#160;&#160;电子围栏+1\n
+&#160;&#160;&#160;&#160;&#160;&#160;车位轨迹+1\n
+&#160;&#160;&#160;&#160;&#160;&#160;资讯+1\n
+&#160;&#160;&#160;&#160;&#160;&#160;个性装扮+1\n
+&#160;&#160;&#160;&#160;&#160;&#160;集卡游戏+1\n
+    \n
+二、每日做任务赚积分\n
+&#160;&#160;&#160;&#160;&#160;&#160;点击【发现】-【积分】-【每日任务】即可参与赚取积分任务\n
+&#160;&#160;&#160;&#160;&#160;&#160;每日登录+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;分享APP到微信好友、朋友圈+20\n
+&#160;&#160;&#160;&#160;&#160;&#160;启动车辆+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;下载车皮肤+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;查看卡片+5\n
+&#160;&#160;&#160;&#160;&#160;&#160;积分不可换现\n
+</string>
+    //保养模块
+    <string name="set_now">立即设置</string>
+    <string name="mantain_remind">保养</string>
+    <string name="maintain_mileage">保养里程 ： </string>
+    <string name="maintain_time">保养时间 ： </string>
+    <string name="maintain_car">保养车辆 ： </string>
+    <string name="maintain_mileage_select">请选择保养里程</string>
+    <string name="maintain_time_select">请选择保养时间</string>
+    <string name="maintain_car_select">请选择保养车辆</string>
+
+    //摇一摇模块
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+    <view.view4me.set.ClipTitleMeSet
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="@string/new_vehicle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lin_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/city"
+                        style="@style/Button_round_blue"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:focusable="true"
+                        android:text="京"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/txt_carname_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/city"
+                        android:background="@drawable/button_selector_rect_sm"
+                        android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:gravity="center"
+                        android:hint="请输入正确的车牌号码"
+                        android:inputType="text"
+                        android:maxLength="8"
+                        android:textColor="@color/black"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColorHint="@color/gray"/>
+
+                </RelativeLayout>
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_carname"
+                    style="@style/Single_line_with_background"
+                    android:visibility="gone"
+                    androidme:gravityTxt="left"
+                    androidme:lefttxt="@string/license_plate_number"
+                    androidme:righthint="@string/please_enter_the_license_plate_number"
+                    androidme:rightres="@android:color/transparent"/>
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_carbrand"
+                    style="@style/Single_line_with_background"
+                    androidme:lefttxt="@string/vehicle_brand"
+                    androidme:rightres="@drawable/right_chacha"
+                    />
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_carseries"
+                    style="@style/Single_line_with_background"
+                    androidme:lefttxt="@string/vehicle_system"
+                    androidme:rightres="@drawable/right_chacha"
+                    />
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_cartype"
+                    style="@style/Single_line_with_background"
+                    androidme:lefttxt="@string/vehicle_type"
+                    androidme:rightres="@drawable/right_chacha"
+                    androidme:splitLine="false"
+                    />
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_vin"
+                    style="@style/Single_line_with_background"
+                    android:layout_marginTop="16dp"
+                    androidme:lefttxt="@string/vin_code"
+                    androidme:righthint="@string/please_enter_vin_code_last_six_number"
+                    androidme:rightres="@drawable/icon_scan"/>
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_carenginenum"
+                    style="@style/Single_line_with_background"
+                    androidme:lefttxt="@string/engine_number"
+                    androidme:righthint="@string/please_enter_engine_last_six_number"
+                    androidme:rightres="@android:color/transparent"
+                    />
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_datebuy"
+                    style="@style/Single_line_with_background"
+                    android:visibility="gone"
+                    androidme:gravityTxt="left"
+                    androidme:lefttxt="@string/purchase_date"
+                    androidme:rightres="@drawable/icon_common_arrow_down"
+                    androidme:righttxt="@string/can_choose"/>
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_dateInsurance"
+                    style="@style/Single_line_with_background"
+                    android:visibility="gone"
+                    androidme:gravityTxt="left"
+                    androidme:lefttxt="@string/date_of_insurance"
+                    androidme:rightres="@drawable/icon_common_arrow_down"
+                    androidme:righttxt="@string/can_choose"/>
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_dateVerification"
+                    style="@style/Single_line_with_background"
+                    android:visibility="gone"
+                    androidme:gravityTxt="left"
+                    androidme:lefttxt="@string/year_of_careful_date"
+                    androidme:rightres="@drawable/icon_common_arrow_down"
+                    androidme:righttxt="@string/can_choose"/>
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_datemaintain"
+                    style="@style/Single_line_with_background"
+                    android:visibility="gone"
+                    androidme:gravityTxt="left"
+                    androidme:lefttxt="@string/maintenance_date"
+                    androidme:rightres="@drawable/icon_common_arrow_down"
+                    androidme:righttxt="@string/can_choose"/>
+
+                <view.clip.ClipLineBtnInptxt
+                    android:id="@+id/txt_terminalnum"
+                    style="@style/Single_line_with_background"
+                    android:visibility="gone"
+                    androidme:lefttxt="@string/terminal_number"
+                    androidme:righttxt=""/>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    style="@style/Button_round_blue"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button_selector_round_light_blue"
+                    android:enabled="false"
+                    android:text="添加"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/img_scan"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="205dp"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_confirm"-->
+    <!--style="@style/Button_round"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:text="@string/confirm" />-->
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/annual_background_all"
+                tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <annualreminder.view.style.StyleTitleHead
+            android:id="@+id/title_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            androidme:leftres="@drawable/titlehead_back"
+            androidme:text="添加年检记录"/>
+
+        <annualreminder.view.style.StyleSingleLineAnnual
+            android:id="@+id/txt_recodetime"
+            style="@style/Style_txt_line_trans"
+            android:layout_marginTop="15dp"
+            androidme:splitLine="true"
+            androidme:text="年检时间"/>
+
+        <annualreminder.view.style.StyleSingleLineAnnual
+            android:id="@+id/txt_fee"
+            style="@style/Style_txt_line_trans"
+            androidme:openinput="true"
+            androidme:rightimgvisible="false"
+            androidme:splitLine="false"
+            androidme:text="年检费用"
+            androidme:textimgr="元"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="| 备注"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/edit_note"
+            style="@style/Style_txt_line_trans"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/annual_bgst_round_black_fir"
+            android:gravity="left|top"
+            android:hint="请输入备注内容"
+            android:maxEms="80"
+            android:padding="10dp"
+            android:textColor="@color/white"/>
+        <!--android:inputType="textMultiLine"-->
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/annual_btn_round_blue_dark"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_pop_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_toast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
